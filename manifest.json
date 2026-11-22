@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-22T21:42:17.472Z",
+  "generatedAt": "2026-11-22T22:12:19.771Z",
   "sources": {
     "seed": {
       "name": "seed",
@@ -353,18 +353,18 @@
     },
     "videsign": {
       "name": "videsign",
-      "head": "6f70c888e8e791175530018b42fb1b5724604835",
-      "syncedAt": "2026-11-22T21:42:17.466Z",
+      "head": "6ee2961a6315296337e6607c5a3e662bfa8cf144",
+      "syncedAt": "2026-11-22T22:12:19.765Z",
       "files": [
         {
           "path": "DESIGN.md",
-          "sha256": "00bceca641701e0da31e4b4994a75b322040e4ccd614b1b4adf472e3c08ebd1f",
-          "bytes": 51727
+          "sha256": "ad9e00b11b060140b3d463c3321d467899d762a531bd4d251ae33108289418cf",
+          "bytes": 58129
         },
         {
           "path": "README.md",
-          "sha256": "936a1ddd64f560de75d45393457546c83fbcb5df4b89a67f8fd5969f105e31f0",
-          "bytes": 10841
+          "sha256": "6bae1921af691cb9c75d2fee9092bae7596deb00bccb2b264ced895a3edbaff8",
+          "bytes": 10987
         },
         {
           "path": "docs/superpowers/plans/2026-11-18-memory-field.md",
