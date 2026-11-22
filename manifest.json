@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-22T16:15:28.585Z",
+  "generatedAt": "2026-11-22T16:19:25.865Z",
   "sources": {
     "seed": {
       "name": "seed",
@@ -56,8 +56,8 @@
     },
     "capillary": {
       "name": "capillary",
-      "head": "30a0835fd00c389e73aed020429c1981fac1ceea",
-      "syncedAt": "2026-11-22T16:15:27.686Z",
+      "head": "1752704361fe3333ba2911f9392b0ebba163a942",
+      "syncedAt": "2026-11-22T16:19:25.375Z",
       "files": [
         {
           "path": "README.md",
@@ -86,8 +86,8 @@
         },
         {
           "path": "docs/family.md",
-          "sha256": "dd2f89945aaab53952f5d053ad54ab7163fefebd89520d079d944c8c7da66f59",
-          "bytes": 4247
+          "sha256": "e3008d977a994f14850c972dde475570c4fce5dba2bd7fdc922e5e5bfc5b434b",
+          "bytes": 4650
         },
         {
           "path": "docs/interop.md",
@@ -98,13 +98,13 @@
     },
     "myosotis": {
       "name": "myosotis",
-      "head": "423dc1922aee79e7ca8d5a4cfe1227b5c227ffba",
-      "syncedAt": "2026-11-22T16:15:27.791Z",
+      "head": "8236ea8cd03a1e705bc76644ab7bd162a2ab9d08",
+      "syncedAt": "2026-11-22T16:19:25.503Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "d8bd5c4b69f77a5e9871c050f7f9253d842a018092722d02f7cd21490556804b",
-          "bytes": 3886
+          "sha256": "4d4de24c5239bb0911c87a35c7ea8ef84eff2f993935398529983d9ac675c1fb",
+          "bytes": 3994
         },
         {
           "path": "docs/architecture.md",
@@ -140,13 +140,13 @@
     },
     "aestivation": {
       "name": "aestivation",
-      "head": "001cc87400974a21130a3ef6433d8d6e4bec9285",
-      "syncedAt": "2026-11-22T16:15:27.893Z",
+      "head": "78c9ea427a40fdc942e3c27195361cfe0981f4d6",
+      "syncedAt": "2026-11-22T16:19:25.621Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "980186bb3d2c7db4d7581bc6df794f491e66a6a893600c40f010f4ac943f4d77",
-          "bytes": 3763
+          "sha256": "9472ae4e53d9f638f7d748eee1063c480f0873b35b3754972770e91ca3328210",
+          "bytes": 3871
         },
         {
           "path": "docs/architecture.md",
@@ -182,13 +182,13 @@
     },
     "drosera": {
       "name": "drosera",
-      "head": "e8aa88731e3d29917a4fe8f1713cc4ff1c20fd78",
-      "syncedAt": "2026-11-22T16:15:27.991Z",
+      "head": "727e6447742e45305624ddd22b70d85ab52ed98e",
+      "syncedAt": "2026-11-22T16:19:25.737Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "1f562d00e2954d024285b445bbe7c7be660739439baf54d3e2f49e3aaa1454c0",
-          "bytes": 3314
+          "sha256": "72c5a1fcb314c29d234e30d567f05862a1ef8bdba42a4716f78a42497b4b1354",
+          "bytes": 3422
         },
         {
           "path": "docs/architecture.md",
@@ -229,13 +229,13 @@
     },
     "trellis": {
       "name": "trellis",
-      "head": "e416b31aa2328699ed210cb9743988d0ff21103c",
-      "syncedAt": "2026-11-22T16:15:28.102Z",
+      "head": "bcabfd311baf9565e5e982124929c12522dafe9b",
+      "syncedAt": "2026-11-22T16:19:25.861Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "680a22496127ecb8f742e8cd1510d44deb078d88d371e95e59089de22179cb2a",
-          "bytes": 4287
+          "sha256": "27dae5ab1ca08a9a9d347b8033cfc697d05f4cc9d1c9a6c696db86d621a528cd",
+          "bytes": 4395
         },
         {
           "path": "docs/architecture.md",
