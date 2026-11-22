@@ -10,7 +10,7 @@ This index is written by the sync run. Each repository below is copied verbatim 
 | [aestivation](https://github.com/Vidoxlabs/aestivation) | `b85cf91` | 2026-11-22 | 7 |
 | [drosera](https://github.com/Vidoxlabs/drosera) | `210cee0` | 2026-11-22 | 8 |
 | [trellis](https://github.com/Vidoxlabs/trellis) | `17fb9fe` | 2026-11-22 | 12 |
-| [bloom](https://github.com/Vidoxlabs/bloom) | `58d5ecd` | 2026-11-22 | 10 |
+| [bloom](https://github.com/Vidoxlabs/bloom) | `27415e1` | 2026-11-22 | 10 |
 | [videsign](https://github.com/Vidoxlabs/videsign) | `f47b686` | 2026-11-22 | 3 |
 
-Run: 2026-11-22T21:10:41.727Z
+Run: 2026-11-22T21:12:19.454Z

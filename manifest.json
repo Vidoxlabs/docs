@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-22T21:10:41.727Z",
+  "generatedAt": "2026-11-22T21:12:19.454Z",
   "sources": {
     "seed": {
       "name": "seed",
@@ -296,8 +296,8 @@
     },
     "bloom": {
       "name": "bloom",
-      "head": "58d5ecdab9f5122f3785e5e71e7d15f69f429239",
-      "syncedAt": "2026-11-22T21:10:41.713Z",
+      "head": "27415e102aea60d8e780bac83d7b3a72ec2e3d80",
+      "syncedAt": "2026-11-22T21:12:19.451Z",
       "files": [
         {
           "path": "README.md",
