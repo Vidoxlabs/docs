@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-22T22:12:19.771Z",
+  "generatedAt": "2026-11-22T22:42:18.862Z",
   "sources": {
     "seed": {
       "name": "seed",
-      "head": "9ada09f6956d214e3cc2f1d098260bd2eb7d6eb9",
-      "syncedAt": "2026-11-22T21:10:41.068Z",
+      "head": "57e334ba2c6c8d3f6aafa84d585431af59451192",
+      "syncedAt": "2026-11-22T22:42:18.432Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "e8f05389f8cfc27dfd11c0de355a4153b150f2e61e8d440ed31e7b6e3682a9d4",
-          "bytes": 4390
+          "sha256": "9e892caed7a33d5e964884a35c1688977d3cda6634be99caed4d3a31cc4c3ace",
+          "bytes": 4424
         },
         {
           "path": "docs/architecture.md",
@@ -34,8 +34,8 @@
         },
         {
           "path": "docs/contracts/run-model.md",
-          "sha256": "6ef6d3dd366fbcab6d46ec4ebe337087e4da67fd6223583bd09eb670e54463c2",
-          "bytes": 5743
+          "sha256": "f6662e157ab5d16e570da1fae0acabf6df650ca9e83ef785e11f5657bdfb9b0e",
+          "bytes": 6515
         },
         {
           "path": "docs/contracts/tool-id.md",
@@ -49,20 +49,20 @@
         },
         {
           "path": "docs/roadmap.md",
-          "sha256": "d9359d6a8ebe39301c24dd76d2a4048e14ff3baac1953849c8ebefa3480f203b",
-          "bytes": 1973
+          "sha256": "a08b95aa1558e92a4d5ada18b9ef82008d7ff6a5fdcd6b017201e7b08bb6c21a",
+          "bytes": 1994
         }
       ]
     },
     "capillary": {
       "name": "capillary",
-      "head": "3535826d754a2280287119da1bea32df9202d027",
-      "syncedAt": "2026-11-22T21:10:41.145Z",
+      "head": "a9f05549b706c2924d85994bd5bb3e5cf403f5c9",
+      "syncedAt": "2026-11-22T22:42:18.538Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "f3c7c4050db3a85fab81a3a59a89d316078b43766933cba7120d6a4b50f9ef35",
-          "bytes": 3595
+          "sha256": "39ca9f59e4b44135972311474aac6b2cd57c3f4f3a699a0de8ddc28edd0ec9bc",
+          "bytes": 3944
         },
         {
           "path": "docs/architecture.md",
@@ -81,8 +81,8 @@
         },
         {
           "path": "docs/contracts/retrieval.md",
-          "sha256": "724d2f2a1c436898aa1fc4437d0016e6588bf8b349317acea876e56f6e73459f",
-          "bytes": 7575
+          "sha256": "5e87f5065d51822d5afb11f770bcce281c5ffe40edca2a138afbd4f90b24160a",
+          "bytes": 12889
         },
         {
           "path": "docs/family.md",
@@ -229,12 +229,12 @@
     },
     "trellis": {
       "name": "trellis",
-      "head": "17fb9fecf60736509eed6c6e7a80c06821485524",
-      "syncedAt": "2026-11-22T21:10:41.562Z",
+      "head": "7f1b641c35234691c86872cf5e70899d0bac8dd1",
+      "syncedAt": "2026-11-22T22:42:18.642Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "2382fab7bfaff5c2b9180c5c28de7c8770d78d5dbb6f59b9372a3a04273196b6",
+          "sha256": "c0d77b25331ebac3f70104ef1d102763f26312b6c44e74d9d9971b4eb8a40db5",
           "bytes": 4274
         },
         {
@@ -254,8 +254,8 @@
         },
         {
           "path": "docs/contracts/probes.md",
-          "sha256": "af9b410bdf33f9580225fd6bb63a5d23dabcac8efd71380ad21a263794ad688d",
-          "bytes": 5988
+          "sha256": "804fac64f8a7efb8fe759473595aff21e476040c0f51364ff0ebef6c1dbaa8fa",
+          "bytes": 6954
         },
         {
           "path": "docs/evidence/family-grid-2026-11-22-after-predecessor-coverage.md",
@@ -281,6 +281,11 @@
           "path": "docs/evidence/family-grid-2026-11-22-trellis-0.5.0.md",
           "sha256": "ffcc4eb6954de7fd12b1e5bb0585596d049cc8bf5dca1a94785e5647045fbe8b",
           "bytes": 1359
+        },
+        {
+          "path": "docs/evidence/family-grid-2026-11-22-trellis-0.6.0.md",
+          "sha256": "cdf0adf832bf94091d984d466f7bd77d1be5611dea33fb77fa200cf07dd70e3b",
+          "bytes": 1360
         },
         {
           "path": "docs/evidence/family-grid-2026-11-22.md",
@@ -353,13 +358,13 @@
     },
     "videsign": {
       "name": "videsign",
-      "head": "6ee2961a6315296337e6607c5a3e662bfa8cf144",
-      "syncedAt": "2026-11-22T22:12:19.765Z",
+      "head": "23bfd5d8122b2e2f1795af0be13bb6c16c3c8caa",
+      "syncedAt": "2026-11-22T22:42:18.851Z",
       "files": [
         {
           "path": "DESIGN.md",
-          "sha256": "ad9e00b11b060140b3d463c3321d467899d762a531bd4d251ae33108289418cf",
-          "bytes": 58129
+          "sha256": "cbda3132e0bfbc0a242c27d87cd123d693a6bd7b612e2352261b00181786efa3",
+          "bytes": 58684
         },
         {
           "path": "README.md",
