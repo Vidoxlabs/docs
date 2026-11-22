@@ -1,0 +1,47 @@
+/**
+ * Sync sources on schedule, dispatch, and sync-code pushes only. The sync commits
+ * manifest.json, docs/sources-index.md, and sources/, none of which appear in the
+ * push filter, so a sync commit never re-triggers this workflow.
+ */
+name: Sync sources
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  push:
+    branches: [main]
+    paths:
+      - sources.json
+      - scripts/**
+      - src/**
+      - package.json
+      - .github/workflows/sync-sources.yml
+  workflow_dispatch:
+  repository_dispatch:
+    types: [docs-sources]
+permissions:
+  contents: write
+concurrency:
+  group: sync-sources
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22.13.1'
+      - run: npm run sync
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit the synced sources
+        run: |
+          git config user.name "Vidoxlabs sync"
+          git config user.email "actions@users.noreply.github.com"
+          git add sources manifest.json docs/sources-index.md
+          if git diff --staged --quiet; then
+            echo "Nothing changed: heads and digests already match the manifest."
+            exit 0
+          fi
+          git commit -F .sync-summary.txt
+          git push

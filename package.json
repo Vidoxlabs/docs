@@ -1,0 +1,26 @@
+{
+  "name": "@vidoxlabs/docs",
+  "version": "0.1.0",
+  "description": "Documentation for the Vidoxlabs agent family: written here, synced from every public repository.",
+  "type": "module",
+  "main": "src/sync-core.mjs",
+  "scripts": {
+    "start": "node src/index.mjs",
+    "test": "node --test \"test/*.test.mjs\"",
+    "sync": "node scripts/sync-sources.mjs"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "keywords": [
+    "documentation",
+    "agents",
+    "sync",
+    "local-first"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vidoxlabs/docs.git"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "org": "Vidoxlabs",
+  "branch": "main",
+  "sources": [
+    { "name": "seed", "files": ["README.md"], "roots": ["docs/"], "extensions": [".md", ".json"] },
+    { "name": "capillary", "files": ["README.md"], "roots": ["docs/"], "extensions": [".md", ".json"] },
+    { "name": "myosotis", "files": ["README.md"], "roots": ["docs/"], "extensions": [".md", ".json"] },
+    { "name": "aestivation", "files": ["README.md"], "roots": ["docs/"], "extensions": [".md", ".json"] },
+    { "name": "drosera", "files": ["README.md"], "roots": ["docs/"], "extensions": [".md", ".json"] },
+    { "name": "trellis", "files": ["README.md"], "roots": ["docs/"], "extensions": [".md", ".json"] },
+    { "name": "bloom", "files": ["README.md"], "roots": ["docs/"], "extensions": [".md", ".json"] },
+    { "name": "videsign", "files": ["README.md", "DESIGN.md"], "roots": ["docs/"], "extensions": [".md", ".json", ".yml"] }
+  ]
+}

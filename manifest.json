@@ -1,0 +1,337 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-22T16:15:28.585Z",
+  "sources": {
+    "seed": {
+      "name": "seed",
+      "head": "05bc9ba4578124488697ea9903dae48ec803dc58",
+      "syncedAt": "2026-11-22T16:15:27.587Z",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "a36fd3952ca5473753c8f2cfcec84392ec7831b275be6b06d84fcdb0687368bb",
+          "bytes": 3993
+        },
+        {
+          "path": "docs/architecture.md",
+          "sha256": "e6a7be4c9c9008fcf96f30aca0d3d58d8270fd117308dd114d5919211d7b3011",
+          "bytes": 3717
+        },
+        {
+          "path": "docs/bloom-interop.md",
+          "sha256": "5bb83286b788b936184285278d9eddd3fb2166dbb9ed7ba2691bdff0b6e37e81",
+          "bytes": 2792
+        },
+        {
+          "path": "docs/charter.md",
+          "sha256": "b1dcd0954e1c86ea424d46cd0b2130587c490c49ebe00e059cd2cb7fee08cfba",
+          "bytes": 2636
+        },
+        {
+          "path": "docs/contracts/provider.md",
+          "sha256": "852015a3826e247398389c5393ec5714e4118d7beb08aa3904a48e9f5991da70",
+          "bytes": 2479
+        },
+        {
+          "path": "docs/contracts/run-model.md",
+          "sha256": "9803650d98d4c3bd9dfccc0c6fbe8d19ae169e4dcd9bd6916c318b55c63785f7",
+          "bytes": 3625
+        },
+        {
+          "path": "docs/contracts/tool-id.md",
+          "sha256": "cc36bba2209bed3148dcce79035bbbaec3681fcdf7e4456d15838c8795ca41b6",
+          "bytes": 3977
+        },
+        {
+          "path": "docs/lexicon.md",
+          "sha256": "9e8bfd15b8ed93e3a48a96e0cafeef22f3b77ed31af6a2e6f5bb5fc650dafa4d",
+          "bytes": 5309
+        },
+        {
+          "path": "docs/roadmap.md",
+          "sha256": "1794b964cf0dbc7934d6475812dc994736877924bdbdf27bf748d562fa75b2ad",
+          "bytes": 1772
+        }
+      ]
+    },
+    "capillary": {
+      "name": "capillary",
+      "head": "30a0835fd00c389e73aed020429c1981fac1ceea",
+      "syncedAt": "2026-11-22T16:15:27.686Z",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "ecbbf6953bc84b4190ee2a67db47d82fd6c4dea369519eb0a4042867d5ef886a",
+          "bytes": 3294
+        },
+        {
+          "path": "docs/architecture.md",
+          "sha256": "c469d926251fd29411b779f2476e4606f5ffeac5a3725ce98e508aa73374f08e",
+          "bytes": 3115
+        },
+        {
+          "path": "docs/charter.md",
+          "sha256": "5ac9a732ab6d2be21dddc4929794e67e95e93842edab0804f63a69a577ceafe8",
+          "bytes": 2414
+        },
+        {
+          "path": "docs/contracts/relations.md",
+          "sha256": "436a0acec5aa87014939d12f826ba76b8f6cf3cff2d7a2a8694975702f17010c",
+          "bytes": 1646
+        },
+        {
+          "path": "docs/contracts/retrieval.md",
+          "sha256": "d4f293cfa3d205a3302b36b1f8a51c50990c5d8733072927138acec3e22ce73d",
+          "bytes": 3823
+        },
+        {
+          "path": "docs/family.md",
+          "sha256": "dd2f89945aaab53952f5d053ad54ab7163fefebd89520d079d944c8c7da66f59",
+          "bytes": 4247
+        },
+        {
+          "path": "docs/interop.md",
+          "sha256": "e807babdca58502eb393ec24c53dcaea88e2aff37e12225c3ab5e6417c0b0c7c",
+          "bytes": 2761
+        }
+      ]
+    },
+    "myosotis": {
+      "name": "myosotis",
+      "head": "423dc1922aee79e7ca8d5a4cfe1227b5c227ffba",
+      "syncedAt": "2026-11-22T16:15:27.791Z",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "d8bd5c4b69f77a5e9871c050f7f9253d842a018092722d02f7cd21490556804b",
+          "bytes": 3886
+        },
+        {
+          "path": "docs/architecture.md",
+          "sha256": "5e62377260e74ecc1f0c99ab51b7ce0f8568e464d69d23c5c5ffbef02ecc81a4",
+          "bytes": 3255
+        },
+        {
+          "path": "docs/charter.md",
+          "sha256": "cb1fd63154d2fef79221f491db891073823b3016be2220cbf5dd691a6415aa10",
+          "bytes": 2225
+        },
+        {
+          "path": "docs/contracts/consent.md",
+          "sha256": "e079a4ffc6385f9e10115c903b6c32c83ec27762b4dae8d6bdf749229d55090a",
+          "bytes": 2615
+        },
+        {
+          "path": "docs/contracts/forget.md",
+          "sha256": "605f1d8338f02e08b1bc63d0771796b6cc3cd984ad617e8c02c6e9aa468f6747",
+          "bytes": 4058
+        },
+        {
+          "path": "docs/contracts/records.md",
+          "sha256": "748757b2c8c67e025a2cd54218f6903137fb89b9216df70b990b0bdeb20dd329",
+          "bytes": 1489
+        },
+        {
+          "path": "docs/interop.md",
+          "sha256": "fd8aef547c0449fd5a5c110a853bda0b20adb8d6306abd40e843c4e9ca9f0db3",
+          "bytes": 3485
+        }
+      ]
+    },
+    "aestivation": {
+      "name": "aestivation",
+      "head": "001cc87400974a21130a3ef6433d8d6e4bec9285",
+      "syncedAt": "2026-11-22T16:15:27.893Z",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "980186bb3d2c7db4d7581bc6df794f491e66a6a893600c40f010f4ac943f4d77",
+          "bytes": 3763
+        },
+        {
+          "path": "docs/architecture.md",
+          "sha256": "f39bcbc14b86695d30c998841348dc1d5ae467cd6e148b3e7f670dd351f0ae71",
+          "bytes": 3851
+        },
+        {
+          "path": "docs/charter.md",
+          "sha256": "8a005146c501801b792eae13e8d7264ec8ea602339485a80619ab6ef85e0ac62",
+          "bytes": 2481
+        },
+        {
+          "path": "docs/contracts/gate.md",
+          "sha256": "c0995e384a4d3090e43cf348685841d7fcbece7c614ab848724daaaab88cb7cb",
+          "bytes": 4373
+        },
+        {
+          "path": "docs/contracts/plan.md",
+          "sha256": "8c186f960f9c3ada9525796691c4f9951e77479f668d318635b7745f9f27da51",
+          "bytes": 2582
+        },
+        {
+          "path": "docs/contracts/verdict.md",
+          "sha256": "4ef61548c2d6da8709631a84dc5cdf6855fd699ad574f1216e4d48607fdb1e81",
+          "bytes": 2501
+        },
+        {
+          "path": "docs/interop.md",
+          "sha256": "1578983ced21dd6ef6ce35068e5619a115715b9088fe91db2bb56339432e86b6",
+          "bytes": 3845
+        }
+      ]
+    },
+    "drosera": {
+      "name": "drosera",
+      "head": "e8aa88731e3d29917a4fe8f1713cc4ff1c20fd78",
+      "syncedAt": "2026-11-22T16:15:27.991Z",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "1f562d00e2954d024285b445bbe7c7be660739439baf54d3e2f49e3aaa1454c0",
+          "bytes": 3314
+        },
+        {
+          "path": "docs/architecture.md",
+          "sha256": "747d2d8c33f13fc9c3b0a9419ec1b4a2f0832bfcdcd15d88ae1573bb0029ad2c",
+          "bytes": 4761
+        },
+        {
+          "path": "docs/charter.md",
+          "sha256": "5dd83fbc7ac55d1105b467a1e27da08c617b3144d1a768108870cf07ba060abe",
+          "bytes": 2933
+        },
+        {
+          "path": "docs/contracts/cookbook.md",
+          "sha256": "d329709f7b9eb13f3f825c49c3c989f9786337c9d8e34109de8f2af71ad614f9",
+          "bytes": 2863
+        },
+        {
+          "path": "docs/contracts/hooks.md",
+          "sha256": "8d955757fe97acb7a54e63882cd0d9fe26624a38dafec6cbdf443be06620a34c",
+          "bytes": 3507
+        },
+        {
+          "path": "docs/contracts/skills.md",
+          "sha256": "942633564bc74c133417a4610b22f1012198c4dc03f0917a224dc5303c92902d",
+          "bytes": 3135
+        },
+        {
+          "path": "docs/contracts/tools.md",
+          "sha256": "94eb4f5d4f986403468f4de1ee5e336b73537daf8017dc44ff5ad950ada4859a",
+          "bytes": 3422
+        },
+        {
+          "path": "docs/interop.md",
+          "sha256": "b0dbabf8782764b28d1b9ce9d09eb022f4e182d025bde988ed676b82fcf1c4bb",
+          "bytes": 4279
+        }
+      ]
+    },
+    "trellis": {
+      "name": "trellis",
+      "head": "e416b31aa2328699ed210cb9743988d0ff21103c",
+      "syncedAt": "2026-11-22T16:15:28.102Z",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "680a22496127ecb8f742e8cd1510d44deb078d88d371e95e59089de22179cb2a",
+          "bytes": 4287
+        },
+        {
+          "path": "docs/architecture.md",
+          "sha256": "121e628d529503a4a6c4af048dcf41292d39d55ce123c3333643c22c21ff4e88",
+          "bytes": 3879
+        },
+        {
+          "path": "docs/charter.md",
+          "sha256": "17fa387ab0fd9cd4ce3cd488ac8e00cc5c21189139137d56f3a1a77874aba199",
+          "bytes": 3559
+        },
+        {
+          "path": "docs/contracts/grid.md",
+          "sha256": "9d16a1334835d89fe78ae9fb83ddaeb92a943b3923002061a6b08e2c5cbb0885",
+          "bytes": 2936
+        },
+        {
+          "path": "docs/contracts/probes.md",
+          "sha256": "84958f765e2f0119cc26f0ead385cad3bb1cd81473d5b70d8b28df30e0791911",
+          "bytes": 3885
+        },
+        {
+          "path": "docs/evidence/family-grid-2026-11-22-trellis-0.2.0.md",
+          "sha256": "12302c7bb98176e222ec2b396e60493dc303cb5edb04f867a81850709e74967a",
+          "bytes": 3291
+        },
+        {
+          "path": "docs/evidence/family-grid-2026-11-22.md",
+          "sha256": "669e5c8b338e38079458c0249b55bec99195aa681edea258145f1636f75fc712",
+          "bytes": 2361
+        },
+        {
+          "path": "docs/interop.md",
+          "sha256": "03024539ddbbdef2b10a119b0cd8e86b04a7d866ae5daca416b302cac1e712c8",
+          "bytes": 6878
+        }
+      ]
+    },
+    "bloom": {
+      "name": "bloom",
+      "head": "3d535e03458b8c324034ede91f857a0e01da22f5",
+      "syncedAt": "2026-11-22T16:15:28.268Z",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "61309af767e97ae6ccbcab5440be2f1d25761586d71ee73606fe792996dec68b",
+          "bytes": 7593
+        },
+        {
+          "path": "docs/architecture.md",
+          "sha256": "a4ea7d98c1b190e7ff5deeaef4035d2d38b56d390e1b3f1891756648e2e24a87",
+          "bytes": 10004
+        },
+        {
+          "path": "docs/ui/README.md",
+          "sha256": "7ac90e9f0bb3cc229a9a2dde99628bc649296fa62c38bda5dbc4debb8569a92d",
+          "bytes": 1827
+        },
+        {
+          "path": "docs/ui/interface-contract.md",
+          "sha256": "b3c3311eb4df470636f84e31f79ca0610b1998db1d92447d8767678904f1a09f",
+          "bytes": 20569
+        },
+        {
+          "path": "docs/ui/research/familiar-harness-patterns.md",
+          "sha256": "225915606e5b624a68a20dba9d22b7d72429de52c43aaeaa7c65854a4842ac8b",
+          "bytes": 41049
+        },
+        {
+          "path": "docs/ui/research/implementability-review.md",
+          "sha256": "5e4a8ac432c1cfe3202a642cf05d64994df00b5961882ffe54d92fd61fbdb758",
+          "bytes": 22568
+        }
+      ]
+    },
+    "videsign": {
+      "name": "videsign",
+      "head": "f47b6869d9a3ac2f9a0d70aa1306217345bdea35",
+      "syncedAt": "2026-11-22T16:15:28.511Z",
+      "files": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "00bceca641701e0da31e4b4994a75b322040e4ccd614b1b4adf472e3c08ebd1f",
+          "bytes": 51727
+        },
+        {
+          "path": "README.md",
+          "sha256": "936a1ddd64f560de75d45393457546c83fbcb5df4b89a67f8fd5969f105e31f0",
+          "bytes": 10841
+        },
+        {
+          "path": "docs/superpowers/plans/2026-11-18-memory-field.md",
+          "sha256": "e27bd95a3a0ec40cc139c34b0d2ac417719f5fb7b89047c21b44e8b561b8ea0f",
+          "bytes": 8071
+        }
+      ]
+    }
+  }
+}
