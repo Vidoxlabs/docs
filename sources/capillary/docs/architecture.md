@@ -7,9 +7,9 @@ Status: `specified`; modules named below exist (`implemented`) where marked.
 1. **Sources** (`implemented as records` in `src/provenance.mjs`) — the corpus is an
    append-only set of recorded sources: an id, a title, a 64-hex digest, an origin class
    (`url`, `repository`, `text`, `workspace-file`, `run-artifact`), and an origin
-   reference. A source without a digest is not a source: it is recorded as unknown, with
-   a null digest and its reason (`not-found`, `read-failed`, `digest-unavailable`), and
-   the packet lists it under `unknown` instead of admitting its excerpts.
+   reference, plus the claim's evidence class and confidence. A source whose digest
+   is unavailable is recorded as unknown with a null digest and its reason
+   (`not-found`, `read-failed`, `digest-unavailable`). The packet lists it under `unknown`.
 2. **The index** (`specified`) — lexical and semantic recall over recorded sources. The
    index is a projection: it is rebuilt from sources, never an authority. A search that
    misses is reported as a miss with its coverage stated; it is never padded.
@@ -21,7 +21,8 @@ Status: `specified`; modules named below exist (`implemented`) where marked.
 4. **The relation ledger** (`implemented as records` in `src/relations.mjs`) — typed,
    append-only records linking known sources: the organization half of context work.
    `derived-from`, `references`, `subsumes`, `revised-from`, `relates-to`. The ledger is
-   an event history: appended to, never rewritten.
+   an event history: appended to, never rewritten. `walkParentChain` follows explicit
+   parent ids in a caller-supplied map with a declared stopping reason.
 
 ## The retrieval seam
 

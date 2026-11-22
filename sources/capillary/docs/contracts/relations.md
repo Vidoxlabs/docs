@@ -1,6 +1,6 @@
 # Contract: context relations
 
-Status: `specified`; record validation and ledger soundness are `implemented` in
+Status: `specified`; record validation, ledger soundness and parent walking are `implemented` in
 `src/relations.mjs`.
 
 ## Why relations
@@ -38,3 +38,22 @@ one of the five, no record links a source to itself, and no duplicate
    a caller's improvisation.
 3. **Ledger checks are cheap and public.** `isSoundLedger` returns every violation, so
    any consumer can audit organization without trusting the writer.
+
+## Parent walk
+
+`walkParentChain({ startId, parentsById, limit = 50 })` reads a supplied `Map`
+from known source ids to their explicit parent ids. A known root maps to `null`.
+The function returns a frozen `{ parentIds, stop, at }`. `parentIds` is frozen and
+lists only resolved parents, from nearest to farthest, excluding the starting id.
+The walk leaves the input map untouched.
+
+| `stop` | `at` |
+| --- | --- |
+| `root` | The root id. |
+| `missing` | The first missing start or parent id. |
+| `cycle` | The id that would repeat. |
+| `limit` | The next parent id, whose existence was left unchecked. |
+
+`limit` can be any integer from 0 through 50. Invalid limits and malformed parent
+links encountered during the walk throw `RelationError`. The walk uses only explicit
+links in the map. A missing id remains missing even if other relations are available.

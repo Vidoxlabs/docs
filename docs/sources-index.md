@@ -4,13 +4,13 @@ This index is written by the sync run. Each repository below is copied verbatim 
 
 | Repository | Head | Synced | Files |
 | --- | --- | --- | --- |
-| [seed](https://github.com/Vidoxlabs/seed) | `eb60bd6` | 2026-11-22 | 9 |
-| [capillary](https://github.com/Vidoxlabs/capillary) | `1752704` | 2026-11-22 | 7 |
-| [myosotis](https://github.com/Vidoxlabs/myosotis) | `8236ea8` | 2026-11-22 | 7 |
-| [aestivation](https://github.com/Vidoxlabs/aestivation) | `78c9ea4` | 2026-11-22 | 7 |
-| [drosera](https://github.com/Vidoxlabs/drosera) | `727e644` | 2026-11-22 | 8 |
-| [trellis](https://github.com/Vidoxlabs/trellis) | `bcabfd3` | 2026-11-22 | 8 |
-| [bloom](https://github.com/Vidoxlabs/bloom) | `5bfd5e5` | 2026-11-22 | 10 |
+| [seed](https://github.com/Vidoxlabs/seed) | `9ada09f` | 2026-11-22 | 9 |
+| [capillary](https://github.com/Vidoxlabs/capillary) | `3535826` | 2026-11-22 | 7 |
+| [myosotis](https://github.com/Vidoxlabs/myosotis) | `fd88484` | 2026-11-22 | 7 |
+| [aestivation](https://github.com/Vidoxlabs/aestivation) | `b85cf91` | 2026-11-22 | 7 |
+| [drosera](https://github.com/Vidoxlabs/drosera) | `210cee0` | 2026-11-22 | 8 |
+| [trellis](https://github.com/Vidoxlabs/trellis) | `17fb9fe` | 2026-11-22 | 12 |
+| [bloom](https://github.com/Vidoxlabs/bloom) | `58d5ecd` | 2026-11-22 | 10 |
 | [videsign](https://github.com/Vidoxlabs/videsign) | `f47b686` | 2026-11-22 | 3 |
 
-Run: 2026-11-22T16:53:44.988Z
+Run: 2026-11-22T21:10:41.727Z

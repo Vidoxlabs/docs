@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-22T16:53:44.988Z",
+  "generatedAt": "2026-11-22T21:10:41.727Z",
   "sources": {
     "seed": {
       "name": "seed",
-      "head": "eb60bd6fcd1fd4e3795552d6a81b18118535f685",
-      "syncedAt": "2026-11-22T16:53:44.810Z",
+      "head": "9ada09f6956d214e3cc2f1d098260bd2eb7d6eb9",
+      "syncedAt": "2026-11-22T21:10:41.068Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "a36fd3952ca5473753c8f2cfcec84392ec7831b275be6b06d84fcdb0687368bb",
-          "bytes": 3993
+          "sha256": "e8f05389f8cfc27dfd11c0de355a4153b150f2e61e8d440ed31e7b6e3682a9d4",
+          "bytes": 4390
         },
         {
           "path": "docs/architecture.md",
@@ -29,18 +29,18 @@
         },
         {
           "path": "docs/contracts/provider.md",
-          "sha256": "852015a3826e247398389c5393ec5714e4118d7beb08aa3904a48e9f5991da70",
-          "bytes": 2479
+          "sha256": "a98b403500347ae5dd4690a929bf620170ba10e7454e99b78890dbf3cfe317bb",
+          "bytes": 4137
         },
         {
           "path": "docs/contracts/run-model.md",
-          "sha256": "9803650d98d4c3bd9dfccc0c6fbe8d19ae169e4dcd9bd6916c318b55c63785f7",
-          "bytes": 3625
+          "sha256": "6ef6d3dd366fbcab6d46ec4ebe337087e4da67fd6223583bd09eb670e54463c2",
+          "bytes": 5743
         },
         {
           "path": "docs/contracts/tool-id.md",
-          "sha256": "cc36bba2209bed3148dcce79035bbbaec3681fcdf7e4456d15838c8795ca41b6",
-          "bytes": 3977
+          "sha256": "a143d6563be018e21d184f5d48e25e72f599ed734f5f07164958fd98857a3cdf",
+          "bytes": 5027
         },
         {
           "path": "docs/lexicon.md",
@@ -49,25 +49,25 @@
         },
         {
           "path": "docs/roadmap.md",
-          "sha256": "1794b964cf0dbc7934d6475812dc994736877924bdbdf27bf748d562fa75b2ad",
-          "bytes": 1772
+          "sha256": "d9359d6a8ebe39301c24dd76d2a4048e14ff3baac1953849c8ebefa3480f203b",
+          "bytes": 1973
         }
       ]
     },
     "capillary": {
       "name": "capillary",
-      "head": "1752704361fe3333ba2911f9392b0ebba163a942",
-      "syncedAt": "2026-11-22T16:19:25.375Z",
+      "head": "3535826d754a2280287119da1bea32df9202d027",
+      "syncedAt": "2026-11-22T21:10:41.145Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "ecbbf6953bc84b4190ee2a67db47d82fd6c4dea369519eb0a4042867d5ef886a",
-          "bytes": 3294
+          "sha256": "f3c7c4050db3a85fab81a3a59a89d316078b43766933cba7120d6a4b50f9ef35",
+          "bytes": 3595
         },
         {
           "path": "docs/architecture.md",
-          "sha256": "c469d926251fd29411b779f2476e4606f5ffeac5a3725ce98e508aa73374f08e",
-          "bytes": 3115
+          "sha256": "d85159a48be74a75e6351ab5c6007e1faaedf979ab80920d834db134421017b0",
+          "bytes": 3222
         },
         {
           "path": "docs/charter.md",
@@ -76,13 +76,13 @@
         },
         {
           "path": "docs/contracts/relations.md",
-          "sha256": "436a0acec5aa87014939d12f826ba76b8f6cf3cff2d7a2a8694975702f17010c",
-          "bytes": 1646
+          "sha256": "5db6e19cf4ccddc6d9bc08bf5da9ed0cfa2cf92bd3678a168a9791acc5615e6f",
+          "bytes": 2522
         },
         {
           "path": "docs/contracts/retrieval.md",
-          "sha256": "d4f293cfa3d205a3302b36b1f8a51c50990c5d8733072927138acec3e22ce73d",
-          "bytes": 3823
+          "sha256": "724d2f2a1c436898aa1fc4437d0016e6588bf8b349317acea876e56f6e73459f",
+          "bytes": 7575
         },
         {
           "path": "docs/family.md",
@@ -98,18 +98,18 @@
     },
     "myosotis": {
       "name": "myosotis",
-      "head": "8236ea8cd03a1e705bc76644ab7bd162a2ab9d08",
-      "syncedAt": "2026-11-22T16:19:25.503Z",
+      "head": "fd88484fc7a75bf67212681582f655c273d388b7",
+      "syncedAt": "2026-11-22T21:10:41.238Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "4d4de24c5239bb0911c87a35c7ea8ef84eff2f993935398529983d9ac675c1fb",
-          "bytes": 3994
+          "sha256": "8937b6dc857590eb5cfe33aa912de9afc236ee8fc258865892ebf7da5e9dd93a",
+          "bytes": 4198
         },
         {
           "path": "docs/architecture.md",
-          "sha256": "5e62377260e74ecc1f0c99ab51b7ce0f8568e464d69d23c5c5ffbef02ecc81a4",
-          "bytes": 3255
+          "sha256": "6ef510dba986fb90b263c311049138c6c7a04dfeb5ddd9ae2880ea40dc50c346",
+          "bytes": 3542
         },
         {
           "path": "docs/charter.md",
@@ -118,35 +118,35 @@
         },
         {
           "path": "docs/contracts/consent.md",
-          "sha256": "e079a4ffc6385f9e10115c903b6c32c83ec27762b4dae8d6bdf749229d55090a",
-          "bytes": 2615
+          "sha256": "697954854792a0733bed5c92f57377a4e0bd24013b2007cf7c878c31f33aace4",
+          "bytes": 2641
         },
         {
           "path": "docs/contracts/forget.md",
-          "sha256": "605f1d8338f02e08b1bc63d0771796b6cc3cd984ad617e8c02c6e9aa468f6747",
-          "bytes": 4058
+          "sha256": "d4ab6acd9c2f69276efb00885b96feff9cec3b29b2ffb0de39e6d026ad8324ed",
+          "bytes": 7276
         },
         {
           "path": "docs/contracts/records.md",
-          "sha256": "748757b2c8c67e025a2cd54218f6903137fb89b9216df70b990b0bdeb20dd329",
-          "bytes": 1489
+          "sha256": "fb04493cee7ab79221b6ce77de0cdb73a41423a8d311d2b60697826e1936dd12",
+          "bytes": 2642
         },
         {
           "path": "docs/interop.md",
-          "sha256": "fd8aef547c0449fd5a5c110a853bda0b20adb8d6306abd40e843c4e9ca9f0db3",
-          "bytes": 3485
+          "sha256": "9334b53fb36dafa11e4e57b847e85f92519fd049f172f38825a45d3b7bad6b45",
+          "bytes": 3565
         }
       ]
     },
     "aestivation": {
       "name": "aestivation",
-      "head": "78c9ea427a40fdc942e3c27195361cfe0981f4d6",
-      "syncedAt": "2026-11-22T16:19:25.621Z",
+      "head": "b85cf91f7a1ad99ce2ffbd6c88a520a7b91a7ddc",
+      "syncedAt": "2026-11-22T21:10:41.374Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "9472ae4e53d9f638f7d748eee1063c480f0873b35b3754972770e91ca3328210",
-          "bytes": 3871
+          "sha256": "8a052167c67455428877fb10dfe1eda785da2eb23d6b6e582c80bb87ed7c714b",
+          "bytes": 4263
         },
         {
           "path": "docs/architecture.md",
@@ -165,8 +165,8 @@
         },
         {
           "path": "docs/contracts/plan.md",
-          "sha256": "8c186f960f9c3ada9525796691c4f9951e77479f668d318635b7745f9f27da51",
-          "bytes": 2582
+          "sha256": "10a7fbdcc843628651613f92cf5fb21b0fbc72e27cdfa082321b92304c643830",
+          "bytes": 6541
         },
         {
           "path": "docs/contracts/verdict.md",
@@ -182,18 +182,18 @@
     },
     "drosera": {
       "name": "drosera",
-      "head": "727e6447742e45305624ddd22b70d85ab52ed98e",
-      "syncedAt": "2026-11-22T16:19:25.737Z",
+      "head": "210cee09b6c9edcc0e9bbdd722ab137c9ac8a6cf",
+      "syncedAt": "2026-11-22T21:10:41.475Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "72c5a1fcb314c29d234e30d567f05862a1ef8bdba42a4716f78a42497b4b1354",
-          "bytes": 3422
+          "sha256": "477dd19216e3c9c449dae6d42226a624944da6f899ffa5fb48a0eac5f316bae5",
+          "bytes": 3344
         },
         {
           "path": "docs/architecture.md",
-          "sha256": "747d2d8c33f13fc9c3b0a9419ec1b4a2f0832bfcdcd15d88ae1573bb0029ad2c",
-          "bytes": 4761
+          "sha256": "905c7f90cfcda823409a61371b1dad0695748bf6337397556700b06ce91dcdb9",
+          "bytes": 4907
         },
         {
           "path": "docs/charter.md",
@@ -212,8 +212,8 @@
         },
         {
           "path": "docs/contracts/skills.md",
-          "sha256": "942633564bc74c133417a4610b22f1012198c4dc03f0917a224dc5303c92902d",
-          "bytes": 3135
+          "sha256": "d02d6a397e2a9c050cc226fb54d875c02b0a0b827e60be0ffc81d564a41f441f",
+          "bytes": 5583
         },
         {
           "path": "docs/contracts/tools.md",
@@ -229,18 +229,18 @@
     },
     "trellis": {
       "name": "trellis",
-      "head": "bcabfd311baf9565e5e982124929c12522dafe9b",
-      "syncedAt": "2026-11-22T16:19:25.861Z",
+      "head": "17fb9fecf60736509eed6c6e7a80c06821485524",
+      "syncedAt": "2026-11-22T21:10:41.562Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "27dae5ab1ca08a9a9d347b8033cfc697d05f4cc9d1c9a6c696db86d621a528cd",
-          "bytes": 4395
+          "sha256": "2382fab7bfaff5c2b9180c5c28de7c8770d78d5dbb6f59b9372a3a04273196b6",
+          "bytes": 4274
         },
         {
           "path": "docs/architecture.md",
-          "sha256": "121e628d529503a4a6c4af048dcf41292d39d55ce123c3333643c22c21ff4e88",
-          "bytes": 3879
+          "sha256": "5c9e0341504f1c5cc2ce0a38176e8c8a22c72d9ac43baa9ac0f0ae5a5d6b6e4d",
+          "bytes": 3971
         },
         {
           "path": "docs/charter.md",
@@ -249,18 +249,38 @@
         },
         {
           "path": "docs/contracts/grid.md",
-          "sha256": "9d16a1334835d89fe78ae9fb83ddaeb92a943b3923002061a6b08e2c5cbb0885",
-          "bytes": 2936
+          "sha256": "1ea833717c4bbea74cf1ba50fd9256f87bc52dfaa8817055a6c38e1121a8314d",
+          "bytes": 3032
         },
         {
           "path": "docs/contracts/probes.md",
-          "sha256": "84958f765e2f0119cc26f0ead385cad3bb1cd81473d5b70d8b28df30e0791911",
-          "bytes": 3885
+          "sha256": "af9b410bdf33f9580225fd6bb63a5d23dabcac8efd71380ad21a263794ad688d",
+          "bytes": 5988
+        },
+        {
+          "path": "docs/evidence/family-grid-2026-11-22-after-predecessor-coverage.md",
+          "sha256": "7b75a7ce91053ed9d70ab74593516e1ed43c335598a3946e1504ff53295ae76e",
+          "bytes": 3359
         },
         {
           "path": "docs/evidence/family-grid-2026-11-22-trellis-0.2.0.md",
           "sha256": "12302c7bb98176e222ec2b396e60493dc303cb5edb04f867a81850709e74967a",
           "bytes": 3291
+        },
+        {
+          "path": "docs/evidence/family-grid-2026-11-22-trellis-0.3.0.md",
+          "sha256": "8143bcb91e428fabb83e7bda6282c88f035473a39a9957338d3364884b6fafb2",
+          "bytes": 2785
+        },
+        {
+          "path": "docs/evidence/family-grid-2026-11-22-trellis-0.4.0.md",
+          "sha256": "b25bc70e954b06814ea7accfcc244e1f81f7088188901ca62b9a288b6d5594db",
+          "bytes": 2626
+        },
+        {
+          "path": "docs/evidence/family-grid-2026-11-22-trellis-0.5.0.md",
+          "sha256": "ffcc4eb6954de7fd12b1e5bb0585596d049cc8bf5dca1a94785e5647045fbe8b",
+          "bytes": 1359
         },
         {
           "path": "docs/evidence/family-grid-2026-11-22.md",
@@ -276,18 +296,18 @@
     },
     "bloom": {
       "name": "bloom",
-      "head": "5bfd5e5f33fd610fc99171622ca25a085e4934b7",
-      "syncedAt": "2026-11-22T16:53:44.983Z",
+      "head": "58d5ecdab9f5122f3785e5e71e7d15f69f429239",
+      "syncedAt": "2026-11-22T21:10:41.713Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "acdd1e4afcce6bc95f90d4e93644cb2ad516a9a904c6e52bbf0b112d664d2648",
-          "bytes": 7670
+          "sha256": "9a7662847499d6e11798a6ee8f56a5e8f5c7064b1147f20e67408dc02c396ae3",
+          "bytes": 7793
         },
         {
           "path": "docs/architecture.md",
-          "sha256": "a4ea7d98c1b190e7ff5deeaef4035d2d38b56d390e1b3f1891756648e2e24a87",
-          "bytes": 10004
+          "sha256": "16bf290e16e7a5d7b2b92e654bdd25b327d18d3faecc1d6c8ddcac9446592df1",
+          "bytes": 10394
         },
         {
           "path": "docs/backend/README.md",
