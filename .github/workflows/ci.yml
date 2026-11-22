@@ -1,7 +1,5 @@
-/**
- * CI: test the sync core on every push and pull request.
- * Family pattern: zero dependency install, Node 22.13.1, plain npm test.
- */
+# CI: test the sync core on every push and pull request.
+# Family pattern: zero dependency install, Node 22.13.1, plain npm test.
 name: Test Docs
 on:
   push:

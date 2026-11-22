@@ -1,8 +1,6 @@
-/**
- * Sync sources on schedule, dispatch, and sync-code pushes only. The sync commits
- * manifest.json, docs/sources-index.md, and sources/, none of which appear in the
- * push filter, so a sync commit never re-triggers this workflow.
- */
+# Sync sources on schedule, dispatch, and sync-code pushes only. The sync commits
+# manifest.json, docs/sources-index.md, and sources/, none of which appear in the
+# push filter, so a sync commit never re-triggers this workflow.
 name: Sync sources
 on:
   schedule:
