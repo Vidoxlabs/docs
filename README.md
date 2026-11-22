@@ -2,7 +2,7 @@
 
 Documentation hub for the Vidoxlabs agent family. Pages are written here, and every public repository's documentation lands here verbatim through a scheduled sync: one source of truth upstream, one place to read and render it all.
 
-**Status: `0.1.0`, hub pages, sync engine, and scheduled runs.** Selection, planning, provenance, and rendering live in `src/sync-core.mjs`, and `npm test` covers them. The site handoff in [docs/site-integration.md](docs/site-integration.md) is `specified`, not shipped.
+**Status: `0.1.0`, hub pages, sync engine, and CI runs.** Selection, planning, provenance, and rendering live in `src/sync-core.mjs`, and `npm test` covers them. The site handoff in [docs/site-integration.md](docs/site-integration.md) is `specified`, not shipped.
 
 ## What lives here
 

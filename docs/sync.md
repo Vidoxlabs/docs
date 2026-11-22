@@ -13,6 +13,8 @@ Status: `implemented`. The sync runs from this repository alone, reads public Gi
 
 No source repository carries any integration, webhook, or credential for this hub. A merged pull request on a source lands here on the next run, inside the schedule's window. Dispatch shortens the wait when a run is needed sooner.
 
+GitHub's own schedule timer is best-effort: platform load can delay or skip a scheduled run, and the manifest names what actually landed, run by run. A skipped interval is a delay, never a silence: every run reads every source's head, so the first run that does fire repairs the whole gap. When a run is needed on demand, the dispatch trigger is the certain path.
+
 ## Selection
 
 `sources.json` names every source. Per source it pins:
