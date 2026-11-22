@@ -4,7 +4,7 @@
 name: Sync sources
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '7,37 * * * *'
   push:
     branches: [main]
     paths:

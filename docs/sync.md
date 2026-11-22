@@ -6,7 +6,7 @@ Status: `implemented`. The sync runs from this repository alone, reads public Gi
 
 | Trigger | When |
 | --- | --- |
-| `schedule` | every 30 minutes |
+| `schedule` | every 30 minutes, at minutes 07 and 37 |
 | `push` to `main` | when `sources.json`, `scripts/`, `src/`, or the sync workflow itself changes |
 | `workflow_dispatch` | by hand, any time |
 | `repository_dispatch` | an event named `docs-sources` |
