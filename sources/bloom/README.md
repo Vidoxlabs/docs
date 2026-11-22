@@ -45,6 +45,8 @@ Every provider runs behind [seed](https://github.com/Vidoxlabs/seed)'s provider 
 
 Bloom serves the browser on loopback and stores SQLite history and desktop files under `~/.bloom` (`~/.bloom/demo` for the demo). Pass `--data-dir PATH` to select a different folder and pass the same argument to the optional desktop command. Existing ViBloom data directories are detected. Use one server per data directory. A running local account can access its files. Closing the browser leaves the local server working. Stopping the server interrupts active work.
 
+Agents start at [AGENTS.md](AGENTS.md). Stay in this repository's province.
+
 [Architecture and design sources](docs/architecture.md) explains the VI, OAI and LA roles, the portable memory implementation, design-token synchronization, and verification boundaries.
 
 ```sh

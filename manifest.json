@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-22T16:19:25.865Z",
+  "generatedAt": "2026-11-22T16:53:44.988Z",
   "sources": {
     "seed": {
       "name": "seed",
-      "head": "05bc9ba4578124488697ea9903dae48ec803dc58",
-      "syncedAt": "2026-11-22T16:15:27.587Z",
+      "head": "eb60bd6fcd1fd4e3795552d6a81b18118535f685",
+      "syncedAt": "2026-11-22T16:53:44.810Z",
       "files": [
         {
           "path": "README.md",
@@ -19,8 +19,8 @@
         },
         {
           "path": "docs/bloom-interop.md",
-          "sha256": "5bb83286b788b936184285278d9eddd3fb2166dbb9ed7ba2691bdff0b6e37e81",
-          "bytes": 2792
+          "sha256": "073339d2179e36c816b7268d04888abbcf0e2e4c3b61d387fd33bd84873ab6bc",
+          "bytes": 4557
         },
         {
           "path": "docs/charter.md",
@@ -276,18 +276,38 @@
     },
     "bloom": {
       "name": "bloom",
-      "head": "3d535e03458b8c324034ede91f857a0e01da22f5",
-      "syncedAt": "2026-11-22T16:15:28.268Z",
+      "head": "5bfd5e5f33fd610fc99171622ca25a085e4934b7",
+      "syncedAt": "2026-11-22T16:53:44.983Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "61309af767e97ae6ccbcab5440be2f1d25761586d71ee73606fe792996dec68b",
-          "bytes": 7593
+          "sha256": "acdd1e4afcce6bc95f90d4e93644cb2ad516a9a904c6e52bbf0b112d664d2648",
+          "bytes": 7670
         },
         {
           "path": "docs/architecture.md",
           "sha256": "a4ea7d98c1b190e7ff5deeaef4035d2d38b56d390e1b3f1891756648e2e24a87",
           "bytes": 10004
+        },
+        {
+          "path": "docs/backend/README.md",
+          "sha256": "fe9c0a437a3aa59f961f72d7e6bba0bf1051f63e31ab8eb98bda0083243d35d4",
+          "bytes": 828
+        },
+        {
+          "path": "docs/backend/agent-runtime.md",
+          "sha256": "5266d623ab323d72a8fddbc9f681b2d649aafa0974d5347998f1fa44dcdac3a6",
+          "bytes": 10743
+        },
+        {
+          "path": "docs/backend/research/agent-runtime-patterns.md",
+          "sha256": "e2f941b55bb5c83b0708e6cc1e0fad86525f90ea0ccae49186c719401746298c",
+          "bytes": 28152
+        },
+        {
+          "path": "docs/backend/research/implementability-review.md",
+          "sha256": "2b3d454bbcc728e8f23f6ebb45c0c6daebe5673330701ce860d494f7eee75397",
+          "bytes": 21225
         },
         {
           "path": "docs/ui/README.md",
