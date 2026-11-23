@@ -20,7 +20,7 @@ Public repositories use only two naming forms: proper nouns for the public repos
 | `storage triangle` | none | Record authority, cache projection, and graph projection. |
 | `admission and ratification loop` | `aestivation` | Plan proposal, independent review verdicts, and the assembly gate. |
 | `context retrieval system` | `capillary` | Provenance-honest, bounded context retrieval and source relations. |
-| `persona seats` (or `the cabinet`) | none | General role term for saved team seats; specifications and run documents use closed `role ID` values only. |
+| `persona seats` | none | General role term for saved team seats; specifications and run documents use closed `role ID` values only. |
 | `coordinator` | `bloom` role term | Team role that frames tasks and plans assignments. |
 | `model-backed specialist` | `bloom` role term | Team role executed by a model generation under an assigned task. |
 | `deterministic verifier` | `bloom` role term | Team role that verifies admitted outputs deterministically without calling a model. |

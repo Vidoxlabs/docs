@@ -23,19 +23,21 @@ No owner decisions have been ratified yet.
 
 ## Pending owner decisions (unratified)
 
-The items below are open questions surfaced across the Phase 0 capability specifications. Every item remains **unratified** and **pending owner decision**.
+The items below are open questions surfaced across the Phase 0 capability specifications and review. Every item remains **unratified** and **PENDING owner ruling**.
 
-| ID | Scope | Summary | Status |
+| ID | Decision | Review recommendation | Status |
 | --- | --- | --- | --- |
-| `D1` | `CAP-01`, `M0` to `M9` | Ratify the initial timeline structure, horizon assignments (`now`, `next`, `later`), milestone groupings (`M0` to `M9`), and move `CAP-01` through `CAP-19` from `proposed` to `accepted` where approved. | unratified (pending owner decision) |
-| `D2` | `CAP-01`, `CAP-02` | Confirm how hub `docs/timeline/ledger.md` regenerates when synced `sources/` updates (automatic regeneration in the sync run versus explicit PR check) and how `capabilities.json` and per-repository `index.json` reconcile status transitions. | unratified (pending owner decision) |
-| `D3` | `CAP-02` | Choose the tool-ID grammar source for `CAP-02` freshness checks (`test/timeline.test.mjs` in `docs` and `test/capabilities.test.mjs` in sibling repositories): local grammar check matching `seed/docs/contracts/tool-id.md`, synced `sources/seed/` in `docs`, or an explicit check against `seed`, while preserving zero runtime dependencies and standalone repository test execution. | unratified (pending owner decision) |
-| `D4` | `CAP-03`, `CAP-09` | Decide whether `drosera` mirrors `seed`'s schema subset validator with a `trellis` parity probe (keeping peers free of cross-imports) or imports `seed` directly, including how `CAP-09` guard hooks interact with schema checks. | unratified (pending owner decision) |
-| `D5` | `CAP-05` | Confirm character-based token budget estimation (explicitly labeled `estimate`) as `capillary`'s default budget unit rather than model-specific tokenizers. | unratified (pending owner decision) |
-| `D6` | `CAP-05` | Confirm restricting custom packet templates in `capillary` to fixed placeholders (`{{tree}}`, `{{files}}`, `{{diff}}`, `{{log}}`, `{{budget}}`, `{{omissions}}`) with no conditionals, loops, or expression logic. | unratified (pending owner decision) |
-| `D7` | `CAP-01` | Confirm cross-repository pull request landing order (lead repository contract/interface slices before downstream consumers) and squash-merge commit SHA backfill on the next touch to `index.json` and spec `Changes`. | unratified (pending owner decision) |
-| `D8` | `CAP-01`, `M1` | Confirm the public/private boundary for proposals and decisions (keeping private operational details off the public hub) and confirm recording `bloom` `P1` terminal shell work under `M1` once PR #1 merges. | unratified (pending owner decision) |
-| `D9` | `CAP-05` | Confirm the default secret-file deny list patterns in `capillary` and whether an explicit override on a denied path requires a `CAP-06` owner approval record or stays unconditionally denied. | unratified (pending owner decision) |
-| `D10` | `CAP-05` | Confirm the change-context boundary (`capillary` reads caller-supplied diff/log text while `bloom` runs read-only system `git`, recording `unknown` when absent) and default packet/per-item budgets (`28000` / `12000` characters) plus format-aware shortening caps. | unratified (pending owner decision) |
-| `D11` | `CAP-11` | Confirm that agents may write experience receipts in `myosotis` (what ran, on which digest, with what result) while never writing any record that reads as an owner decision. | unratified (pending owner decision) |
-| `D12` | `CAP-04`, `CAP-06`, `CAP-07`, `CAP-08`, `CAP-10`, `M3`, `M4` | Resolve pending `bloom` CLI and orchestration rulings: `P2` workspace and finish tool IDs (`CAP-04`), declarative seat storage in `src/seats.mjs` plus member rows using closed role IDs rather than instruction files or persona names (`CAP-08`), terminal renderer without a third-party TUI library (`CAP-10`, planned `bloom/docs/adr/0001-terminal-renderer.md`), and cross-milestone sequencing where `CAP-07` (`M3`, `P3`) depends on `CAP-06` (`M4`, `P4`). | unratified (pending owner decision) |
+| `D1` | Spec placement: plan of record in the hub; specs and progress in owner repos | Accept | PENDING owner ruling |
+| `D2` | Two-field status (`status` lifecycle plus `claim` truth label) with fixed pairings | Accept | PENDING owner ruling |
+| `D3` | Grammar source for the hub's `CAP-02.1` test | `seed` as a commit-pinned devDependency of `docs` (one grammar, no runtime dependency) | PENDING owner ruling |
+| `D4` | Home of the schema subset and validator (`CAP-03`) | `seed` owns it; `drosera` mirrors it with a parity test, the same way it mirrors the tool grammar | PENDING owner ruling |
+| `D5` | Token estimate (`CAP-05`) | Character-based estimate labeled `estimate`; exact counts only from the configured provider at run time, never in tests | PENDING owner ruling |
+| `D6` | Template model (`CAP-05`) | Built-in `markdown`, `tagged`, `json` formats plus a placeholder-only custom template with no logic | PENDING owner ruling |
+| `D7` | Proposal intake | Files under the hub's `docs/proposals/`; anything needing private detail goes to the owner, not the hub | PENDING owner ruling |
+| `D8` | Changelog location | `docs/CHANGELOG.md` per repo, so the sync carries it without a `sources.json` change | PENDING owner ruling |
+| `D9` | Bloom calls the system `git` binary read-only for diff and log (`CAP-05`) | Accept; absent `git` is `unknown`, never an empty diff | PENDING owner ruling |
+| `D10` | Secret-file deny list (`CAP-05`) | Always on; an explicit include of a denied path needs a per-call owner approval record (`CAP-06.1`); symlinks not followed by default | PENDING owner ruling |
+| `D11` | Experience-only memory receipts (`CAP-11`) | Accept: experience kind only, never anything shaped as an owner decision | PENDING owner ruling |
+| `D12` | Pending `bloom` rulings: P2 tool IDs `workspace.file.update`, `workspace.shell.execute`, `run.answer.create` (`CAP-04`); seats as role IDs with renderer-only display labels (`CAP-08`); terminal renderer without a third-party TUI library, ADR `0001` Proposed (`CAP-10`) | Accept all three | PENDING owner ruling |
+| `D13` | Accept the timeline structure, milestones `M0` to `M9`, and the capability catalog | Accept the structure now; move `CAP-01` to `CAP-05` to `accepted` now; leave `CAP-06` to `CAP-19` `proposed` until their milestone opens | PENDING owner ruling |
+| `D14` | Review conventions made under delegation: changelog shape (`A1.1`), slice milestones and slice IDs in `dependsOn` (`A1.3`, `A1.4`), `CAP-06.1` at `M3` with `CAP-07.3` folded in (`A2`), `CAP-02` slice split (`A3`), reuse of `out-of-budget` (`A4`) | Keep, unless the owner overrides | PENDING owner ruling |

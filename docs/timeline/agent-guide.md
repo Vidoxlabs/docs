@@ -4,14 +4,14 @@ This guide defines the working loop for any code or documentation agent implemen
 
 ## Working loop (steps 1 to 9)
 
-1. **Read context**: Read in order: `docs/timeline/README.md`, `docs/timeline/roadmap.md`, `docs/timeline/capabilities.json`, the lead capability spec, and the target repository's `AGENTS.md` plus contracts and `docs/capabilities/index.json`. Check [decisions.md](decisions.md) for any unratified owner questions affecting the slice.
+1. **Read context**: Read in order: `docs/timeline/README.md`, `docs/timeline/roadmap.md`, `docs/timeline/capabilities.json`, the lead capability spec, and the target repository's `AGENTS.md` plus contracts and `docs/capabilities/index.json`. Check [decisions.md](decisions.md) (`D1` to `D14` and any later rulings) for unratified owner questions affecting the slice.
 2. **Create slice branch**: Confirm `git status --porcelain` is empty, run `git fetch origin`, and branch from `origin/main` using `cap-NN-k-<slug>` (for slice `CAP-NN.k`), or `docs-timeline-scaffold` for scaffold work. Never commit directly to `main`.
 3. **Write failing tests first**: Add deterministic, offline unit or contract tests naming the slice's acceptance cases before writing implementation code. Confirm the new tests fail for the expected missing behavior.
 4. **Implement the slice**: Write the minimal, clean implementation within the repository's province using existing helpers and patterns. Do not add runtime dependencies without an owner-accepted ADR (`docs/adr/`).
 5. **Update ledger and docs in the same PR**: Every code or contract change updates all affected records in the same pull request:
-   - Target repository `docs/capabilities/index.json` (slice `status`, capability `status` and `claim`, `tests`, `contracts`, `updated`).
+   - Target repository `docs/capabilities/index.json` (slice `milestone` and `status`, capability `status` and `claim`, `tests`, `prs` as `"<repo>#<n>"`, `contracts`, `updated`).
    - Lead capability spec (`Evidence`, `Changes`, and `Slices` status when editing the lead repository).
-   - Target repository `docs/CHANGELOG.md` under `## Unreleased` (ending each line with capability ID and PR reference).
+   - Target repository `docs/CHANGELOG.md` under `## Unreleased` (ending each line with `(CAP-NN, <repo>#<n>)`).
    - Any touched contract document's `## Changes` section.
 6. **Run local verification gates**:
    - Run `npm test` and verify 100% pass with zero skipped or relaxed assertions.
@@ -19,7 +19,14 @@ This guide defines the working loop for any code or documentation agent implemen
    - Run both public hygiene greps over `git diff origin/main...HEAD -U0` (forbidden hosts/handles/secrets/paths/kinship terms and zero em-dashes) plus any task-supplied private-needles check.
 7. **Open a pull request**: Push the slice branch and open a pull request against `main` for safety and code review. Include test counts, hygiene results, and ledger updates in the PR description.
 8. **Respect cross-repository ordering**: Land lead-repository contract and interface slices before downstream touching repositories consume them, following the pinned commit or version rules of the consuming repository. Never edit a sibling repository from another repository's branch.
-9. **Backfill squash SHA on next touch**: GitHub squash-merge commits receive their final SHA only upon merge. Do not rewrite merged history; record the merged squash SHA in `commits[]` in `docs/capabilities/index.json` and in the spec's `Changes` section on the next touch to that repository.
+9. **Backfill squash SHA on next touch**: GitHub squash-merge commits receive their final SHA only upon merge. Do not rewrite merged history; record the full 40-character merged squash SHA in `commits[]` in `docs/capabilities/index.json` and in the spec's `Changes` section on the next touch to that repository.
+
+## Per-repository index and dependency rules
+
+- **Slice milestones (`A1.3`)**: Every slice object in `docs/capabilities/index.json` carries `"id"`, `"title"`, `"milestone": "Mn"`, and `"status"`. A capability's plan-of-record `milestone` in `docs/timeline/capabilities.json` is its earliest slice milestone.
+- **Slice IDs in `dependsOn` (`A1.4`)**: `dependsOn` in `docs/timeline/capabilities.json` and spec headers may name a slice ID (`CAP-NN.k`) as well as a capability ID (`CAP-NN`). Every dependency's milestone must be less than or equal to the dependent's milestone.
+- **`lead` vs `touches` entries (`A1.5`)**: A `lead` entry in `docs/capabilities/index.json` lists every slice of the capability across all repositories, and its `spec` path is repo-relative (`docs/capabilities/CAP-NN-<slug>.md`). A `touches` entry lists only the slices landing in that repository, and its `spec` path uses `<repo>/<path>` (for example `seed/docs/capabilities/CAP-03-typed-tool-input-output.md`).
+- **PR and commit references (`A1.6`)**: `prs` holds pull request references formatted as `"<repo>#<n>"` (for example `"docs#1"`). `commits` holds full 40-character squash-merge commit SHAs backfilled on the next touch after merge.
 
 ## Status and claim pairing
 

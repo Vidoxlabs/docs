@@ -12,7 +12,7 @@ Ownership splits in two: pages this repository writes, and pages synced verbatim
 - [Roadmap](timeline/roadmap.md): milestones `M0` to `M9`, horizons, Bloom CLI phase mapping, and pending owner rulings.
 - [Capability catalog](timeline/capabilities.json): machine-readable registry of `CAP-01` through `CAP-19`.
 - [Capability ledger](timeline/ledger.md): status and claim table for all family capabilities.
-- [Owner decisions](timeline/decisions.md): owner ruling log format and pending decisions `D1` to `D12`.
+- [Owner decisions](timeline/decisions.md): owner ruling log format and pending decisions `D1` to `D14`.
 - [Agent working guide](timeline/agent-guide.md): nine-step slice loop, status/claim rules, and governance boundaries.
 - [Capability spec template](timeline/spec-template.md): required 12-section specification layout.
 - [Hub capabilities](capabilities/README.md): hub capability index ([index.json](capabilities/index.json)), [CAP-01](capabilities/CAP-01-development-timeline-ledger.md), and [CAP-02](capabilities/CAP-02-docs-freshness-check.md).

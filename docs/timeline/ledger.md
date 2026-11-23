@@ -1,6 +1,6 @@
-Hand-maintained until CAP-02 lands; generated afterward.
-
 # Capability ledger
+
+Hand-maintained until CAP-02 lands; generated afterward.
 
 | ID | Title | Lead | Touches | Horizon | Milestone | CLI phase | Status | Claim | Spec |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -9,7 +9,7 @@ Hand-maintained until CAP-02 lands; generated afterward.
 | `CAP-03` | Typed tool input and output | `seed` | `drosera`, `bloom` | `now` | `M2` | `P2` | `proposed` | `planned` | `seed/docs/capabilities/CAP-03-typed-tool-input-output.md` |
 | `CAP-04` | Workspace tool set and coding loop | `bloom` | `drosera` | `now` | `M2` | `P2` | `proposed` | `planned` | `bloom/docs/capabilities/CAP-04-workspace-tools-coding-loop.md` |
 | `CAP-05` | Codebase-to-context packer | `capillary` | `drosera`, `bloom`, `trellis` | `now` | `M2` | `P3` | `proposed` | `planned` | `capillary/docs/capabilities/CAP-05-codebase-context-packer.md` |
-| `CAP-06` | Tool-call approval decisions | `seed` | `bloom`, `drosera` | `next` | `M4` | `P4` | `proposed` | `planned` | `seed/docs/capabilities/CAP-06-tool-call-approval-decisions.md` |
+| `CAP-06` | Tool-call approval decisions | `seed` | `bloom`, `drosera` | `next` | `M3` | `P4` | `proposed` | `planned` | `seed/docs/capabilities/CAP-06-tool-call-approval-decisions.md` |
 | `CAP-07` | Plan review and approval loop | `aestivation` | `seed`, `bloom` | `next` | `M3` | `P3` | `proposed` | `planned` | `aestivation/docs/capabilities/CAP-07-plan-review-approval-loop.md` |
 | `CAP-08` | Seat orchestration | `bloom` | `seed` | `next` | `M3` | `P3` | `proposed` | `planned` | `bloom/docs/capabilities/CAP-08-seat-orchestration.md` |
 | `CAP-09` | Run guards (ordered hook chain) | `drosera` | `bloom`, `seed` | `next` | `M3` | `P3` | `proposed` | `planned` | `drosera/docs/capabilities/CAP-09-run-guards-hook-chain.md` |

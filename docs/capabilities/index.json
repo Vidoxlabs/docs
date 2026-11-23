@@ -12,6 +12,49 @@
         {
           "id": "CAP-01.1",
           "title": "Hub timeline scaffold",
+          "milestone": "M0",
+          "status": "in-progress"
+        },
+        {
+          "id": "CAP-01.2",
+          "title": "Seed capability docs and roadmap mapping",
+          "milestone": "M0",
+          "status": "in-progress"
+        },
+        {
+          "id": "CAP-01.3",
+          "title": "Capillary capability docs and packer spec",
+          "milestone": "M0",
+          "status": "in-progress"
+        },
+        {
+          "id": "CAP-01.4",
+          "title": "Myosotis capability docs and memory integration spec",
+          "milestone": "M0",
+          "status": "in-progress"
+        },
+        {
+          "id": "CAP-01.5",
+          "title": "Aestivation capability docs and plan loop spec",
+          "milestone": "M0",
+          "status": "in-progress"
+        },
+        {
+          "id": "CAP-01.6",
+          "title": "Drosera capability docs and run guard / scan specs",
+          "milestone": "M0",
+          "status": "in-progress"
+        },
+        {
+          "id": "CAP-01.7",
+          "title": "Trellis capability docs and ledger entries",
+          "milestone": "M0",
+          "status": "in-progress"
+        },
+        {
+          "id": "CAP-01.8",
+          "title": "Bloom capability docs and workspace/orchestration specs",
+          "milestone": "M0",
           "status": "in-progress"
         }
       ],
@@ -21,7 +64,9 @@
         "docs/engineering-law.md"
       ],
       "tests": [],
-      "prs": [],
+      "prs": [
+        "docs#1"
+      ],
       "commits": [],
       "adr": [],
       "decision": null,
@@ -36,42 +81,56 @@
       "slices": [
         {
           "id": "CAP-02.1",
-          "title": "Hub timeline freshness test test/timeline.test.mjs and ledger generation",
+          "title": "Hub timeline test test/timeline.test.mjs",
+          "milestone": "M2",
           "status": "proposed"
         },
         {
           "id": "CAP-02.2",
           "title": "Self-test test/capabilities.test.mjs in seed",
+          "milestone": "M2",
           "status": "proposed"
         },
         {
           "id": "CAP-02.3",
           "title": "Self-test test/capabilities.test.mjs in capillary",
+          "milestone": "M2",
           "status": "proposed"
         },
         {
           "id": "CAP-02.4",
           "title": "Self-test test/capabilities.test.mjs in myosotis",
+          "milestone": "M2",
           "status": "proposed"
         },
         {
           "id": "CAP-02.5",
           "title": "Self-test test/capabilities.test.mjs in aestivation",
+          "milestone": "M2",
           "status": "proposed"
         },
         {
           "id": "CAP-02.6",
           "title": "Self-test test/capabilities.test.mjs in drosera",
+          "milestone": "M2",
           "status": "proposed"
         },
         {
           "id": "CAP-02.7",
           "title": "Self-test test/capabilities.test.mjs in trellis",
+          "milestone": "M2",
           "status": "proposed"
         },
         {
           "id": "CAP-02.8",
           "title": "Self-test test/capabilities.test.mjs in bloom",
+          "milestone": "M2",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-02.9",
+          "title": "Sync regenerates docs/timeline/ledger.md with docs/sync.md and sync tests in the same commit",
+          "milestone": "M2",
           "status": "proposed"
         }
       ],

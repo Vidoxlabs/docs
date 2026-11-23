@@ -15,7 +15,7 @@ Every lead capability spec in `<lead-repo>/docs/capabilities/CAP-NN-<slug>.md` u
 - CLI phase: `P1`..`P6` | `none`
 - Status: `proposed` | `accepted` | `in-progress` | `landed` | `deferred`
 - Claim: `planned` | `specified` | `implemented` | `observed`
-- Depends on: `CAP-XX`, ... | `none`
+- Depends on: `CAP-XX`, `CAP-XX.k`, ... | `none`
 
 ## Why
 
@@ -49,7 +49,7 @@ List named deterministic test cases that must pass before any slice or capabilit
 
 ## Slices
 
-Ordered list of slices (`CAP-NN.1`, `CAP-NN.2`, ...), naming the owning repository and deliverable per slice.
+Ordered list of slices (`CAP-NN.1`, `CAP-NN.2`, ...), naming the owning repository, milestone (`M0`..`M9`), and deliverable per slice.
 
 ## Non-goals
 
@@ -61,7 +61,7 @@ Note how this capability honors stack boundaries, claim discipline, zero-depende
 
 ## Open owner decisions
 
-Reference pending decisions (`D1` to `D12` in `docs/timeline/decisions.md` or new unratified questions) without deciding them.
+Reference pending decisions (`D1` to `D14` in `docs/timeline/decisions.md` or new unratified questions) without deciding them.
 
 ## Evidence
 

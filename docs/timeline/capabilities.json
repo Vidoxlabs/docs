@@ -97,7 +97,7 @@
         "drosera"
       ],
       "horizon": "next",
-      "milestone": "M4",
+      "milestone": "M3",
       "cliPhase": "P4",
       "dependsOn": [
         "CAP-03",
@@ -117,7 +117,7 @@
       "milestone": "M3",
       "cliPhase": "P3",
       "dependsOn": [
-        "CAP-06"
+        "CAP-06.1"
       ],
       "spec": "aestivation/docs/capabilities/CAP-07-plan-review-approval-loop.md"
     },
