@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-23T02:42:23.147Z",
+  "generatedAt": "2026-11-23T03:12:17.921Z",
   "sources": {
     "seed": {
       "name": "seed",
@@ -234,12 +234,12 @@
     },
     "trellis": {
       "name": "trellis",
-      "head": "52e77897e154a955880a9f265277a0acb4bdd36d",
-      "syncedAt": "2026-11-23T02:42:22.666Z",
+      "head": "369e590970847b4642c0da26af90ddfeaaa13462",
+      "syncedAt": "2026-11-23T03:12:17.794Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "784b503dbee47e81292fa00e0ebac0d5e12e8a9d60545c9e634c2c9f2e971bb6",
+          "sha256": "4097fee9f70c803e261ba837a1b0789d74ad2dd8e15bc118b7fa5a65e9073e29",
           "bytes": 4274
         },
         {
@@ -259,8 +259,8 @@
         },
         {
           "path": "docs/contracts/probes.md",
-          "sha256": "18bc4fc5e1e34c08115ad9f1c8277fc4c4ea9da1a8c0726347601aefbb4e56f8",
-          "bytes": 9071
+          "sha256": "91b0822e1f9bccf845c879274f513749caf747a9710b994b79336d5a44d7a63e",
+          "bytes": 9790
         },
         {
           "path": "docs/evidence/family-grid-2026-11-22-after-predecessor-coverage.md",
@@ -313,6 +313,11 @@
           "bytes": 1327
         },
         {
+          "path": "docs/evidence/family-grid-2026-11-23-trellis-0.8.0.md",
+          "sha256": "ca2aeab35c4e21fc8df01f2e1252951377997773d40e2bfcb8bcb5edfcb62038",
+          "bytes": 1434
+        },
+        {
           "path": "docs/interop.md",
           "sha256": "03024539ddbbdef2b10a119b0cd8e86b04a7d866ae5daca416b302cac1e712c8",
           "bytes": 6878
@@ -321,8 +326,8 @@
     },
     "bloom": {
       "name": "bloom",
-      "head": "a1ddff213de5ed39bd74e6fe8b6ca4ea5994d2d2",
-      "syncedAt": "2026-11-23T02:42:22.918Z",
+      "head": "eaf8ea22a37d67993cb678db39a0b5e3cdcc9539",
+      "syncedAt": "2026-11-23T03:12:17.914Z",
       "files": [
         {
           "path": "README.md",

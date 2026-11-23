@@ -9,8 +9,8 @@ This index is written by the sync run. Each repository below is copied verbatim 
 | [myosotis](https://github.com/Vidoxlabs/myosotis) | `79d0938` | 2026-11-23 | 8 |
 | [aestivation](https://github.com/Vidoxlabs/aestivation) | `b85cf91` | 2026-11-22 | 7 |
 | [drosera](https://github.com/Vidoxlabs/drosera) | `d05aff0` | 2026-11-23 | 8 |
-| [trellis](https://github.com/Vidoxlabs/trellis) | `52e7789` | 2026-11-23 | 16 |
-| [bloom](https://github.com/Vidoxlabs/bloom) | `a1ddff2` | 2026-11-23 | 10 |
+| [trellis](https://github.com/Vidoxlabs/trellis) | `369e590` | 2026-11-23 | 17 |
+| [bloom](https://github.com/Vidoxlabs/bloom) | `eaf8ea2` | 2026-11-23 | 10 |
 | [videsign](https://github.com/Vidoxlabs/videsign) | `98a2ab2` | 2026-11-23 | 3 |
 
-Run: 2026-11-23T02:42:23.147Z
+Run: 2026-11-23T03:12:17.921Z
