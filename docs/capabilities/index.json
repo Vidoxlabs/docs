@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "repo": "docs",
+  "entries": [
+    {
+      "id": "CAP-01",
+      "role": "lead",
+      "status": "in-progress",
+      "claim": "planned",
+      "spec": "docs/capabilities/CAP-01-development-timeline-ledger.md",
+      "slices": [
+        {
+          "id": "CAP-01.1",
+          "title": "Hub timeline scaffold",
+          "status": "in-progress"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [
+        "docs/sync.md",
+        "docs/engineering-law.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-02",
+      "role": "lead",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "docs/capabilities/CAP-02-docs-freshness-check.md",
+      "slices": [
+        {
+          "id": "CAP-02.1",
+          "title": "Hub timeline freshness test test/timeline.test.mjs and ledger generation",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-02.2",
+          "title": "Self-test test/capabilities.test.mjs in seed",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-02.3",
+          "title": "Self-test test/capabilities.test.mjs in capillary",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-02.4",
+          "title": "Self-test test/capabilities.test.mjs in myosotis",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-02.5",
+          "title": "Self-test test/capabilities.test.mjs in aestivation",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-02.6",
+          "title": "Self-test test/capabilities.test.mjs in drosera",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-02.7",
+          "title": "Self-test test/capabilities.test.mjs in trellis",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-02.8",
+          "title": "Self-test test/capabilities.test.mjs in bloom",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [
+        "docs/sync.md",
+        "docs/engineering-law.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    }
+  ]
+}

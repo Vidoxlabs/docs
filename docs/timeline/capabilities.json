@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "capabilities": [
+    {
+      "id": "CAP-01",
+      "title": "Development timeline and capability ledger",
+      "lead": "docs",
+      "touches": [
+        "seed",
+        "capillary",
+        "myosotis",
+        "aestivation",
+        "drosera",
+        "trellis",
+        "bloom"
+      ],
+      "horizon": "now",
+      "milestone": "M0",
+      "cliPhase": null,
+      "dependsOn": [],
+      "spec": "docs/docs/capabilities/CAP-01-development-timeline-ledger.md"
+    },
+    {
+      "id": "CAP-02",
+      "title": "Docs freshness check",
+      "lead": "docs",
+      "touches": [
+        "seed",
+        "capillary",
+        "myosotis",
+        "aestivation",
+        "drosera",
+        "trellis",
+        "bloom"
+      ],
+      "horizon": "now",
+      "milestone": "M2",
+      "cliPhase": null,
+      "dependsOn": [
+        "CAP-01"
+      ],
+      "spec": "docs/docs/capabilities/CAP-02-docs-freshness-check.md"
+    },
+    {
+      "id": "CAP-03",
+      "title": "Typed tool input and output",
+      "lead": "seed",
+      "touches": [
+        "drosera",
+        "bloom"
+      ],
+      "horizon": "now",
+      "milestone": "M2",
+      "cliPhase": "P2",
+      "dependsOn": [],
+      "spec": "seed/docs/capabilities/CAP-03-typed-tool-input-output.md"
+    },
+    {
+      "id": "CAP-04",
+      "title": "Workspace tool set and coding loop",
+      "lead": "bloom",
+      "touches": [
+        "drosera"
+      ],
+      "horizon": "now",
+      "milestone": "M2",
+      "cliPhase": "P2",
+      "dependsOn": [
+        "CAP-03"
+      ],
+      "spec": "bloom/docs/capabilities/CAP-04-workspace-tools-coding-loop.md"
+    },
+    {
+      "id": "CAP-05",
+      "title": "Codebase-to-context packer",
+      "lead": "capillary",
+      "touches": [
+        "drosera",
+        "bloom",
+        "trellis"
+      ],
+      "horizon": "now",
+      "milestone": "M2",
+      "cliPhase": "P3",
+      "dependsOn": [
+        "CAP-03",
+        "CAP-04"
+      ],
+      "spec": "capillary/docs/capabilities/CAP-05-codebase-context-packer.md"
+    },
+    {
+      "id": "CAP-06",
+      "title": "Tool-call approval decisions",
+      "lead": "seed",
+      "touches": [
+        "bloom",
+        "drosera"
+      ],
+      "horizon": "next",
+      "milestone": "M4",
+      "cliPhase": "P4",
+      "dependsOn": [
+        "CAP-03",
+        "CAP-04"
+      ],
+      "spec": "seed/docs/capabilities/CAP-06-tool-call-approval-decisions.md"
+    },
+    {
+      "id": "CAP-07",
+      "title": "Plan review and approval loop",
+      "lead": "aestivation",
+      "touches": [
+        "seed",
+        "bloom"
+      ],
+      "horizon": "next",
+      "milestone": "M3",
+      "cliPhase": "P3",
+      "dependsOn": [
+        "CAP-06"
+      ],
+      "spec": "aestivation/docs/capabilities/CAP-07-plan-review-approval-loop.md"
+    },
+    {
+      "id": "CAP-08",
+      "title": "Seat orchestration",
+      "lead": "bloom",
+      "touches": [
+        "seed"
+      ],
+      "horizon": "next",
+      "milestone": "M3",
+      "cliPhase": "P3",
+      "dependsOn": [
+        "CAP-07"
+      ],
+      "spec": "bloom/docs/capabilities/CAP-08-seat-orchestration.md"
+    },
+    {
+      "id": "CAP-09",
+      "title": "Run guards (ordered hook chain)",
+      "lead": "drosera",
+      "touches": [
+        "bloom",
+        "seed"
+      ],
+      "horizon": "next",
+      "milestone": "M3",
+      "cliPhase": "P3",
+      "dependsOn": [
+        "CAP-04"
+      ],
+      "spec": "drosera/docs/capabilities/CAP-09-run-guards-hook-chain.md"
+    },
+    {
+      "id": "CAP-10",
+      "title": "Trace and observability",
+      "lead": "bloom",
+      "touches": [
+        "seed"
+      ],
+      "horizon": "next",
+      "milestone": "M4",
+      "cliPhase": "P4",
+      "dependsOn": [
+        "CAP-04"
+      ],
+      "spec": "bloom/docs/capabilities/CAP-10-trace-observability.md"
+    },
+    {
+      "id": "CAP-11",
+      "title": "Memory integration",
+      "lead": "myosotis",
+      "touches": [
+        "bloom",
+        "capillary"
+      ],
+      "horizon": "next",
+      "milestone": "M3",
+      "cliPhase": "P3",
+      "dependsOn": [
+        "CAP-05"
+      ],
+      "spec": "myosotis/docs/capabilities/CAP-11-memory-integration.md"
+    },
+    {
+      "id": "CAP-12",
+      "title": "Step graph, checkpoints, resume, interrupts",
+      "lead": "seed",
+      "touches": [
+        "bloom"
+      ],
+      "horizon": "later",
+      "milestone": "M7",
+      "cliPhase": null,
+      "dependsOn": [
+        "CAP-06",
+        "CAP-10"
+      ],
+      "spec": "seed/docs/capabilities/CAP-12-step-graph-checkpoints-interrupts.md"
+    },
+    {
+      "id": "CAP-13",
+      "title": "Durable run store and conformance suite",
+      "lead": "seed",
+      "touches": [
+        "bloom",
+        "trellis"
+      ],
+      "horizon": "later",
+      "milestone": "M7",
+      "cliPhase": null,
+      "dependsOn": [
+        "CAP-12"
+      ],
+      "spec": "seed/docs/capabilities/CAP-13-durable-run-store-conformance.md"
+    },
+    {
+      "id": "CAP-14",
+      "title": "Eval harness",
+      "lead": "bloom",
+      "touches": [
+        "seed",
+        "trellis"
+      ],
+      "horizon": "next",
+      "milestone": "M5",
+      "cliPhase": "P5",
+      "dependsOn": [
+        "CAP-10"
+      ],
+      "spec": "bloom/docs/capabilities/CAP-14-eval-harness.md"
+    },
+    {
+      "id": "CAP-15",
+      "title": "Research flow",
+      "lead": "bloom",
+      "touches": [
+        "capillary",
+        "aestivation",
+        "drosera"
+      ],
+      "horizon": "later",
+      "milestone": "M8",
+      "cliPhase": null,
+      "dependsOn": [
+        "CAP-05",
+        "CAP-07",
+        "CAP-08"
+      ],
+      "spec": "bloom/docs/capabilities/CAP-15-research-flow.md"
+    },
+    {
+      "id": "CAP-16",
+      "title": "Provider conformance and model profiles",
+      "lead": "seed",
+      "touches": [
+        "trellis",
+        "bloom"
+      ],
+      "horizon": "next",
+      "milestone": "M4",
+      "cliPhase": "P4",
+      "dependsOn": [],
+      "spec": "seed/docs/capabilities/CAP-16-provider-conformance-model-profiles.md"
+    },
+    {
+      "id": "CAP-17",
+      "title": "Sandbox scopes",
+      "lead": "seed",
+      "touches": [
+        "bloom"
+      ],
+      "horizon": "later",
+      "milestone": "M9",
+      "cliPhase": null,
+      "dependsOn": [
+        "CAP-04",
+        "CAP-12"
+      ],
+      "spec": "seed/docs/capabilities/CAP-17-sandbox-scopes.md"
+    },
+    {
+      "id": "CAP-18",
+      "title": "Symbol outline for packed context",
+      "lead": "capillary",
+      "touches": [
+        "drosera",
+        "bloom"
+      ],
+      "horizon": "later",
+      "milestone": "M8",
+      "cliPhase": null,
+      "dependsOn": [
+        "CAP-05"
+      ],
+      "spec": "capillary/docs/capabilities/CAP-18-symbol-outline-packed-context.md"
+    },
+    {
+      "id": "CAP-19",
+      "title": "Skill safety scan",
+      "lead": "drosera",
+      "touches": [
+        "trellis"
+      ],
+      "horizon": "later",
+      "milestone": "M9",
+      "cliPhase": null,
+      "dependsOn": [],
+      "spec": "drosera/docs/capabilities/CAP-19-skill-safety-scan.md"
+    }
+  ]
+}

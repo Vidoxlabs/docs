@@ -9,6 +9,10 @@ Docs is a public repository. Everything committed here can be read by anyone.
 3. `docs/engineering-law.md`: the shared discipline.
 4. `docs/family.md`: the agent family and this hub's place.
 5. `docs/site-integration.md`: the specified site handoff.
+6. `docs/timeline/README.md`: the family timeline, roadmap, and working loop.
+7. `docs/capabilities/`: the hub capability ledger index and specifications.
+
+Same-PR ledger rule: any pull request that starts, updates, or lands a capability or contract change updates `docs/capabilities/index.json`, the owning spec's `Evidence` and `Changes` sections, `docs/CHANGELOG.md`, and touched contract `Changes` sections in the same PR.
 
 ## Claim discipline
 
