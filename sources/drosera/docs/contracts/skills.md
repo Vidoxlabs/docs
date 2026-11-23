@@ -1,23 +1,105 @@
 # Contract: skills
 
-Label: `specified` (shape), `implemented` (validation and pack in `src/skills.mjs`).
+Label: `specified` (shape), `implemented` (validation and pack in `src/skills.mjs`, the
+document reader in `src/skill-markdown.mjs`).
 
 ## Shape
 
 ```
-skill { name, summary, procedure, guardrails, verification, instructions?, tips?,
+skill { name, summary, procedure, guardrails, verification,
+        triggers, inputs, outputs, examples, sources, instructions?, tips?,
         lifecycle, promotedBy?, deprecatedReason? }
 name          kebab-case: [a-z][a-z0-9-]*  — one word or hyphenated words
 summary       non-empty; what following the skill accomplishes
 procedure     non-empty list of non-empty steps, in order
 guardrails    non-empty list of non-empty limits the reader keeps to
 verification  non-empty list of non-empty checks that show the skill worked
+triggers      non-empty list of non-empty situations that call for the skill
+inputs        non-empty list of non-empty things the reader needs before starting
+outputs       non-empty list of non-empty things following the skill produces
+examples      non-empty list of non-empty worked examples
+sources       non-empty list of non-empty references to the evidence the skill rests on
 instructions  optional non-empty text; prose around the procedure, never a substitute for it
 tips          optional list of non-empty strings; small, load-bearing reminders
-lifecycle     draft (the default), promoted, or deprecated
+lifecycle     intake, draft (the default), review, promoted, or deprecated
 promotedBy    required on a promoted skill; who approved it
 deprecatedReason  required on a deprecated skill; why it was retired
 ```
+
+`SECTION_LISTS` exports the five lists added in `1.0.0`, in the order above. Together
+with `summary`, `procedure`, `guardrails`, and `verification`, they are the record form
+of the nine sections the predecessor skill validator required in a skill document.
+`skill()` checks the record. `skillFromMarkdown` reads a document's text into one (see
+"Skill documents" below). A missing list, an empty list, or a list holding anything but
+non-empty text is refused, and each refusal names its field.
+
+## Skill documents
+
+`implemented` in `src/skill-markdown.mjs`. `skillFromMarkdown(text)` reads a skill
+document the caller already holds and returns the record `skill()` accepts, after
+`skill()` has checked it. It ports the predecessor skill validator's required sections
+and required frontmatter fields onto text. It reads no file, walks no directory, takes
+no path, and calls no network. Text that is not a string is refused.
+
+**Frontmatter.** The text opens with a `---` line, and the frontmatter ends at the next
+`---` line. It must give `name` and `description`, each as non-empty text. The reader
+takes top-level keys only:
+
+- `key: value`, plain, single-quoted, or double-quoted. A `#` after a space ends a plain
+  value and starts a comment. A double-quoted value reads `\\` and `\"` and refuses
+  every other escape.
+- `key: |` or `key: >`, with or without `-` or `+`, followed by indented lines. `|` keeps
+  the line breaks. `>` joins lines with a space and keeps each blank line as a break.
+- `key:` followed by indented lines, a nested mapping or list. It is kept unread.
+- Blank lines and `#` comment lines.
+
+Every value is trimmed. Any other line, a repeated top-level key, a value continued on
+indented lines without `|` or `>`, an unclosed quote, and a block form with an
+indentation digit are refused, each with its frontmatter line number. This is a bounded
+reader for skill frontmatter, not a YAML parser.
+
+**Headings.** The body holds each of `SKILL_HEADINGS` as a level one or level two
+heading, matched exactly, outside a code fence:
+
+| Heading | Record field |
+| --- | --- |
+| `Summary` | `summary`, after the description |
+| `When to Use (Triggers)` | `triggers` |
+| `Inputs` | `inputs` |
+| `Outputs` | `outputs` |
+| `Procedure / Steps` | `procedure` |
+| `Guardrails` | `guardrails` |
+| `Examples` | `examples` |
+| `Verification` | `verification` |
+| `Sources / Evidence` | `sources` |
+
+A heading at level three or deeper does not count, and neither does one inside a fence.
+A missing heading, a required heading given twice, and a heading whose body holds no
+item are refused. One `SkillError` names every such heading together with every
+frontmatter refusal. Other headings, such as the document title, are not read.
+
+**Items.** A section runs to the next level one or two heading. Its items are:
+
+- each list item (`-`, `*`, `+`, `1.`, or `1)`), at any depth, with its continuation
+  lines joined by a space;
+- each paragraph, its lines joined by a space;
+- each fenced code block (three or more backticks or tildes), its lines kept as they are,
+  without the fence lines.
+
+Blockquote markers are dropped. A heading at level three or deeper inside a section
+labels the items under it, so an item under `### Good` reads `Good: …`. A blank item is
+dropped. `summary` is the description, then each Summary item, separated by blank lines.
+
+**Lifecycle.** The lifecycle stays `draft` unless the frontmatter gives `lifecycle`.
+`lifecycle`, `promotedBy`, and `deprecatedReason` go to `skill()` exactly as the
+frontmatter gives them, and `skill()` checks them. An unknown state, such as `stable` or
+the predecessor's capitalized `Promoted`, is refused. A `promoted` document names
+`promotedBy`, and a `deprecated` one states `deprecatedReason`. When present, each of the
+three keys must be non-empty text. A nested value such as `metadata.status` is not read,
+so a document that marks itself promoted only there reads as a draft.
+
+`skill()` itself is unchanged. A record built without a document stays valid, and
+`skillFromMarkdown` skips no check `skill()` makes.
 
 ## Skill rules
 
@@ -31,21 +113,50 @@ deprecatedReason  required on a deprecated skill; why it was retired
 
 ## Lifecycle
 
-`implemented` in `src/skills.mjs`. `LIFECYCLE_STATES` is `draft`, `promoted`,
-`deprecated`. `transitionSkill(record, to, { approver?, reason? })` returns a new frozen
-record and leaves the given one unchanged:
+`implemented` in `src/skills.mjs`. `LIFECYCLE_STATES` is `intake`, `draft`, `review`,
+`promoted`, `deprecated`: the promotion path of the predecessor skill lifecycle, in
+lowercase. Only the states and their moves are ported. Drosera reads no file, keeps
+no clock or timestamp, and runs no quality gate on a move.
+`transitionSkill(record, to, { approver?, reason? })` returns a new frozen record and
+leaves the given one unchanged:
 
 | From | To | Needs |
 | --- | --- | --- |
-| `draft` | `promoted` | `approver`, kept as `promotedBy` |
-| `draft` | `deprecated` | `reason`, kept as `deprecatedReason` |
+| `intake` | `draft` | nothing |
+| `intake` | `deprecated` | `reason`, kept as `deprecatedReason` |
+| `draft` | `review` | nothing |
+| `draft` | `deprecated` | `reason` |
+| `review` | `promoted` | `approver`, kept as `promotedBy` |
+| `review` | `draft` | nothing; the record carries no promoter |
+| `review` | `deprecated` | `reason` |
 | `promoted` | `deprecated` | `reason`; `promotedBy` is kept |
 | `deprecated` | none | deprecated is terminal |
 
-Every other move, including a move to the same state and a move back to `draft`, is
-refused. A record built directly as `promoted` or `deprecated` must carry the same
-field the transition would have added. A lifecycle state is a review label. It grants
-nothing (rule 2).
+Every other move is refused, including `draft` → `promoted`, a move to the same state,
+and any move out of `promoted` except deprecation. A skill reaches `promoted` only
+through `review`. An `intake`, `draft`, or `review` record carries neither `promotedBy`
+nor `deprecatedReason`, so a move back to `draft` clears the promoter. A record built
+directly in a state must carry the same field the transition would have added. The
+record keeps no history, so a record built directly as `promoted` is checked for its
+`promotedBy` and not for the path it took. A lifecycle state is a review label. It
+grants nothing (rule 2).
+
+## Lifecycle notices
+
+`implemented` in `src/skills.mjs`. `lifecycleNotice(before, after)` checks both records
+as skills and returns the notice a move leaves for the hook events `skill-promoted` and
+`skill-deprecated` (see the hooks contract). It ports the predecessor's promoted and
+deprecated log events as a record only.
+
+| `before.lifecycle` | `after.lifecycle` | Notice (frozen) |
+| --- | --- | --- |
+| `review` | `promoted` | `{ name, from: 'review', to: 'promoted', approver }`, with `approver` from `promotedBy` |
+| `intake`, `draft`, `review`, or `promoted` | `deprecated` | `{ name, from, to: 'deprecated', reason }`, with `reason` from `deprecatedReason` |
+
+Every other pair throws `SkillError`. A move into `draft`, `intake`, or `review` is not a
+notice, and neither is a pair that is not a move or a pair naming two different skills.
+The function writes no file, reads no environment variable, and calls no network.
+`transitionSkill` stays pure: it does not build a notice or dispatch a hook.
 
 ## The pack
 
@@ -64,6 +175,8 @@ skillPack(skills) → { skill(name), names(), has(name), size }
 It applies the existing skill validator to each entry and uses the skill's name as
 its slug. Duplicate slugs are refused. The license is catalog metadata.
 
+- An entry whose skill fails validation, including a missing section list, refuses the
+  whole catalog. It is never listed.
 - `list()` returns frozen `{ slug, license, skill }` items in input order. A skill
   is listed only if its lifecycle is `promoted` and the entry explicitly gives it
   the `MIT` license.
@@ -79,6 +192,32 @@ Build a fresh snapshot when a skill's lifecycle or license changes.
 - Not a tool. A skill has no effect class, makes no calls, and is never dispatched.
 
 ## Changes
+
+- `2.2.0` — additive `skillFromMarkdown` and `SKILL_HEADINGS` exports, which read a
+  skill document's text into the record `skill()` accepts. `skill()`, transitions,
+  lifecycle notices, packs, and the catalog are unchanged, and every call valid under
+  `2.1.0` stays valid.
+
+- `2.1.0` — additive `lifecycleNotice` export, the record for the new hook events
+  `skill-promoted` and `skill-deprecated`. No skill, transition, pack, or catalog call
+  valid under `2.0.0` changes.
+
+- `2.0.0` — breaking. The lifecycle gains `intake` and `review`, and a draft reaches
+  `promoted` only through `review`. `transitionSkill(draft, 'promoted', …)`, valid
+  under `1.0.0`, is refused now; move the draft to `review` first, then promote it
+  with its approver. `review` may also return to `draft`, which carries no promoter.
+  `LIFECYCLE_STATES` lists five states, so a caller comparing it to the three-state
+  list sees a change. The default lifecycle stays `draft`, the five section lists
+  stay required, and the catalog still lists only a promoted skill whose own license
+  is `MIT`.
+
+- `1.0.0` — breaking. A skill also requires `triggers`, `inputs`, `outputs`,
+  `examples`, and `sources`, each a non-empty list of non-empty text. A skill valid
+  under `0.5.0` that omits any of them is refused now by `skill`, `skillPack`,
+  `transitionSkill`, and `skillCatalog`. Migrate a record by giving it the five lists
+  from the skill's own document. `SECTION_LISTS` is a new export. `instructions` and
+  `tips` stay optional. The lifecycle, its terminal deprecated state, and the catalog
+  rule (promoted, own license `MIT`) are unchanged.
 
 - `0.5.0` — additive `skillCatalog` export for listing and reading promoted MIT skills.
 

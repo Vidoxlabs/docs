@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-23T01:42:24.770Z",
+  "generatedAt": "2026-11-23T02:42:23.147Z",
   "sources": {
     "seed": {
       "name": "seed",
-      "head": "57e334ba2c6c8d3f6aafa84d585431af59451192",
-      "syncedAt": "2026-11-22T22:42:18.432Z",
+      "head": "7c0cdae3779a5b55aebabe1b055df4978e85962e",
+      "syncedAt": "2026-11-23T02:42:22.226Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "9e892caed7a33d5e964884a35c1688977d3cda6634be99caed4d3a31cc4c3ace",
-          "bytes": 4424
+          "sha256": "bf104cf878376f38c590fa83a3a4ce949bb9cece16448935323fc6fb1750496d",
+          "bytes": 4596
         },
         {
           "path": "docs/architecture.md",
@@ -34,13 +34,13 @@
         },
         {
           "path": "docs/contracts/run-model.md",
-          "sha256": "f6662e157ab5d16e570da1fae0acabf6df650ca9e83ef785e11f5657bdfb9b0e",
-          "bytes": 6515
+          "sha256": "72e8d26e4c53bdf166c6754490ec82e312d59c4a19cf1e0b89c0e54aab48fe35",
+          "bytes": 8070
         },
         {
           "path": "docs/contracts/tool-id.md",
-          "sha256": "a143d6563be018e21d184f5d48e25e72f599ed734f5f07164958fd98857a3cdf",
-          "bytes": 5027
+          "sha256": "e0fda1d4f34b905e578fa4926a7b50f8d7f3d8851a08696a5d34f5539fe326b6",
+          "bytes": 7663
         },
         {
           "path": "docs/lexicon.md",
@@ -49,8 +49,8 @@
         },
         {
           "path": "docs/roadmap.md",
-          "sha256": "a08b95aa1558e92a4d5ada18b9ef82008d7ff6a5fdcd6b017201e7b08bb6c21a",
-          "bytes": 1994
+          "sha256": "709069472b124c124c8e6d6d029b30283c440680a2062ca3185c850caf5e410f",
+          "bytes": 2068
         }
       ]
     },
@@ -98,18 +98,18 @@
     },
     "myosotis": {
       "name": "myosotis",
-      "head": "fd88484fc7a75bf67212681582f655c273d388b7",
-      "syncedAt": "2026-11-22T21:10:41.238Z",
+      "head": "79d09383304cf14c89387a5dc335a2ef664ca83e",
+      "syncedAt": "2026-11-23T02:42:22.367Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "8937b6dc857590eb5cfe33aa912de9afc236ee8fc258865892ebf7da5e9dd93a",
-          "bytes": 4198
+          "sha256": "6fac1fe996c0f82eab46086ff9a840fea91dcfeeb8ee831a8baa997757ddbd85",
+          "bytes": 4454
         },
         {
           "path": "docs/architecture.md",
-          "sha256": "6ef510dba986fb90b263c311049138c6c7a04dfeb5ddd9ae2880ea40dc50c346",
-          "bytes": 3542
+          "sha256": "fec7119a00df2428e232783d339e71453c7b92794c84b50d51e924201f7de74e",
+          "bytes": 4074
         },
         {
           "path": "docs/charter.md",
@@ -120,6 +120,11 @@
           "path": "docs/contracts/consent.md",
           "sha256": "697954854792a0733bed5c92f57377a4e0bd24013b2007cf7c878c31f33aace4",
           "bytes": 2641
+        },
+        {
+          "path": "docs/contracts/continuity.md",
+          "sha256": "af3bf564bac95615b486d8a4efc8bc50c6bd04275ee1841330f943021defda79",
+          "bytes": 4631
         },
         {
           "path": "docs/contracts/forget.md",
@@ -182,18 +187,18 @@
     },
     "drosera": {
       "name": "drosera",
-      "head": "210cee09b6c9edcc0e9bbdd722ab137c9ac8a6cf",
-      "syncedAt": "2026-11-22T21:10:41.475Z",
+      "head": "d05aff04e2cfe464121f469af6d23af89a11add9",
+      "syncedAt": "2026-11-23T02:42:22.515Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "477dd19216e3c9c449dae6d42226a624944da6f899ffa5fb48a0eac5f316bae5",
-          "bytes": 3344
+          "sha256": "0d41df44fed682b316dda46e1914bedb63b6484dec78027dd960df5f14725cb9",
+          "bytes": 3532
         },
         {
           "path": "docs/architecture.md",
-          "sha256": "905c7f90cfcda823409a61371b1dad0695748bf6337397556700b06ce91dcdb9",
-          "bytes": 4907
+          "sha256": "9063b8f32607ba1a8401ac618597a91d7fe446666c1da14975599338c4f82bbe",
+          "bytes": 5461
         },
         {
           "path": "docs/charter.md",
@@ -207,13 +212,13 @@
         },
         {
           "path": "docs/contracts/hooks.md",
-          "sha256": "8d955757fe97acb7a54e63882cd0d9fe26624a38dafec6cbdf443be06620a34c",
-          "bytes": 3507
+          "sha256": "b1ce41ca5bdbda7e8181f2aa9ee6664241a25648108ea7145b2412b1949efea4",
+          "bytes": 4524
         },
         {
           "path": "docs/contracts/skills.md",
-          "sha256": "d02d6a397e2a9c050cc226fb54d875c02b0a0b827e60be0ffc81d564a41f441f",
-          "bytes": 5583
+          "sha256": "8f8ecbd7b0c2072f9bfa1ac16b91728c40d3d8abc4f1dd8f46e842cefeabc141",
+          "bytes": 13716
         },
         {
           "path": "docs/contracts/tools.md",
@@ -229,12 +234,12 @@
     },
     "trellis": {
       "name": "trellis",
-      "head": "7f1b641c35234691c86872cf5e70899d0bac8dd1",
-      "syncedAt": "2026-11-22T22:42:18.642Z",
+      "head": "52e77897e154a955880a9f265277a0acb4bdd36d",
+      "syncedAt": "2026-11-23T02:42:22.666Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "c0d77b25331ebac3f70104ef1d102763f26312b6c44e74d9d9971b4eb8a40db5",
+          "sha256": "784b503dbee47e81292fa00e0ebac0d5e12e8a9d60545c9e634c2c9f2e971bb6",
           "bytes": 4274
         },
         {
@@ -254,8 +259,8 @@
         },
         {
           "path": "docs/contracts/probes.md",
-          "sha256": "804fac64f8a7efb8fe759473595aff21e476040c0f51364ff0ebef6c1dbaa8fa",
-          "bytes": 6954
+          "sha256": "18bc4fc5e1e34c08115ad9f1c8277fc4c4ea9da1a8c0726347601aefbb4e56f8",
+          "bytes": 9071
         },
         {
           "path": "docs/evidence/family-grid-2026-11-22-after-predecessor-coverage.md",
@@ -288,9 +293,24 @@
           "bytes": 1360
         },
         {
+          "path": "docs/evidence/family-grid-2026-11-22-trellis-0.6.1.md",
+          "sha256": "854c5f301cdf5e7ee76c2dd9fe8642c5d0e7b42f7c12ec233b12f0c9bedd3609",
+          "bytes": 1395
+        },
+        {
+          "path": "docs/evidence/family-grid-2026-11-22-trellis-0.6.2.md",
+          "sha256": "e0acb5ef21992a73f05403f9d76716965fee77848301bde1ab2c4652e9f034cf",
+          "bytes": 1272
+        },
+        {
           "path": "docs/evidence/family-grid-2026-11-22.md",
           "sha256": "669e5c8b338e38079458c0249b55bec99195aa681edea258145f1636f75fc712",
           "bytes": 2361
+        },
+        {
+          "path": "docs/evidence/family-grid-2026-11-23-trellis-0.7.0.md",
+          "sha256": "99544d6cdcb6f7327788b63f6280fdaef551f3f6a20176b8a53955aacecbea68",
+          "bytes": 1327
         },
         {
           "path": "docs/interop.md",
@@ -301,8 +321,8 @@
     },
     "bloom": {
       "name": "bloom",
-      "head": "27415e102aea60d8e780bac83d7b3a72ec2e3d80",
-      "syncedAt": "2026-11-22T21:12:19.451Z",
+      "head": "a1ddff213de5ed39bd74e6fe8b6ca4ea5994d2d2",
+      "syncedAt": "2026-11-23T02:42:22.918Z",
       "files": [
         {
           "path": "README.md",
@@ -358,8 +378,8 @@
     },
     "videsign": {
       "name": "videsign",
-      "head": "7f48508c1ea1a1e688146f5cc0ecdb3cdb2f2a5c",
-      "syncedAt": "2026-11-23T01:42:24.766Z",
+      "head": "98a2ab2316b68a5ed4c675e9033ed7817450bceb",
+      "syncedAt": "2026-11-23T02:42:23.140Z",
       "files": [
         {
           "path": "DESIGN.md",

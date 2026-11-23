@@ -30,7 +30,7 @@ A face is a definition, not an admission. The registry entry a run admits — wi
 
 ## The skill
 
-A skill is packaged instructions: `{ name, summary, procedure, guardrails, verification, instructions?, tips?, lifecycle }`. The name is kebab-case; the summary says what following the skill accomplishes; the procedure, guardrails, and verification are text for whoever reads context. The lifecycle is draft, promoted, or deprecated, and deprecated is terminal. A skill pack collects them, unique by name.
+A skill is packaged instructions: `{ name, summary, procedure, guardrails, verification, triggers, inputs, outputs, examples, sources, instructions?, tips?, lifecycle }`. The name is kebab-case; the summary says what following the skill accomplishes; the eight lists are text for whoever reads context. The lifecycle runs intake, draft, review, promoted, and deprecated; a draft reaches promoted only through review, and deprecated is terminal. A skill pack collects them, unique by name. `skillFromMarkdown` reads a skill document's text into that record and checks it the same way; the caller supplies the text, and nothing here opens a file.
 
 The rule with teeth: skills grow context, never authority. Loading a skill puts text into a reader's context. A skill's instructions have no power to admit effects or extend scopes — a run that wants an effect gets it admitted through the harness like any other effect.
 
@@ -44,6 +44,10 @@ A hook is a deterministic check bound to a run event: `{ id, event, summary, che
 | `before-tool` | before a tool call is dispatched |
 | `after-tool` | after a tool call returns |
 | `run-end` | a run completes |
+| `skill-promoted` | a caller dispatches the notice of a review → promoted move |
+| `skill-deprecated` | a caller dispatches the notice of a move to deprecated |
+
+The two lifecycle events carry the frozen notice `lifecycleNotice` returns. `transitionSkill` never fires them; the caller that moved the skill does.
 
 The `check` must be a function. This is the shape rule that keeps hooks what they are: deterministic code, not prose, not prompts, and never a model call. A forgotten invariant in a hook is code the author forgot to write, not a thought the hook had.
 
