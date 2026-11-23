@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-22T23:33:56.943Z",
+  "generatedAt": "2026-11-23T00:42:17.825Z",
   "sources": {
     "seed": {
       "name": "seed",
@@ -358,8 +358,8 @@
     },
     "videsign": {
       "name": "videsign",
-      "head": "5015a1ed42af5ec0e208b3dd253a72653cd23ff4",
-      "syncedAt": "2026-11-22T23:33:56.933Z",
+      "head": "54bb860946c9c6a1c689f57ce3915f603c6307ee",
+      "syncedAt": "2026-11-23T00:42:17.821Z",
       "files": [
         {
           "path": "DESIGN.md",
