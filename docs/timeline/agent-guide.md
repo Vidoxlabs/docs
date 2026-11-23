@@ -23,10 +23,10 @@ This guide defines the working loop for any code or documentation agent implemen
 
 ## Per-repository index and dependency rules
 
-- **Slice milestones (`A1.3`)**: Every slice object in `docs/capabilities/index.json` carries `"id"`, `"title"`, `"milestone": "Mn"`, and `"status"`. A capability's plan-of-record `milestone` in `docs/timeline/capabilities.json` is its earliest slice milestone.
-- **Slice IDs in `dependsOn` (`A1.4`)**: `dependsOn` in `docs/timeline/capabilities.json` and spec headers may name a slice ID (`CAP-NN.k`) as well as a capability ID (`CAP-NN`). Every dependency's milestone must be less than or equal to the dependent's milestone.
-- **`lead` vs `touches` entries (`A1.5`)**: A `lead` entry in `docs/capabilities/index.json` lists every slice of the capability across all repositories, and its `spec` path is repo-relative (`docs/capabilities/CAP-NN-<slug>.md`). A `touches` entry lists only the slices landing in that repository, and its `spec` path uses `<repo>/<path>` (for example `seed/docs/capabilities/CAP-03-typed-tool-input-output.md`).
-- **PR and commit references (`A1.6`)**: `prs` holds pull request references formatted as `"<repo>#<n>"` (for example `"docs#1"`). `commits` holds full 40-character squash-merge commit SHAs backfilled on the next touch after merge.
+- **Slice milestones (`D14`)**: Every slice object in `docs/capabilities/index.json` carries `"id"`, `"title"`, `"milestone": "Mn"`, and `"status"`. A capability's plan-of-record `milestone` in `docs/timeline/capabilities.json` is its earliest slice milestone.
+- **Slice IDs in `dependsOn` (`D14`)**: `dependsOn` in `docs/timeline/capabilities.json` and spec headers may name a slice ID (`CAP-NN.k`) as well as a capability ID (`CAP-NN`). Every dependency's milestone must be less than or equal to the dependent's milestone.
+- **`lead` vs `touches` entries (`D14`)**: A `lead` entry in `docs/capabilities/index.json` lists every slice of the capability across all repositories, and its `spec` path is repo-relative (`docs/capabilities/CAP-NN-<slug>.md`). A `touches` entry lists only the slices landing in that repository, and its `spec` path uses `<repo>/<path>` (for example `seed/docs/capabilities/CAP-03-typed-tool-input-output.md`).
+- **PR and commit references (`D14`)**: `prs` holds pull request references formatted as `"<repo>#<n>"` (for example `"docs#1"`). `commits` holds full 40-character squash-merge commit SHAs backfilled on the next touch after merge.
 
 ## Status and claim pairing
 

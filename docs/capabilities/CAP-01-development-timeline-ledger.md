@@ -88,7 +88,7 @@ The family spans eight public repositories (`docs`, `seed`, `capillary`, `myosot
 - `D7` (unratified / pending owner ruling): Proposal intake via files under the hub's `docs/proposals/`; anything needing private detail goes directly to the owner, never to the hub.
 - `D8` (unratified / pending owner ruling): Changelog location in `docs/CHANGELOG.md` per repository, so sync carries it without a `sources.json` change.
 - `D13` (unratified / pending owner ruling): Accept the timeline structure, milestones `M0` to `M9`, and the capability catalog (review recommendation: accept the structure now, move `CAP-01` to `CAP-05` to `accepted` now, and leave `CAP-06` to `CAP-19` `proposed` until their milestone opens).
-- `D14` (unratified / pending owner ruling): Review conventions made under delegation: changelog shape (`A1.1`), slice milestones and slice IDs in `dependsOn` (`A1.3`, `A1.4`), `CAP-06.1` at `M3` with `CAP-07.3` folded in (`A2`), `CAP-02` slice split (`A3`), and reuse of `out-of-budget` (`A4`).
+- `D14` (unratified / pending owner ruling): Review conventions made under delegation: changelog shape; slice milestones and slice IDs in `dependsOn`; `lead` lists all slices and `touches` list their own; `prs` as `"<repo>#<n>"` and full squash SHAs in `commits`; `CAP-06.1` at `M3` with `CAP-07.3` folded in; the `CAP-02` nine-slice split; reuse of `out-of-budget`.
 
 ## Evidence
 
@@ -97,4 +97,4 @@ None yet (`CAP-01.1` scaffold PR in progress across the eight repositories; `npm
 ## Changes
 
 - `2026-11-23`: Initial `CAP-01` specification drafted and Phase 0 scaffold prepared across `docs` and the seven sibling repositories (`CAP-01.1`).
-- `2026-11-23`: Part A review updates: align canonical `D1` to `D14` decision references, record full `CAP-01.1` to `CAP-01.8` slice entries with milestones and `prs: ["docs#1"]`, and document updated changelog, `spec`/`slices`, and `dependsOn` conventions (`CAP-01.1`).
+- `2026-11-23`: Review updates: align canonical `D1` to `D14` decision references, record full `CAP-01.1` to `CAP-01.8` slice entries with milestones and `prs: ["docs#1"]`, and document updated changelog, `spec`/`slices`, and `dependsOn` conventions (`CAP-01.1`).
