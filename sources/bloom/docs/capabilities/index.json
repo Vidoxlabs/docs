@@ -5,50 +5,59 @@
     {
       "id": "CAP-01",
       "role": "touches",
-      "status": "in-progress",
-      "claim": "planned",
+      "status": "landed",
+      "claim": "implemented",
       "spec": "docs/docs/capabilities/CAP-01-development-timeline-ledger.md",
       "slices": [
         {
           "id": "CAP-01.8",
           "title": "Bloom capability docs and workspace/orchestration specs",
           "milestone": "M0",
-          "status": "in-progress"
+          "status": "landed"
         }
       ],
       "toolIds": [],
       "contracts": [],
-      "tests": [],
-      "prs": [
-        "bloom#2"
+      "tests": [
+        "test/capabilities.test.mjs"
       ],
-      "commits": [],
+      "prs": [
+        "bloom#2",
+        "bloom#3"
+      ],
+      "commits": [
+        "6b18f87cc29fb910163d42f8f66d020ceb414bad"
+      ],
       "adr": [],
       "decision": null,
-      "updated": "2026-11-23"
+      "updated": "2026-11-24"
     },
     {
       "id": "CAP-02",
       "role": "touches",
-      "status": "proposed",
-      "claim": "planned",
+      "status": "landed",
+      "claim": "implemented",
       "spec": "docs/docs/capabilities/CAP-02-docs-freshness-check.md",
       "slices": [
         {
           "id": "CAP-02.8",
           "title": "Self-test test/capabilities.test.mjs in bloom",
           "milestone": "M2",
-          "status": "proposed"
+          "status": "landed"
         }
       ],
       "toolIds": [],
       "contracts": [],
-      "tests": [],
-      "prs": [],
+      "tests": [
+        "test/capabilities.test.mjs"
+      ],
+      "prs": [
+        "bloom#3"
+      ],
       "commits": [],
       "adr": [],
       "decision": null,
-      "updated": "2026-11-23"
+      "updated": "2026-11-24"
     },
     {
       "id": "CAP-03",
@@ -59,7 +68,7 @@
       "slices": [
         {
           "id": "CAP-03.3",
-          "title": "Pre-dispatch input validation, single repair turn, and output validation",
+          "title": "Pre-dispatch input validation, single repair turn, and output validation in bloom",
           "milestone": "M2",
           "status": "proposed"
         }
@@ -73,7 +82,7 @@
       "commits": [],
       "adr": [],
       "decision": null,
-      "updated": "2026-11-23"
+      "updated": "2026-11-24"
     },
     {
       "id": "CAP-04",
@@ -160,7 +169,7 @@
       "slices": [
         {
           "id": "CAP-06.4",
-          "title": "Approval UI/CLI flow, edit and respond handling, and permission events",
+          "title": "Bloom approval UI/CLI flow, edit and respond handling, and permission events",
           "milestone": "M4",
           "status": "proposed"
         }
@@ -174,7 +183,7 @@
       "commits": [],
       "adr": [],
       "decision": null,
-      "updated": "2026-11-23"
+      "updated": "2026-11-24"
     },
     {
       "id": "CAP-07",
@@ -335,7 +344,7 @@
       "slices": [
         {
           "id": "CAP-12.3",
-          "title": "Step graph runtime execution, checkpoint tools, and interrupt resume",
+          "title": "Runtime graph executor, checkpoint tools, and interrupt/fork wiring in bloom",
           "milestone": "M7",
           "status": "proposed"
         }
@@ -349,7 +358,7 @@
       "commits": [],
       "adr": [],
       "decision": null,
-      "updated": "2026-11-23"
+      "updated": "2026-11-24"
     },
     {
       "id": "CAP-13",
@@ -360,7 +369,7 @@
       "slices": [
         {
           "id": "CAP-13.2",
-          "title": "SQLite durable run store passing conformance suite",
+          "title": "SQLite durable run store in bloom passing conformance suite",
           "milestone": "M7",
           "status": "proposed"
         }
@@ -374,7 +383,7 @@
       "commits": [],
       "adr": [],
       "decision": null,
-      "updated": "2026-11-23"
+      "updated": "2026-11-24"
     },
     {
       "id": "CAP-14",
@@ -475,7 +484,7 @@
       "slices": [
         {
           "id": "CAP-16.3",
-          "title": "Doctor probe model profile and profile-driven prompts and budgets",
+          "title": "Doctor probe model profile and profile-driven prompts and budgets in bloom",
           "milestone": "M4",
           "status": "proposed"
         }
@@ -489,7 +498,7 @@
       "commits": [],
       "adr": [],
       "decision": null,
-      "updated": "2026-11-23"
+      "updated": "2026-11-24"
     },
     {
       "id": "CAP-17",
@@ -500,7 +509,7 @@
       "slices": [
         {
           "id": "CAP-17.2",
-          "title": "Workspace root enforcement and effect scope checks",
+          "title": "Workspace root enforcement and effect scope checks in bloom",
           "milestone": "M9",
           "status": "proposed"
         }
@@ -514,7 +523,7 @@
       "commits": [],
       "adr": [],
       "decision": null,
-      "updated": "2026-11-23"
+      "updated": "2026-11-24"
     },
     {
       "id": "CAP-18",

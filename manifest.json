@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-24T06:42:22.486Z",
+  "generatedAt": "2026-11-24T07:12:23.782Z",
   "sources": {
     "seed": {
       "name": "seed",
-      "head": "d9c6f7db5ef00c8122030141749cf34808cf3d33",
-      "syncedAt": "2026-11-24T04:42:19.801Z",
+      "head": "3532bd564fcb0564034a850c6aa4601c0dc6d2c0",
+      "syncedAt": "2026-11-24T07:12:23.408Z",
       "files": [
         {
           "path": "README.md",
@@ -14,8 +14,8 @@
         },
         {
           "path": "docs/CHANGELOG.md",
-          "sha256": "07f1483b1e2641f4534c57a0241899373de60683f7fb59888b5ee1e997675f5b",
-          "bytes": 439
+          "sha256": "45ddf8004890474921d29df23f23865a653ae85aaa55d4175b29e7f8bb276e9d",
+          "bytes": 524
         },
         {
           "path": "docs/adr/README.md",
@@ -69,8 +69,8 @@
         },
         {
           "path": "docs/capabilities/index.json",
-          "sha256": "3395049a3d9bc61318133219b3803964d76610d477d6a6d76373f162886a5ec0",
-          "bytes": 10294
+          "sha256": "13e1d9cdcf9e428e4d55a7a3fff6236e7daa40bf0147cbf393ba1bdf96327c42",
+          "bytes": 10491
         },
         {
           "path": "docs/charter.md",
@@ -317,8 +317,8 @@
     },
     "drosera": {
       "name": "drosera",
-      "head": "a760ba065c5b2fd78cebbbbd0a6c15ecbf2d1072",
-      "syncedAt": "2026-11-24T04:42:20.296Z",
+      "head": "98851c714fea35ca238c3b16a00e76ec58f06fd7",
+      "syncedAt": "2026-11-24T07:12:23.541Z",
       "files": [
         {
           "path": "README.md",
@@ -327,8 +327,8 @@
         },
         {
           "path": "docs/CHANGELOG.md",
-          "sha256": "ad35fbe72782f5a9f5936881702c0f8f401984908646bf58123a52828b43952f",
-          "bytes": 494
+          "sha256": "fa94801e017affb7acd574eb267cefbedc182c3322345b1d5ae2df228e9e8952",
+          "bytes": 582
         },
         {
           "path": "docs/adr/README.md",
@@ -357,8 +357,8 @@
         },
         {
           "path": "docs/capabilities/index.json",
-          "sha256": "5a43f469e3658a4befa9bdc012c26ac946ac6ecb2a02f84fb17af7ad41b0417c",
-          "bytes": 6821
+          "sha256": "4f8b3b78a52320a5fd83aa608d73f0e0975a3eed4af2baeeb49bf329a7b27988",
+          "bytes": 7008
         },
         {
           "path": "docs/charter.md",
@@ -506,8 +506,8 @@
     },
     "bloom": {
       "name": "bloom",
-      "head": "db52ad4ff7eaaeb588b199fd68066b5a2746d5a6",
-      "syncedAt": "2026-11-24T05:12:21.230Z",
+      "head": "1e199b513fc9800e69bb05bece10889eb29e518c",
+      "syncedAt": "2026-11-24T07:12:23.775Z",
       "files": [
         {
           "path": "README.md",
@@ -516,8 +516,8 @@
         },
         {
           "path": "docs/CHANGELOG.md",
-          "sha256": "4a3f7bed912f74e638d962041297993d48e386908bd547cace8146712293a3c1",
-          "bytes": 327
+          "sha256": "c8b372722a2bbf7560cd3cad6dedfc8b4e1bbdb5f70a450b5ea92bd2175f809f",
+          "bytes": 413
         },
         {
           "path": "docs/adr/README.md",
@@ -561,8 +561,8 @@
         },
         {
           "path": "docs/capabilities/CAP-10-trace-observability.md",
-          "sha256": "0fb3659c6ca1f10ebf35eb0847b72544d5db8752ba083da6e6f9ea15b7a2c403",
-          "bytes": 6013
+          "sha256": "a530aef52d930a80db3d20a24b4c6c8d3b76c90a3f660706c27d171dde77912b",
+          "bytes": 6001
         },
         {
           "path": "docs/capabilities/CAP-14-eval-harness.md",
@@ -581,8 +581,8 @@
         },
         {
           "path": "docs/capabilities/index.json",
-          "sha256": "14a8c43d7e4ee02436e87acab8d1581cf8e2c97af5816223510a0a75f2843bb4",
-          "bytes": 13849
+          "sha256": "7efdf4048eebd60956165a71159fe5674fe2290baad4dd99b4c280a39d7b1426",
+          "bytes": 14083
         },
         {
           "path": "docs/ui/README.md",

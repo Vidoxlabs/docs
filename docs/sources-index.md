@@ -4,13 +4,13 @@ This index is written by the sync run. Each repository below is copied verbatim 
 
 | Repository | Head | Synced | Files |
 | --- | --- | --- | --- |
-| [seed](https://github.com/Vidoxlabs/seed) | `d9c6f7d` | 2026-11-24 | 19 |
+| [seed](https://github.com/Vidoxlabs/seed) | `3532bd5` | 2026-11-24 | 19 |
 | [capillary](https://github.com/Vidoxlabs/capillary) | `4abadfa` | 2026-11-24 | 13 |
 | [myosotis](https://github.com/Vidoxlabs/myosotis) | `74e78a2` | 2026-11-24 | 13 |
 | [aestivation](https://github.com/Vidoxlabs/aestivation) | `09588de` | 2026-11-24 | 12 |
-| [drosera](https://github.com/Vidoxlabs/drosera) | `a760ba0` | 2026-11-24 | 14 |
+| [drosera](https://github.com/Vidoxlabs/drosera) | `98851c7` | 2026-11-24 | 14 |
 | [trellis](https://github.com/Vidoxlabs/trellis) | `eaabdd5` | 2026-11-24 | 21 |
-| [bloom](https://github.com/Vidoxlabs/bloom) | `db52ad4` | 2026-11-24 | 19 |
+| [bloom](https://github.com/Vidoxlabs/bloom) | `1e199b5` | 2026-11-24 | 19 |
 | [videsign](https://github.com/Vidoxlabs/videsign) | `c5f89a7` | 2026-11-24 | 3 |
 
-Run: 2026-11-24T06:42:22.486Z
+Run: 2026-11-24T07:12:23.782Z

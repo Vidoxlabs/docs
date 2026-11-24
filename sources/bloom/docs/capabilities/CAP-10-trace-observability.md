@@ -82,7 +82,7 @@ None. This capability introduces no tool IDs.
 
 ## Open owner decisions
 
-- `D12` (pending owner ruling): renderer ruling without a third-party TUI library, governing terminal view formatting and tracked in `docs/adr/0001-terminal-renderer.md` (`Proposed`).
+- `D12` (pending owner ruling): renderer ruling without a third-party TUI library, governing terminal view formatting and planned for `docs/adr/0001-terminal-renderer.md`.
 
 ## Evidence
 
