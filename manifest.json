@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-24T13:42:21.660Z",
+  "generatedAt": "2026-11-24T14:12:24.174Z",
   "sources": {
     "seed": {
       "name": "seed",
-      "head": "5838727b47e253dc8b55e43e205d5c618fb8521b",
-      "syncedAt": "2026-11-24T13:42:21.331Z",
+      "head": "0d158cd7e1fb5098162c98d303ddde8172001062",
+      "syncedAt": "2026-11-24T14:12:23.017Z",
       "files": [
         {
           "path": "README.md",
@@ -14,8 +14,8 @@
         },
         {
           "path": "docs/CHANGELOG.md",
-          "sha256": "76ddddfc6dad06a81da9b88c19afc2a90b82f4780ddedf131b833e3e796b7702",
-          "bytes": 853
+          "sha256": "d309216ef1f08dee36d52056ca3d4e22659ce28a09876a7dbd97bb084681544d",
+          "bytes": 1209
         },
         {
           "path": "docs/adr/README.md",
@@ -24,8 +24,8 @@
         },
         {
           "path": "docs/architecture.md",
-          "sha256": "e6a7be4c9c9008fcf96f30aca0d3d58d8270fd117308dd114d5919211d7b3011",
-          "bytes": 3717
+          "sha256": "85db2514b54d9bcf223769d63f6cf4677c7b1897340e59cb72c09e91bc4006cc",
+          "bytes": 3852
         },
         {
           "path": "docs/bloom-interop.md",
@@ -44,8 +44,8 @@
         },
         {
           "path": "docs/capabilities/CAP-12-step-graph-checkpoints-interrupts.md",
-          "sha256": "c07d30f4cdeab9db4e709a0a269c2a655ba472516ab35abca3312bc4a9e81fe2",
-          "bytes": 8654
+          "sha256": "95214c9043a583370bfd170ae3b3961db7d92057ba85e63996e08c90b3e26efe",
+          "bytes": 9051
         },
         {
           "path": "docs/capabilities/CAP-13-durable-run-store-conformance.md",
@@ -69,8 +69,8 @@
         },
         {
           "path": "docs/capabilities/index.json",
-          "sha256": "d9a9bf6310f6ee11950f4b0ea97b974778ee0a51cc4cd358aab709347993354b",
-          "bytes": 10709
+          "sha256": "2d3bbe1bfcdd6972ad0a2a10bf600f3b6aeef4d70325a4340be7d422d37e27a9",
+          "bytes": 10784
         },
         {
           "path": "docs/charter.md",
@@ -84,8 +84,8 @@
         },
         {
           "path": "docs/contracts/run-model.md",
-          "sha256": "72e8d26e4c53bdf166c6754490ec82e312d59c4a19cf1e0b89c0e54aab48fe35",
-          "bytes": 8070
+          "sha256": "171843fe742dd27d02718a343efebfd2b09ceb17076cf360b045c2dfdfb2ad69",
+          "bytes": 8192
         },
         {
           "path": "docs/contracts/tool-id.md",
@@ -106,8 +106,8 @@
     },
     "capillary": {
       "name": "capillary",
-      "head": "8117c7754c6990b93b323112541a50fe11e531b3",
-      "syncedAt": "2026-11-24T09:12:22.304Z",
+      "head": "4987f28e04b64adf4ae48bdfaf6988c3ee072c0b",
+      "syncedAt": "2026-11-24T14:12:23.197Z",
       "files": [
         {
           "path": "README.md",
@@ -178,8 +178,8 @@
     },
     "myosotis": {
       "name": "myosotis",
-      "head": "79c4eec7650ffc633e8a093db476f404b13f07c6",
-      "syncedAt": "2026-11-24T09:12:22.496Z",
+      "head": "4c7a8b8ef632c8b36a2f92d9be6d1cefdcf10db9",
+      "syncedAt": "2026-11-24T14:12:23.374Z",
       "files": [
         {
           "path": "README.md",
@@ -250,8 +250,8 @@
     },
     "aestivation": {
       "name": "aestivation",
-      "head": "610184e571d292e05712d1c37180d895aa7203b5",
-      "syncedAt": "2026-11-24T09:12:22.699Z",
+      "head": "f506c9e9a25017ea354e68861ce9112e90d73374",
+      "syncedAt": "2026-11-24T14:12:23.584Z",
       "files": [
         {
           "path": "README.md",
@@ -317,8 +317,8 @@
     },
     "drosera": {
       "name": "drosera",
-      "head": "e48a4aa36964fe386707806f69c22561db14720f",
-      "syncedAt": "2026-11-24T09:12:22.915Z",
+      "head": "34c5c29c15f1d1f8baa6de6d5016f4809d68f098",
+      "syncedAt": "2026-11-24T14:12:23.760Z",
       "files": [
         {
           "path": "README.md",
@@ -327,8 +327,8 @@
         },
         {
           "path": "docs/CHANGELOG.md",
-          "sha256": "fa94801e017affb7acd574eb267cefbedc182c3322345b1d5ae2df228e9e8952",
-          "bytes": 582
+          "sha256": "7f707b7b7e79872b24c0556cbc4de1e681ac4ac7cd567d8f81ba379077c3d77f",
+          "bytes": 736
         },
         {
           "path": "docs/adr/README.md",
@@ -357,8 +357,8 @@
         },
         {
           "path": "docs/capabilities/index.json",
-          "sha256": "4f8b3b78a52320a5fd83aa608d73f0e0975a3eed4af2baeeb49bf329a7b27988",
-          "bytes": 7008
+          "sha256": "ca54117a001f9645df2980b9e5de36e0800888c56210eb8111f990b94b0c69ce",
+          "bytes": 7384
         },
         {
           "path": "docs/charter.md",
@@ -367,8 +367,8 @@
         },
         {
           "path": "docs/contracts/cookbook.md",
-          "sha256": "d329709f7b9eb13f3f825c49c3c989f9786337c9d8e34109de8f2af71ad614f9",
-          "bytes": 2863
+          "sha256": "1d020ff384d1139ed10f3e1684fe777978607811a989b96ecb559c56dd081ede",
+          "bytes": 3301
         },
         {
           "path": "docs/contracts/hooks.md",
@@ -382,8 +382,8 @@
         },
         {
           "path": "docs/contracts/tools.md",
-          "sha256": "94eb4f5d4f986403468f4de1ee5e336b73537daf8017dc44ff5ad950ada4859a",
-          "bytes": 3422
+          "sha256": "7f526232011ef3880cd2a85185201bd941a6b61222de4c5aa1dd8f58d646249f",
+          "bytes": 5303
         },
         {
           "path": "docs/interop.md",
@@ -394,8 +394,8 @@
     },
     "trellis": {
       "name": "trellis",
-      "head": "57504522e83c55c86b4f89d981cb4e94ced8f727",
-      "syncedAt": "2026-11-24T09:12:23.150Z",
+      "head": "76d59fb1edb6b7093ae8a42ca29e4bfbd524f5e1",
+      "syncedAt": "2026-11-24T14:12:23.932Z",
       "files": [
         {
           "path": "README.md",
@@ -506,8 +506,8 @@
     },
     "bloom": {
       "name": "bloom",
-      "head": "4ac3c9a4edb7b089d044abf8678ae6c4f09d90c1",
-      "syncedAt": "2026-11-24T13:42:21.653Z",
+      "head": "f5b06194c9826e81d86a9df5df4ab4765e91c039",
+      "syncedAt": "2026-11-24T14:12:24.162Z",
       "files": [
         {
           "path": "README.md",
@@ -516,8 +516,8 @@
         },
         {
           "path": "docs/CHANGELOG.md",
-          "sha256": "8cd1f40700c0528471bf131778cb191aaa92ef20ddafdb02de1d5b36678cb26e",
-          "bytes": 2449
+          "sha256": "11a752290155ea75ef754816590d2690d9059256bb8bcaae340c42cf0c863a1c",
+          "bytes": 2627
         },
         {
           "path": "docs/adr/0002-family-peer-imports.md",
