@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-24T04:42:20.610Z",
+  "generatedAt": "2026-11-24T05:12:21.234Z",
   "sources": {
     "seed": {
       "name": "seed",
@@ -506,18 +506,18 @@
     },
     "bloom": {
       "name": "bloom",
-      "head": "6b18f87cc29fb910163d42f8f66d020ceb414bad",
-      "syncedAt": "2026-11-24T04:42:20.604Z",
+      "head": "db52ad4ff7eaaeb588b199fd68066b5a2746d5a6",
+      "syncedAt": "2026-11-24T05:12:21.230Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "9a7662847499d6e11798a6ee8f56a5e8f5c7064b1147f20e67408dc02c396ae3",
-          "bytes": 7793
+          "sha256": "185f46a97cc419f4ad535dfd05b8b02800c486b5bf5662fddcaea3a7d02ca55f",
+          "bytes": 9406
         },
         {
           "path": "docs/CHANGELOG.md",
-          "sha256": "36eef144feb0555a7202208edb2311130fd01516fa39fc396c296b90b299df6f",
-          "bytes": 259
+          "sha256": "4a3f7bed912f74e638d962041297993d48e386908bd547cace8146712293a3c1",
+          "bytes": 327
         },
         {
           "path": "docs/adr/README.md",
@@ -526,8 +526,8 @@
         },
         {
           "path": "docs/architecture.md",
-          "sha256": "16bf290e16e7a5d7b2b92e654bdd25b327d18d3faecc1d6c8ddcac9446592df1",
-          "bytes": 10394
+          "sha256": "147f5473265b90958114bcb5575d868ee76f1e4f15220d920352c0f0115fc354",
+          "bytes": 10928
         },
         {
           "path": "docs/backend/README.md",
@@ -576,8 +576,8 @@
         },
         {
           "path": "docs/capabilities/README.md",
-          "sha256": "ff43ba537b98b2197e3ef427e7b27f77b33cb94ecb0ea0a6140aa9242be7ab19",
-          "bytes": 527
+          "sha256": "731c3b328fd6a8fc2a7fa92483043170ea875eceb46d8bc4f8e0a9ea0d3e8d0d",
+          "bytes": 655
         },
         {
           "path": "docs/capabilities/index.json",

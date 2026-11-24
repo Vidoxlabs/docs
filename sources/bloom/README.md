@@ -21,7 +21,7 @@ Open **http://127.0.0.1:4317**, choose **Create a team** and give the head agent
 Teams run on any service that speaks the chat-completions HTTP API (`POST {base}/chat/completions`). Bloom names no default service.
 
 ```sh
-npm start -- --api-base http://127.0.0.1:8000/v1 --team-model local-model
+npm start -- --api-base '<your-endpoint>' --team-model local-model
 ```
 
 Use your server's address and model. A hosted endpoint must use HTTPS; set `BLOOM_API_KEY` in the environment if it needs a key. Team calls send the brief and admitted evidence to that endpoint. Started without `--api-base`, Bloom still opens the workspace, notes and files, and a team turn stops with a message naming the flag.
@@ -29,6 +29,16 @@ Use your server's address and model. A hosted endpoint must use HTTPS; set `BLOO
 Every provider runs behind [seed](https://github.com/Vidoxlabs/seed)'s provider seam: Bloom checks the adapter when it starts and checks every reply against seed's record before the team reads it. A reply outside that record stops the turn.
 
 **Coding sessions** need a coding runtime, and none ships with Bloom yet. The scripted demo runtime shows the coding view, with streamed plans, tool activity and approvals. Outside the demo, the **Create a coding session** choice is hidden, and coding sessions saved by an earlier version stay readable but cannot start a new turn.
+
+## Terminal commands
+
+**Implemented.** After `npm install`, run `npm link` to install the `bloom` command from this checkout. Try the scripted runtime with `bloom chat --demo`, or run it once with `bloom run --headless --demo --json "Inspect the project"`. Headless runs reject requests by default. Use `--approve-policy allow-read` to allow read requests.
+
+A configured local model can run the existing team loop. In the terminal data directory, use a private `config.json` with `version: 1`, one entry under `providers` with `kind: "chat-completions"` and `baseURL` set to your OpenAI-compatible API base, and `models.aliases` containing an alias, backend model ID and workload. Set `models.default` to that alias or choose one with `--model`. Loopback is local by default. For a server on your private network, set `locality` to `local`. Enable `allowInsecureHttp` only if that server uses plain HTTP. Set `apiKeyEnv` to the name of an environment variable if the server requires a key.
+
+The team loop uses the desktop and saved specialists. `--workspace` records the session's workspace. The coding runtime and terminal cloud approval are **planned**.
+
+`bloom doctor` checks the local installation and endpoint rule without displaying the address. Model-server probes are **planned**. `bloom sessions list` lists session IDs. `bloom sessions export ID --jsonl` writes the stored events in order, and `bloom replay FILE --step` displays them one at a time. Use `--data-dir` to select the data directory, including when you read a demo session. `bloom memory --help` lists note commands. Forget requires `--confirm`.
 
 ## Work with a team
 

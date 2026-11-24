@@ -2,6 +2,10 @@
 
 Bloom runs as one Node.js webserver with an embedded SQLite database, a directory of Markdown artifacts and a browser client. One head owns a team conversation. Every group post names its author. Durable sequence numbers let a disconnected browser replay activity. A model adapter supplies generations. The harness decides which files to read, which specialist owns the next step and when to stop.
 
+## Terminal shell
+
+**Implemented.** The terminal shell shares the team loop, demo adapter, provider selection and SQLite event stream with the browser. Headless JSON ends with an unstored `run.result` record. Missing usage stays unreported. The terminal reads provider addresses from its private data directory configuration. A configured address is masked before events are stored or rendered. Session exports also mask the stored workspace path. File replay reads the exported events without opening a store or starting a runtime.
+
 ## The shared computer
 
 Grok Bot’s published design gives a user one persistent cloud computer. The bots share files and browser state, have individual screens, and can hand tasks to another bot in a group. Its primary bot can create specialists. Each responding bot consumes usage. These are product behaviors described by xAI. Its internal prompts and scheduling algorithms are proprietary. [How Grok Bot works](https://docs.x.ai/grok-bot/how-grok-bot-works) · [Shared computer](https://docs.x.ai/grok-bot/computer-and-apps) · [Group messaging](https://docs.x.ai/grok-bot/chat-and-collaboration)
