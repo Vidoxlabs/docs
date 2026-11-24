@@ -11,6 +11,6 @@ This index is written by the sync run. Each repository below is copied verbatim 
 | [drosera](https://github.com/Vidoxlabs/drosera) | `a760ba0` | 2026-11-24 | 14 |
 | [trellis](https://github.com/Vidoxlabs/trellis) | `eaabdd5` | 2026-11-24 | 21 |
 | [bloom](https://github.com/Vidoxlabs/bloom) | `db52ad4` | 2026-11-24 | 19 |
-| [videsign](https://github.com/Vidoxlabs/videsign) | `d887940` | 2026-11-23 | 3 |
+| [videsign](https://github.com/Vidoxlabs/videsign) | `c5f89a7` | 2026-11-24 | 3 |
 
-Run: 2026-11-24T05:12:21.234Z
+Run: 2026-11-24T06:42:22.486Z
