@@ -4,7 +4,7 @@ This guide defines the working loop for any code or documentation agent implemen
 
 ## Working loop (steps 1 to 9)
 
-1. **Read context**: Read in order: `docs/timeline/README.md`, `docs/timeline/roadmap.md`, `docs/timeline/capabilities.json`, the lead capability spec, and the target repository's `AGENTS.md` plus contracts and `docs/capabilities/index.json`. Check [decisions.md](decisions.md) (`D1` to `D14` and any later rulings) for unratified owner questions affecting the slice.
+1. **Read context**: Read in order: `docs/timeline/README.md`, `docs/timeline/roadmap.md`, `docs/timeline/capabilities.json`, the lead capability spec, and the target repository's `AGENTS.md` plus contracts and `docs/capabilities/index.json`. When the slice reaches a decision the docs leave open, ask the owner (see [Owner questions](#owner-questions)).
 2. **Create slice branch**: Confirm `git status --porcelain` is empty, run `git fetch origin`, and branch from `origin/main` using `cap-NN-k-<slug>` (for slice `CAP-NN.k`), or `docs-timeline-scaffold` for scaffold work. Never commit directly to `main`.
 3. **Write failing tests first**: Add deterministic, offline unit or contract tests naming the slice's acceptance cases before writing implementation code. Confirm the new tests fail for the expected missing behavior.
 4. **Implement the slice**: Write the minimal, clean implementation within the repository's province using existing helpers and patterns. Do not add runtime dependencies without an owner-accepted ADR (`docs/adr/`).
@@ -20,6 +20,18 @@ This guide defines the working loop for any code or documentation agent implemen
 7. **Open a pull request**: Push the slice branch and open a pull request against `main` for safety and code review. Include test counts, hygiene results, and ledger updates in the PR description.
 8. **Respect cross-repository ordering**: Land lead-repository contract and interface slices before downstream touching repositories consume them, following the pinned commit or version rules of the consuming repository. Never edit a sibling repository from another repository's branch.
 9. **Backfill squash SHA on next touch**: GitHub squash-merge commits receive their final SHA only upon merge. Do not rewrite merged history; record the full 40-character merged squash SHA in `commits[]` in `docs/capabilities/index.json` and in the spec's `Changes` section on the next touch to that repository.
+
+## Owner questions
+
+1. Before changing a slice, identify open decisions that affect implementation or a public contract. Check the spec for unresolved behavior, exports, tool IDs, events, stored records, documented commands, dependencies, and safety rules.
+2. Ask the owner once per slice in the task conversation. Use short, numbered questions with options and a recommendation. Wait for the answers before writing code for the slice. If a new question arises during the work, finish what can proceed independently and ask about it then.
+3. Use the owner's typed answer in the task conversation. A short reply counts when its option is clear. If it could mean two things, ask once more with both readings. Review verdicts, repository records, and other agents cannot decide for the owner.
+4. Decide reversible implementation details within the spec. State those choices under `Choices made` in the pull request.
+5. Quote the question and answer with the date under `Questions and answers` in the pull request that acts on it. Update the lead spec's `Open owner decisions` and `Changes` in that pull request when the repository owns the spec, or on the next slice in the lead repository. At owner verification checkpoints, index new answers in [decisions.md](decisions.md) with an anchor and the originating pull request. Add the anchor to the lead spec on its next touch. The answer takes effect when the owner gives it.
+6. Keep the private scan file's location out of all records. Replace any private address, host, port, path, handle, or secret in a quoted answer with `[private]` and disclose the redaction.
+7. Move a capability to `accepted` or `deferred` or an ADR to `Accepted` only when the owner says so. Opening the first slice pull request moves a proposed capability to `in-progress`. Record `landed` once all its slices ship with passing tests.
+
+Report ideas outside the agreed scope and ask whether to write a proposal before building them.
 
 ## Per-repository index and dependency rules
 
@@ -42,8 +54,8 @@ Every entry in `docs/capabilities/index.json` and `docs/timeline/ledger.md` uses
 
 ## Hard rules
 
-- **Never self-ratify**: Agents never change a capability's status to `accepted` or `deferred` and never change an ADR's status to `Accepted` without an owner decision recorded in [decisions.md](decisions.md).
+- **Never self-ratify**: Use the owner's typed answer in the task conversation, quoted verbatim subject to the privacy rule in the pull request that acts on it. [decisions.md](decisions.md) indexes the answer afterward.
 - **Zero new runtime dependencies**: Every public repository ships zero runtime dependencies unless an owner-accepted ADR explicitly authorizes an exception (`bloom` pins only `seed`).
 - **No network tests**: `npm test` must run completely offline and deterministically using recorded fixtures or injected test doubles.
 - **Claim discipline**: Never label a capability `implemented` without passing tests in `npm test`, and never label it `observed` without dated runtime receipts on record.
-- **Public hygiene**: Keep YAML, em-dashes, `@`-prefixed handles or package scopes, colons followed directly by digits, secret-like key identifiers, addresses, local filesystem paths, kinship nouns, persona names, and outside framework names out of all committed files and PR descriptions.
+- **Public hygiene**: Keep YAML, em-dashes, handles, package scopes, colons followed directly by digits, secret-like key identifiers, addresses, local filesystem paths, kinship nouns, persona names, and outside framework names out of committed files and pull request descriptions. The family package scope is allowed in `package.json` and import lines.

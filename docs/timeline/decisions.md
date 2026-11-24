@@ -1,6 +1,6 @@
 # Owner decisions
 
-This log records owner rulings that ratify proposals, move capabilities to `accepted` or `deferred`, accept Architecture Decision Records, or resolve cross-repository design questions. Agents never self-ratify entries here.
+This log indexes answers already given under [Owner questions](agent-guide.md#owner-questions), including decisions that ratify proposals, change capability status, accept Architecture Decision Records, or resolve cross-repository design questions. Agents never self-ratify entries here.
 
 ## Recording format
 
@@ -9,8 +9,8 @@ Every ratified entry uses these fields in order:
 - **Anchor**: `D-YYYYMMDD-NN` (unique heading anchor, for example `### D-20261124-01`)
 - **Date**: `YYYY-MM-DD`
 - **Scope**: Capability IDs, proposal IDs, or ADR numbers governed by the ruling
-- **Decision**: One plain sentence stating what the owner decided
-- **Attribution**: Exact sentence `Recorded from the owner's message in the task that opened this PR.`
+- **Decision**: The owner's answer quoted from the pull request that acted on it, with private details redacted
+- **Attribution**: Exact sentence `Quoted from the owner's answer recorded in <repo>#<n>.`
 
 Public safety rules for entries:
 
