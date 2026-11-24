@@ -1,3 +1,10 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/docs-banner-dark.svg">
+  <img src=".github/assets/docs-banner.svg" alt="Docs banner: a leaf that also reads as a page, and the tagline The documentation hub." width="1280">
+</picture>
+
+The documentation hub
+
 # Docs
 
 Documentation hub for the Vidoxlabs agent family. Pages are written here, and every public repository's documentation lands here verbatim through a scheduled sync: one source of truth upstream, one place to read and render it all.
@@ -57,3 +64,5 @@ No runtime dependencies. Node 22.13 or newer.
 ## License
 
 [MIT](LICENSE)
+
+The Vidoxlabs name and mark are trademarks of Vidoxlabs LLC. They are not covered by this repository's MIT license.
