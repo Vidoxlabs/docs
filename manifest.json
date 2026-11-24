@@ -1,16 +1,26 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-23T03:59:19.908Z",
+  "generatedAt": "2026-11-24T04:42:20.610Z",
   "sources": {
     "seed": {
       "name": "seed",
-      "head": "7c0cdae3779a5b55aebabe1b055df4978e85962e",
-      "syncedAt": "2026-11-23T02:42:22.226Z",
+      "head": "d9c6f7db5ef00c8122030141749cf34808cf3d33",
+      "syncedAt": "2026-11-24T04:42:19.801Z",
       "files": [
         {
           "path": "README.md",
           "sha256": "bf104cf878376f38c590fa83a3a4ce949bb9cece16448935323fc6fb1750496d",
           "bytes": 4596
+        },
+        {
+          "path": "docs/CHANGELOG.md",
+          "sha256": "07f1483b1e2641f4534c57a0241899373de60683f7fb59888b5ee1e997675f5b",
+          "bytes": 439
+        },
+        {
+          "path": "docs/adr/README.md",
+          "sha256": "7101692445b13a44366d502e111de144d117dc5178a6b595c094982601850474",
+          "bytes": 547
         },
         {
           "path": "docs/architecture.md",
@@ -21,6 +31,46 @@
           "path": "docs/bloom-interop.md",
           "sha256": "073339d2179e36c816b7268d04888abbcf0e2e4c3b61d387fd33bd84873ab6bc",
           "bytes": 4557
+        },
+        {
+          "path": "docs/capabilities/CAP-03-typed-tool-input-output.md",
+          "sha256": "cbd9a9cdaa4425a7faf77154029bbdcfef777a8cc21238865544091905591f31",
+          "bytes": 7989
+        },
+        {
+          "path": "docs/capabilities/CAP-06-tool-call-approval-decisions.md",
+          "sha256": "b607e52c0f0a34015be7c437fed21821d48dc1eb1e77b4876efeb21081aee948",
+          "bytes": 9782
+        },
+        {
+          "path": "docs/capabilities/CAP-12-step-graph-checkpoints-interrupts.md",
+          "sha256": "c07d30f4cdeab9db4e709a0a269c2a655ba472516ab35abca3312bc4a9e81fe2",
+          "bytes": 8654
+        },
+        {
+          "path": "docs/capabilities/CAP-13-durable-run-store-conformance.md",
+          "sha256": "d9cc6398dd137b1887d8718fcf1616858e4faa569eebbf071b20d7681d020032",
+          "bytes": 6758
+        },
+        {
+          "path": "docs/capabilities/CAP-16-provider-conformance-model-profiles.md",
+          "sha256": "8aabf6efe40631f0f25640ae25751c07c9d05b57b1d9bf2d8e32a51703b98299",
+          "bytes": 6934
+        },
+        {
+          "path": "docs/capabilities/CAP-17-sandbox-scopes.md",
+          "sha256": "06f8bfdf8f748364f2216860d0b07252811b88578513e4dd550c7e2341376173",
+          "bytes": 6002
+        },
+        {
+          "path": "docs/capabilities/README.md",
+          "sha256": "d4e20feff9c91ab0faa427fc179dca26b4de77450cb3cc0a1547ea8187017255",
+          "bytes": 545
+        },
+        {
+          "path": "docs/capabilities/index.json",
+          "sha256": "3395049a3d9bc61318133219b3803964d76610d477d6a6d76373f162886a5ec0",
+          "bytes": 10294
         },
         {
           "path": "docs/charter.md",
@@ -49,15 +99,15 @@
         },
         {
           "path": "docs/roadmap.md",
-          "sha256": "709069472b124c124c8e6d6d029b30283c440680a2062ca3185c850caf5e410f",
-          "bytes": 2068
+          "sha256": "bd793c871a7557412018a2e4c770a069a136f443a1c2387e79448bfa7fe1d4b5",
+          "bytes": 3562
         }
       ]
     },
     "capillary": {
       "name": "capillary",
-      "head": "a9f05549b706c2924d85994bd5bb3e5cf403f5c9",
-      "syncedAt": "2026-11-22T22:42:18.538Z",
+      "head": "4abadfac454ac50a4f0403a3c206f0eaa1b35ae0",
+      "syncedAt": "2026-11-24T04:42:19.928Z",
       "files": [
         {
           "path": "README.md",
@@ -65,9 +115,39 @@
           "bytes": 3944
         },
         {
+          "path": "docs/CHANGELOG.md",
+          "sha256": "39a49a3c5098c37fcf7eb2d4c99467a7132f869a1b5fbdd89763b3642d7ec6d0",
+          "bytes": 534
+        },
+        {
+          "path": "docs/adr/README.md",
+          "sha256": "f97fec3fcf5c874706a3d8076920f997cdbabd9438145c9914b3393f82f1f27a",
+          "bytes": 568
+        },
+        {
           "path": "docs/architecture.md",
           "sha256": "d85159a48be74a75e6351ab5c6007e1faaedf979ab80920d834db134421017b0",
           "bytes": 3222
+        },
+        {
+          "path": "docs/capabilities/CAP-05-codebase-context-packer.md",
+          "sha256": "08918cc4a30b52450da80927a8f3b08ed55799850c0ef058f821c09a0406128d",
+          "bytes": 16273
+        },
+        {
+          "path": "docs/capabilities/CAP-18-symbol-outline-packed-context.md",
+          "sha256": "a79dcbee61148baf051593122eeb4b95db04b11109c5f4ad5e5c52153c34a7e7",
+          "bytes": 6034
+        },
+        {
+          "path": "docs/capabilities/README.md",
+          "sha256": "2243c1d27b24f659aa6e2917a12c403270b5c4644f8dbcba78fd13c052327681",
+          "bytes": 546
+        },
+        {
+          "path": "docs/capabilities/index.json",
+          "sha256": "55d1e8a827c4a7dad95e731f3ec4a3b2ede7c918ac647bd12f4269a1fc12de59",
+          "bytes": 5491
         },
         {
           "path": "docs/charter.md",
@@ -98,8 +178,8 @@
     },
     "myosotis": {
       "name": "myosotis",
-      "head": "79d09383304cf14c89387a5dc335a2ef664ca83e",
-      "syncedAt": "2026-11-23T02:42:22.367Z",
+      "head": "74e78a2a235c83cc64a53ac908c6b8d4fe6bddcf",
+      "syncedAt": "2026-11-24T04:42:20.061Z",
       "files": [
         {
           "path": "README.md",
@@ -107,9 +187,34 @@
           "bytes": 4454
         },
         {
+          "path": "docs/CHANGELOG.md",
+          "sha256": "90e5424cd45f4cc7922b02d4f00ec758f649176966affff9c8b8000c81312701",
+          "bytes": 410
+        },
+        {
+          "path": "docs/adr/README.md",
+          "sha256": "cee542fe49027cf2297b6cec5b184ca8ce4f693c979e0ac459712303b7461516",
+          "bytes": 639
+        },
+        {
           "path": "docs/architecture.md",
           "sha256": "fec7119a00df2428e232783d339e71453c7b92794c84b50d51e924201f7de74e",
           "bytes": 4074
+        },
+        {
+          "path": "docs/capabilities/CAP-11-memory-integration.md",
+          "sha256": "4eb7df94ea818b803d843616fa346391e9b829ffab0a81c51bb628e6582c354a",
+          "bytes": 7996
+        },
+        {
+          "path": "docs/capabilities/README.md",
+          "sha256": "faa50ae324d2bf5a9d773c7361f5c53c03f3efc163338b5ef079869f847c9859",
+          "bytes": 522
+        },
+        {
+          "path": "docs/capabilities/index.json",
+          "sha256": "6598c3466cd19c24d43191e9ab7269295a0bc13e8417b4c2a51087de977a75a6",
+          "bytes": 2364
         },
         {
           "path": "docs/charter.md",
@@ -145,8 +250,8 @@
     },
     "aestivation": {
       "name": "aestivation",
-      "head": "b85cf91f7a1ad99ce2ffbd6c88a520a7b91a7ddc",
-      "syncedAt": "2026-11-22T21:10:41.374Z",
+      "head": "09588de791e1b870d2dfe83e359996de947c2949",
+      "syncedAt": "2026-11-24T04:42:20.179Z",
       "files": [
         {
           "path": "README.md",
@@ -154,9 +259,34 @@
           "bytes": 4263
         },
         {
+          "path": "docs/CHANGELOG.md",
+          "sha256": "2a81d870bb989cdac6e06f5e37fa2484e5d4fc68b500a6db94223002a7e6f31e",
+          "bytes": 405
+        },
+        {
+          "path": "docs/adr/README.md",
+          "sha256": "ab4cec00fa12762fbe7be8c072a174148b2e44997bca33a22b91063ce438cdfe",
+          "bytes": 642
+        },
+        {
           "path": "docs/architecture.md",
           "sha256": "f39bcbc14b86695d30c998841348dc1d5ae467cd6e148b3e7f670dd351f0ae71",
           "bytes": 3851
+        },
+        {
+          "path": "docs/capabilities/CAP-07-plan-review-approval-loop.md",
+          "sha256": "0a07a2fd087728e9255ac91072782c9d1a91857c2be4bbb6718bfc83f7b93d78",
+          "bytes": 8675
+        },
+        {
+          "path": "docs/capabilities/README.md",
+          "sha256": "0ec841feee64e2e03d0f3f3fc78e5e18462c637bddbde151e104a4cf8e03c15d",
+          "bytes": 525
+        },
+        {
+          "path": "docs/capabilities/index.json",
+          "sha256": "ef5357839eb559f451af7d4181cd45504c0fac6260c96e8749eec96b5c56deb2",
+          "bytes": 2896
         },
         {
           "path": "docs/charter.md",
@@ -187,8 +317,8 @@
     },
     "drosera": {
       "name": "drosera",
-      "head": "d05aff04e2cfe464121f469af6d23af89a11add9",
-      "syncedAt": "2026-11-23T02:42:22.515Z",
+      "head": "a760ba065c5b2fd78cebbbbd0a6c15ecbf2d1072",
+      "syncedAt": "2026-11-24T04:42:20.296Z",
       "files": [
         {
           "path": "README.md",
@@ -196,9 +326,39 @@
           "bytes": 3532
         },
         {
+          "path": "docs/CHANGELOG.md",
+          "sha256": "ad35fbe72782f5a9f5936881702c0f8f401984908646bf58123a52828b43952f",
+          "bytes": 494
+        },
+        {
+          "path": "docs/adr/README.md",
+          "sha256": "602537ab131655001aae511d4785bdb5cf2298b9608e514fac5084e7ddca6992",
+          "bytes": 633
+        },
+        {
           "path": "docs/architecture.md",
           "sha256": "9063b8f32607ba1a8401ac618597a91d7fe446666c1da14975599338c4f82bbe",
           "bytes": 5461
+        },
+        {
+          "path": "docs/capabilities/CAP-09-run-guards-hook-chain.md",
+          "sha256": "5dec4e41515cf0e5510b192b05f43bb75e43c86b7a39d7c55a6759f254924fdb",
+          "bytes": 9659
+        },
+        {
+          "path": "docs/capabilities/CAP-19-skill-safety-scan.md",
+          "sha256": "7f624356dbdc82643a0d7b4e6b4421b436feae8b7173e31ad042484015457568",
+          "bytes": 8540
+        },
+        {
+          "path": "docs/capabilities/README.md",
+          "sha256": "73e77b72d9617de6dbe2500b6e128a6634a139cf5587df355df0cf663dce5409",
+          "bytes": 434
+        },
+        {
+          "path": "docs/capabilities/index.json",
+          "sha256": "5a43f469e3658a4befa9bdc012c26ac946ac6ecb2a02f84fb17af7ad41b0417c",
+          "bytes": 6821
         },
         {
           "path": "docs/charter.md",
@@ -234,8 +394,8 @@
     },
     "trellis": {
       "name": "trellis",
-      "head": "369e590970847b4642c0da26af90ddfeaaa13462",
-      "syncedAt": "2026-11-23T03:12:17.794Z",
+      "head": "eaabdd5cc030e60cc00e1645dabd8032deaeaa4f",
+      "syncedAt": "2026-11-24T04:42:20.407Z",
       "files": [
         {
           "path": "README.md",
@@ -243,9 +403,29 @@
           "bytes": 4274
         },
         {
+          "path": "docs/CHANGELOG.md",
+          "sha256": "c332d241ab4f2d05a802cba1069e91185a573ac5f687c82909cd0b8f6402b933",
+          "bytes": 388
+        },
+        {
+          "path": "docs/adr/README.md",
+          "sha256": "ba581c2c653ebb9df6594f92a8db388d12eea4491f286e147beaacce245520e8",
+          "bytes": 638
+        },
+        {
           "path": "docs/architecture.md",
           "sha256": "5c9e0341504f1c5cc2ce0a38176e8c8a22c72d9ac43baa9ac0f0ae5a5d6b6e4d",
           "bytes": 3971
+        },
+        {
+          "path": "docs/capabilities/README.md",
+          "sha256": "6074e83191305d54f9e39cf8057a2aac424483ae4d22cb9bcdf89015cada35b8",
+          "bytes": 606
+        },
+        {
+          "path": "docs/capabilities/index.json",
+          "sha256": "5da34043fc95a1a51cd2741a80acd2e08f9c6fc826bf06b156b5948e6825e3db",
+          "bytes": 4243
         },
         {
           "path": "docs/charter.md",
@@ -326,13 +506,23 @@
     },
     "bloom": {
       "name": "bloom",
-      "head": "eaf8ea22a37d67993cb678db39a0b5e3cdcc9539",
-      "syncedAt": "2026-11-23T03:12:17.914Z",
+      "head": "6b18f87cc29fb910163d42f8f66d020ceb414bad",
+      "syncedAt": "2026-11-24T04:42:20.604Z",
       "files": [
         {
           "path": "README.md",
           "sha256": "9a7662847499d6e11798a6ee8f56a5e8f5c7064b1147f20e67408dc02c396ae3",
           "bytes": 7793
+        },
+        {
+          "path": "docs/CHANGELOG.md",
+          "sha256": "36eef144feb0555a7202208edb2311130fd01516fa39fc396c296b90b299df6f",
+          "bytes": 259
+        },
+        {
+          "path": "docs/adr/README.md",
+          "sha256": "704b658475d265da6d53bc10b592ddb0c6716316d54b02d8101ad66fd91ad65c",
+          "bytes": 678
         },
         {
           "path": "docs/architecture.md",
@@ -358,6 +548,41 @@
           "path": "docs/backend/research/implementability-review.md",
           "sha256": "2b3d454bbcc728e8f23f6ebb45c0c6daebe5673330701ce860d494f7eee75397",
           "bytes": 21225
+        },
+        {
+          "path": "docs/capabilities/CAP-04-workspace-tools-coding-loop.md",
+          "sha256": "e3e973c342769c0ac54a9976568a49299bbf0f1f4faaa9e0093017c88c06ffac",
+          "bytes": 6551
+        },
+        {
+          "path": "docs/capabilities/CAP-08-seat-orchestration.md",
+          "sha256": "b3baa8b7a606e2eaba8c47ee6efcc04a3fddccc9397453e259903df93b10b28b",
+          "bytes": 6916
+        },
+        {
+          "path": "docs/capabilities/CAP-10-trace-observability.md",
+          "sha256": "0fb3659c6ca1f10ebf35eb0847b72544d5db8752ba083da6e6f9ea15b7a2c403",
+          "bytes": 6013
+        },
+        {
+          "path": "docs/capabilities/CAP-14-eval-harness.md",
+          "sha256": "c8b520aba8323a14f3fa72c69a10692d2f733562c9df58af90db36093505f8df",
+          "bytes": 5906
+        },
+        {
+          "path": "docs/capabilities/CAP-15-research-flow.md",
+          "sha256": "cc6469111366f93f054bc5ab2323384bfe6d7cf6fb04ed14219682c8934233be",
+          "bytes": 6117
+        },
+        {
+          "path": "docs/capabilities/README.md",
+          "sha256": "ff43ba537b98b2197e3ef427e7b27f77b33cb94ecb0ea0a6140aa9242be7ab19",
+          "bytes": 527
+        },
+        {
+          "path": "docs/capabilities/index.json",
+          "sha256": "14a8c43d7e4ee02436e87acab8d1581cf8e2c97af5816223510a0a75f2843bb4",
+          "bytes": 13849
         },
         {
           "path": "docs/ui/README.md",

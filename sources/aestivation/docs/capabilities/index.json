@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "repo": "aestivation",
+  "entries": [
+    {
+      "id": "CAP-01",
+      "role": "touches",
+      "status": "in-progress",
+      "claim": "planned",
+      "spec": "docs/docs/capabilities/CAP-01-development-timeline-ledger.md",
+      "slices": [
+        {
+          "id": "CAP-01.5",
+          "title": "Aestivation capability docs and plan loop spec",
+          "milestone": "M0",
+          "status": "in-progress"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [],
+      "tests": [],
+      "prs": [
+        "aestivation#1"
+      ],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-02",
+      "role": "touches",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "docs/docs/capabilities/CAP-02-docs-freshness-check.md",
+      "slices": [
+        {
+          "id": "CAP-02.5",
+          "title": "Self-test test/capabilities.test.mjs in aestivation",
+          "milestone": "M2",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-07",
+      "role": "lead",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "docs/capabilities/CAP-07-plan-review-approval-loop.md",
+      "slices": [
+        {
+          "id": "CAP-07.1",
+          "title": "Plan payload extensions, clarifying question hold, and step status machine",
+          "milestone": "M3",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-07.2",
+          "title": "Revision cap and separation of review verdict from owner approval",
+          "milestone": "M3",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-07.4",
+          "title": "Plan review loop wiring and plan events",
+          "milestone": "M3",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [
+        "docs/contracts/plan.md",
+        "docs/contracts/verdict.md",
+        "docs/contracts/gate.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-15",
+      "role": "touches",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "bloom/docs/capabilities/CAP-15-research-flow.md",
+      "slices": [
+        {
+          "id": "CAP-15.2",
+          "title": "Typed research plan steps and step/revision caps",
+          "milestone": "M8",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [
+        "docs/contracts/plan.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    }
+  ]
+}

@@ -1,0 +1,545 @@
+{
+  "version": 1,
+  "repo": "bloom",
+  "entries": [
+    {
+      "id": "CAP-01",
+      "role": "touches",
+      "status": "in-progress",
+      "claim": "planned",
+      "spec": "docs/docs/capabilities/CAP-01-development-timeline-ledger.md",
+      "slices": [
+        {
+          "id": "CAP-01.8",
+          "title": "Bloom capability docs and workspace/orchestration specs",
+          "milestone": "M0",
+          "status": "in-progress"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [],
+      "tests": [],
+      "prs": [
+        "bloom#2"
+      ],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-02",
+      "role": "touches",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "docs/docs/capabilities/CAP-02-docs-freshness-check.md",
+      "slices": [
+        {
+          "id": "CAP-02.8",
+          "title": "Self-test test/capabilities.test.mjs in bloom",
+          "milestone": "M2",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-03",
+      "role": "touches",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "seed/docs/capabilities/CAP-03-typed-tool-input-output.md",
+      "slices": [
+        {
+          "id": "CAP-03.3",
+          "title": "Pre-dispatch input validation, single repair turn, and output validation",
+          "milestone": "M2",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [
+        "docs/architecture.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-04",
+      "role": "lead",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "docs/capabilities/CAP-04-workspace-tools-coding-loop.md",
+      "slices": [
+        {
+          "id": "CAP-04.1",
+          "title": "Drosera workspace and finish tool faces pack and recipe",
+          "milestone": "M2",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-04.2",
+          "title": "Workspace root path containment, write serialization, capped digest output",
+          "milestone": "M2",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-04.3",
+          "title": "Coding loop integration with workspace tools and finish action",
+          "milestone": "M2",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [
+        "workspace.file.read",
+        "workspace.dir.list",
+        "workspace.text.search",
+        "workspace.file.write",
+        "workspace.file.update",
+        "workspace.shell.execute",
+        "run.answer.create"
+      ],
+      "contracts": [
+        "docs/architecture.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-05",
+      "role": "touches",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "capillary/docs/capabilities/CAP-05-codebase-context-packer.md",
+      "slices": [
+        {
+          "id": "CAP-05.5",
+          "title": "Workspace file walker, read-only git context executor, and bloom pack CLI",
+          "milestone": "M3",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-05.6",
+          "title": "Coding loop context-step integration and context.packet event",
+          "milestone": "M3",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [
+        "docs/architecture.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-06",
+      "role": "touches",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "seed/docs/capabilities/CAP-06-tool-call-approval-decisions.md",
+      "slices": [
+        {
+          "id": "CAP-06.4",
+          "title": "Approval UI/CLI flow, edit and respond handling, and permission events",
+          "milestone": "M4",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [
+        "docs/architecture.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-07",
+      "role": "touches",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "aestivation/docs/capabilities/CAP-07-plan-review-approval-loop.md",
+      "slices": [
+        {
+          "id": "CAP-07.4",
+          "title": "Plan review loop wiring and plan events",
+          "milestone": "M3",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [
+        "docs/architecture.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-08",
+      "role": "lead",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "docs/capabilities/CAP-08-seat-orchestration.md",
+      "slices": [
+        {
+          "id": "CAP-08.1",
+          "title": "Seed declarative team document validation checks",
+          "milestone": "M3",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-08.2",
+          "title": "Declarative seats data, role IDs, and deterministic verifier handoff",
+          "milestone": "M3",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-08.3",
+          "title": "Bounded parallel fan-out with timeout, tool subset, and plan-order merge",
+          "milestone": "M3",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [
+        "docs/architecture.md",
+        "docs/backend/agent-runtime.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-09",
+      "role": "touches",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "drosera/docs/capabilities/CAP-09-run-guards-hook-chain.md",
+      "slices": [
+        {
+          "id": "CAP-09.3",
+          "title": "Ordered guard hook chain in run loop",
+          "milestone": "M3",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [
+        "docs/architecture.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-10",
+      "role": "lead",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "docs/capabilities/CAP-10-trace-observability.md",
+      "slices": [
+        {
+          "id": "CAP-10.1",
+          "title": "Seed correlation IDs on run trace records",
+          "milestone": "M4",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-10.2",
+          "title": "Unified append-only typed event stream and four renderer views",
+          "milestone": "M4",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-10.3",
+          "title": "Trace replay command, HTML export, digest redaction, and per-seat usage",
+          "milestone": "M4",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [
+        "docs/architecture.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-11",
+      "role": "touches",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "myosotis/docs/capabilities/CAP-11-memory-integration.md",
+      "slices": [
+        {
+          "id": "CAP-11.3",
+          "title": "Thread continuity, consent enforcement, and digest-only trace logging",
+          "milestone": "M3",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [
+        "docs/architecture.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-12",
+      "role": "touches",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "seed/docs/capabilities/CAP-12-step-graph-checkpoints-interrupts.md",
+      "slices": [
+        {
+          "id": "CAP-12.3",
+          "title": "Step graph runtime execution, checkpoint tools, and interrupt resume",
+          "milestone": "M7",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [
+        "docs/architecture.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-13",
+      "role": "touches",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "seed/docs/capabilities/CAP-13-durable-run-store-conformance.md",
+      "slices": [
+        {
+          "id": "CAP-13.2",
+          "title": "SQLite durable run store passing conformance suite",
+          "milestone": "M7",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [
+        "docs/architecture.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-14",
+      "role": "lead",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "docs/capabilities/CAP-14-eval-harness.md",
+      "slices": [
+        {
+          "id": "CAP-14.1",
+          "title": "Seed scripted and function model test doubles",
+          "milestone": "M5",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-14.2",
+          "title": "Smoke eval dataset, deterministic evaluators, and smoke command",
+          "milestone": "M5",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-14.3",
+          "title": "Full eval suite, labeled judge option, and baseline diff reports",
+          "milestone": "M8",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-14.4",
+          "title": "Trellis eval harness consistency and determinism probes",
+          "milestone": "M8",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [
+        "eval.suite.execute"
+      ],
+      "contracts": [
+        "docs/architecture.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-15",
+      "role": "lead",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "docs/capabilities/CAP-15-research-flow.md",
+      "slices": [
+        {
+          "id": "CAP-15.1",
+          "title": "Drosera research source search face",
+          "milestone": "M8",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-15.2",
+          "title": "Aestivation typed research plan steps and caps",
+          "milestone": "M8",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-15.3",
+          "title": "Capillary cited source attachment and uncited-claim flagging",
+          "milestone": "M8",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-15.4",
+          "title": "Coordinator research routing, scan, gated search, and cited reporter",
+          "milestone": "M8",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [
+        "research.source.search"
+      ],
+      "contracts": [
+        "docs/architecture.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-16",
+      "role": "touches",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "seed/docs/capabilities/CAP-16-provider-conformance-model-profiles.md",
+      "slices": [
+        {
+          "id": "CAP-16.3",
+          "title": "Doctor probe model profile and profile-driven prompts and budgets",
+          "milestone": "M4",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [
+        "docs/architecture.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-17",
+      "role": "touches",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "seed/docs/capabilities/CAP-17-sandbox-scopes.md",
+      "slices": [
+        {
+          "id": "CAP-17.2",
+          "title": "Workspace root enforcement and effect scope checks",
+          "milestone": "M9",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [
+        "docs/architecture.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-18",
+      "role": "touches",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "capillary/docs/capabilities/CAP-18-symbol-outline-packed-context.md",
+      "slices": [
+        {
+          "id": "CAP-18.3",
+          "title": "Symbol outline executor and packer wiring",
+          "milestone": "M8",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [
+        "docs/architecture.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    }
+  ]
+}

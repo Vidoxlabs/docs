@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "repo": "capillary",
+  "entries": [
+    {
+      "id": "CAP-01",
+      "role": "touches",
+      "status": "in-progress",
+      "claim": "planned",
+      "spec": "docs/docs/capabilities/CAP-01-development-timeline-ledger.md",
+      "slices": [
+        {
+          "id": "CAP-01.3",
+          "title": "Capillary capability docs and packer spec",
+          "milestone": "M0",
+          "status": "in-progress"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [],
+      "tests": [],
+      "prs": [
+        "capillary#1"
+      ],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-02",
+      "role": "touches",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "docs/docs/capabilities/CAP-02-docs-freshness-check.md",
+      "slices": [
+        {
+          "id": "CAP-02.3",
+          "title": "Self-test test/capabilities.test.mjs in capillary",
+          "milestone": "M2",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-05",
+      "role": "lead",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "docs/capabilities/CAP-05-codebase-context-packer.md",
+      "slices": [
+        {
+          "id": "CAP-05.1",
+          "title": "Selection engine: globs, ignore rules, deny list, overrides, binary sniff",
+          "milestone": "M2",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-05.2",
+          "title": "Ordering, tree render, format-aware readers, budget, and token map",
+          "milestone": "M2",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-05.3",
+          "title": "Render formats, placeholder template, untrusted envelope, and packet output",
+          "milestone": "M2",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-05.4",
+          "title": "Packer tool faces, map-first exploration skill, and recipe",
+          "milestone": "M2",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-05.5",
+          "title": "Workspace file walker, read-only git context executor, and bloom pack CLI",
+          "milestone": "M3",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-05.6",
+          "title": "Coding loop context-step integration and context.packet event",
+          "milestone": "M3",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-05.7",
+          "title": "Packer behavior and determinism probes",
+          "milestone": "M3",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [
+        "workspace.tree.list",
+        "context.repo.pack.read",
+        "context.budget.verify",
+        "vcs.repo.diff.read",
+        "vcs.repo.log.read"
+      ],
+      "contracts": [
+        "docs/contracts/retrieval.md",
+        "docs/contracts/relations.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-11",
+      "role": "touches",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "myosotis/docs/capabilities/CAP-11-memory-integration.md",
+      "slices": [
+        {
+          "id": "CAP-11.2",
+          "title": "Epoch-guarded packet integration with typed memory kinds and provenance",
+          "milestone": "M3",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [
+        "docs/contracts/retrieval.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-15",
+      "role": "touches",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "bloom/docs/capabilities/CAP-15-research-flow.md",
+      "slices": [
+        {
+          "id": "CAP-15.3",
+          "title": "Cited source attachment and uncited-claim flagging",
+          "milestone": "M8",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [],
+      "contracts": [
+        "docs/contracts/retrieval.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "CAP-18",
+      "role": "lead",
+      "status": "proposed",
+      "claim": "planned",
+      "spec": "docs/capabilities/CAP-18-symbol-outline-packed-context.md",
+      "slices": [
+        {
+          "id": "CAP-18.1",
+          "title": "Zero-dependency JS, Markdown, and JSON symbol outline parser and unknown fallback",
+          "milestone": "M8",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-18.2",
+          "title": "Outline reader tool face definition and schema",
+          "milestone": "M8",
+          "status": "proposed"
+        },
+        {
+          "id": "CAP-18.3",
+          "title": "Symbol outline executor and packer wiring",
+          "milestone": "M8",
+          "status": "proposed"
+        }
+      ],
+      "toolIds": [
+        "workspace.file.outline.read"
+      ],
+      "contracts": [
+        "docs/contracts/retrieval.md"
+      ],
+      "tests": [],
+      "prs": [],
+      "commits": [],
+      "adr": [],
+      "decision": null,
+      "updated": "2026-11-23"
+    }
+  ]
+}
