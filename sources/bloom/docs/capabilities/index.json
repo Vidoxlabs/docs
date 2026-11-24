@@ -409,8 +409,8 @@
     {
       "id": "CAP-14",
       "role": "lead",
-      "status": "proposed",
-      "claim": "planned",
+      "status": "in-progress",
+      "claim": "specified",
       "spec": "docs/capabilities/CAP-14-eval-harness.md",
       "slices": [
         {
@@ -423,7 +423,7 @@
           "id": "CAP-14.2",
           "title": "Smoke eval dataset, deterministic evaluators, and smoke command",
           "milestone": "M5",
-          "status": "proposed"
+          "status": "landed"
         },
         {
           "id": "CAP-14.3",
@@ -444,12 +444,16 @@
       "contracts": [
         "docs/architecture.md"
       ],
-      "tests": [],
-      "prs": [],
+      "tests": [
+        "test/smoke-eval.test.mjs"
+      ],
+      "prs": [
+        "bloom#16"
+      ],
       "commits": [],
       "adr": [],
       "decision": null,
-      "updated": "2026-11-23"
+      "updated": "2026-11-24"
     },
     {
       "id": "CAP-15",

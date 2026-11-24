@@ -238,10 +238,11 @@ Omit `--check` to update the used properties. A fresh Bloom checkout runs from t
 
 ## Verification
 
-The portable suite exercises the budgets, group handoffs, review hold, restart, deletion fence, file-integrity checks, the chat-completions adapter, the provider seam, the coding-session harness against a scripted runtime, the command gate, the provider probe against a fake server, and the coding loop against a scripted provider and a synthetic project with zero network calls. The hosted checks start a real Bloom listener on Windows, macOS and Linux. A Chromium journey opens a reviewed document and tests a narrow viewport. These checks use synthetic briefs and source files. A hosted, billed generation and a graphical desktop session have distinct verification requirements.
+The portable suite exercises the budgets, group handoffs, review hold, restart, deletion fence, file-integrity checks, the chat-completions adapter, the provider seam, the coding-session harness against a scripted runtime, the command gate, the provider probe against a fake server, the coding loop against a scripted provider and a synthetic project with zero network calls, and the smoke eval over the same synthetic project. The hosted checks start a real Bloom listener on Windows, macOS and Linux. A Chromium journey opens a reviewed document and tests a narrow viewport. These checks use synthetic briefs and source files. A hosted, billed generation and a graphical desktop session have distinct verification requirements.
 
 ## Changes
 
+- 2026-11-24: Run the deterministic coding smoke dataset with `bloom eval --smoke`, which emits case and report events and makes no network call (CAP-14, bloom#16).
 - 2026-11-24: Compare resolved Git metadata paths on Windows and verify the Git command fixture with portable repository configuration (CAP-04, bloom#5).
 
 - 2026-11-24: Harden the command gate and file tools for the coding loop (CAP-04, bloom#5).

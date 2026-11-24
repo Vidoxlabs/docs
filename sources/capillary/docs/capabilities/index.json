@@ -111,12 +111,12 @@
         "docs/contracts/retrieval.md",
         "docs/contracts/relations.md"
       ],
-      "tests": [],
-      "prs": [],
+      "tests": ["test/codebase-context.test.mjs"],
+      "prs": ["capillary#3"],
       "commits": [],
       "adr": [],
       "decision": null,
-      "updated": "2026-11-23"
+      "updated": "2026-11-24"
     },
     {
       "id": "CAP-11",

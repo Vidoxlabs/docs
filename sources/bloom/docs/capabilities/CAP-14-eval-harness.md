@@ -7,8 +7,8 @@
 - Horizon: `next` (`CAP-14.1`, `CAP-14.2` in `M5`; `CAP-14.3`, `CAP-14.4` in `later` `M8`)
 - Milestone: `M5` (`CAP-14.1`, `CAP-14.2` at `M5`; `CAP-14.3`, `CAP-14.4` at `M8`)
 - CLI phase: `P5`
-- Status: `proposed`
-- Claim: `planned`
+- Status: `in-progress`
+- Claim: `specified`
 - Depends on: `CAP-10`
 
 ## Why
@@ -80,13 +80,15 @@ Bloom needs repeatable, deterministic evaluation over coding and team workflows 
 
 ## Open owner decisions
 
+- Decided 2026-11-24 in bloom#16: Should the scripted and pure-function model doubles move to Seed in a later draft PR? I recommend proving them in Bloom first, then upstreaming them. Owner's answer, relayed (owner typed in code-agent chat, not seen by reviewers): "Upstream them later".
 - Baseline report storage path and full-suite dataset curation criteria for `M8` (`CAP-14.3`) remain open for owner guidance; `CAP-14.1` and `CAP-14.2` require no blocking decision.
 
 ## Evidence
 
-- None yet (`claim: planned`).
+- `test/smoke-eval.test.mjs` runs the smoke command twice with a denied transport, checks deterministic assertions, and exercises both fixture provider doubles through Seed.
 
 ## Changes
 
+- 2026-11-24. Add the offline smoke command, six deterministic assertions and case/report events (CAP-14, bloom#16).
 - `2026-11-23`: Added explicit `M5` (`CAP-14.1`, `CAP-14.2`) and `M8` (`CAP-14.3`, `CAP-14.4`) slice milestones.
 - `2026-11-23`: Initial capability specification created in Phase 0 timeline scaffold.

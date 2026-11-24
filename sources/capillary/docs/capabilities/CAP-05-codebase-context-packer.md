@@ -140,9 +140,13 @@ By separating pure selection, ordering, budgeting, and rendering inside `capilla
 
 ## Evidence
 
+- `test/codebase-context.test.mjs` exercises scoped selection, denied inputs, format-aware excerpts, deterministic budgets, and untrusted renderers over caller-supplied bytes.
+
 None yet (`status: proposed`, `claim: planned`). Test outputs, probe receipts, and commit SHAs will be recorded here as slices `CAP-05.1` through `CAP-05.7` land.
 
 ## Changes
+
+- 2026-11-24. Add pure codebase selection, context budgeting, and packet rendering (CAP-05, capillary#3).
 
 - `2026-11-23`: Initial capability specification drafted for `CAP-01` timeline scaffold.
 - `2026-11-23`: Reused `out-of-budget` from `OMISSION_REASONS`, aligned canonical `D5`/`D6`/`D9`/`D10`/`D14` decision references and `CAP-06.1` override reference, and added `M2`/`M3` slice milestones (`CAP-01`, review fixes).

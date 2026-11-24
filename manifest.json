@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-24T14:12:24.174Z",
+  "generatedAt": "2026-11-24T14:42:22.812Z",
   "sources": {
     "seed": {
       "name": "seed",
@@ -106,8 +106,8 @@
     },
     "capillary": {
       "name": "capillary",
-      "head": "4987f28e04b64adf4ae48bdfaf6988c3ee072c0b",
-      "syncedAt": "2026-11-24T14:12:23.197Z",
+      "head": "0caa855cca2780f29d1d11167f4f352ba28ee9f5",
+      "syncedAt": "2026-11-24T14:42:22.567Z",
       "files": [
         {
           "path": "README.md",
@@ -116,8 +116,8 @@
         },
         {
           "path": "docs/CHANGELOG.md",
-          "sha256": "39a49a3c5098c37fcf7eb2d4c99467a7132f869a1b5fbdd89763b3642d7ec6d0",
-          "bytes": 534
+          "sha256": "06762b8a46b8c0f3aa6888ccbd4c069af319f72452e4d3bbf2524bbca272bf7a",
+          "bytes": 677
         },
         {
           "path": "docs/adr/README.md",
@@ -131,8 +131,8 @@
         },
         {
           "path": "docs/capabilities/CAP-05-codebase-context-packer.md",
-          "sha256": "08918cc4a30b52450da80927a8f3b08ed55799850c0ef058f821c09a0406128d",
-          "bytes": 16273
+          "sha256": "fa4e0750bc265132f0ea8ca167c271353e7dadb7489986594398da126f17b366",
+          "bytes": 16557
         },
         {
           "path": "docs/capabilities/CAP-18-symbol-outline-packed-context.md",
@@ -146,8 +146,8 @@
         },
         {
           "path": "docs/capabilities/index.json",
-          "sha256": "55d1e8a827c4a7dad95e731f3ec4a3b2ede7c918ac647bd12f4269a1fc12de59",
-          "bytes": 5491
+          "sha256": "64452f395d7e0204d8c73f079a8a1360ea9716a696a355244808065ea648e2d5",
+          "bytes": 5536
         },
         {
           "path": "docs/charter.md",
@@ -506,18 +506,18 @@
     },
     "bloom": {
       "name": "bloom",
-      "head": "f5b06194c9826e81d86a9df5df4ab4765e91c039",
-      "syncedAt": "2026-11-24T14:12:24.162Z",
+      "head": "4e61cca4ec1d158cd592afcd56a3280489aceedf",
+      "syncedAt": "2026-11-24T14:42:22.807Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "ca380215495b36c39acb4167ea3f48894805aacb64558d3342af746017409a1c",
-          "bytes": 10795
+          "sha256": "2b1ddef19d00ba8700a9cbaa191b93c6d88d8fe94f07ba7597d792f2f75078e6",
+          "bytes": 10915
         },
         {
           "path": "docs/CHANGELOG.md",
-          "sha256": "11a752290155ea75ef754816590d2690d9059256bb8bcaae340c42cf0c863a1c",
-          "bytes": 2627
+          "sha256": "9c1360b8b1529588fa2773e4a147a89afa9c246148a175467b944f16ecc8d788",
+          "bytes": 2891
         },
         {
           "path": "docs/adr/0002-family-peer-imports.md",
@@ -531,8 +531,8 @@
         },
         {
           "path": "docs/architecture.md",
-          "sha256": "724b1060146506454e97e6c19467d98f8c11613463ea07995c37784ecc186ab7",
-          "bytes": 23506
+          "sha256": "5040efd9124e4d87db1ed0015d4fe067b7fefa0c894315606a8753c64edc1bd7",
+          "bytes": 23719
         },
         {
           "path": "docs/backend/README.md",
@@ -571,8 +571,8 @@
         },
         {
           "path": "docs/capabilities/CAP-14-eval-harness.md",
-          "sha256": "c8b520aba8323a14f3fa72c69a10692d2f733562c9df58af90db36093505f8df",
-          "bytes": 5906
+          "sha256": "1d9bf5dba9ff36e9954d5f7af8cd7220b5182b9a32a6a51752f6dfc401373018",
+          "bytes": 6459
         },
         {
           "path": "docs/capabilities/CAP-15-research-flow.md",
@@ -586,8 +586,8 @@
         },
         {
           "path": "docs/capabilities/index.json",
-          "sha256": "c2254e1d4924e495e0edf516de0e8fe5a04a566c6f050796992bf76bb61631e3",
-          "bytes": 14787
+          "sha256": "ec084ac999c6cf6a0051e1d8dd33aa0710db02ef65057730500d11b8db55be0a",
+          "bytes": 14858
         },
         {
           "path": "docs/live-test.md",

@@ -23,6 +23,8 @@ npm run demo
 
 Open **http://127.0.0.1:4317**, choose **Create a team** and give the head agent a name. Use **Add file** to paste some project notes, select **Try a sample task**, and send it. Open the assembler’s file in the group chat. The demo is scripted and requires no key. Its outputs and usage display identify it as a demonstration.
 
+Run `node bin/bloom.mjs eval --smoke` to check the built-in coding fixture offline and print its deterministic report.
+
 ## Connect a model endpoint
 
 Teams and coding sessions run on any service that speaks the chat-completions HTTP API (`POST {base}/chat/completions`). Bloom names no default service. The endpoint lives only in the private `config.json` in Bloom's data directory, described under **Terminal commands** below, and neither the web workspace nor the terminal takes it on the command line.
