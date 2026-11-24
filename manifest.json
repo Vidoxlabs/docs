@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-24T07:12:23.782Z",
+  "generatedAt": "2026-11-24T09:12:23.855Z",
   "sources": {
     "seed": {
       "name": "seed",
-      "head": "3532bd564fcb0564034a850c6aa4601c0dc6d2c0",
-      "syncedAt": "2026-11-24T07:12:23.408Z",
+      "head": "791d5c3dd0aff0887650edb552d6dbec82d00ee0",
+      "syncedAt": "2026-11-24T09:12:22.079Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "bf104cf878376f38c590fa83a3a4ce949bb9cece16448935323fc6fb1750496d",
-          "bytes": 4596
+          "sha256": "5e9125abcfc0af87baa806ea8c3a608348b2b0adfff8310ae0a46f9e625d22a2",
+          "bytes": 5037
         },
         {
           "path": "docs/CHANGELOG.md",
@@ -106,13 +106,13 @@
     },
     "capillary": {
       "name": "capillary",
-      "head": "4abadfac454ac50a4f0403a3c206f0eaa1b35ae0",
-      "syncedAt": "2026-11-24T04:42:19.928Z",
+      "head": "8117c7754c6990b93b323112541a50fe11e531b3",
+      "syncedAt": "2026-11-24T09:12:22.304Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "39ca9f59e4b44135972311474aac6b2cd57c3f4f3a699a0de8ddc28edd0ec9bc",
-          "bytes": 3944
+          "sha256": "630054158356f448018f816a7d86b06c2b76a01e0e4402c7033a368123989e98",
+          "bytes": 4381
         },
         {
           "path": "docs/CHANGELOG.md",
@@ -178,13 +178,13 @@
     },
     "myosotis": {
       "name": "myosotis",
-      "head": "74e78a2a235c83cc64a53ac908c6b8d4fe6bddcf",
-      "syncedAt": "2026-11-24T04:42:20.061Z",
+      "head": "79c4eec7650ffc633e8a093db476f404b13f07c6",
+      "syncedAt": "2026-11-24T09:12:22.496Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "6fac1fe996c0f82eab46086ff9a840fea91dcfeeb8ee831a8baa997757ddbd85",
-          "bytes": 4454
+          "sha256": "cfe0383823803b79c0511834f4a01143b1399a18db7856632008b18ddc4a98a1",
+          "bytes": 4897
         },
         {
           "path": "docs/CHANGELOG.md",
@@ -250,13 +250,13 @@
     },
     "aestivation": {
       "name": "aestivation",
-      "head": "09588de791e1b870d2dfe83e359996de947c2949",
-      "syncedAt": "2026-11-24T04:42:20.179Z",
+      "head": "610184e571d292e05712d1c37180d895aa7203b5",
+      "syncedAt": "2026-11-24T09:12:22.699Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "8a052167c67455428877fb10dfe1eda785da2eb23d6b6e582c80bb87ed7c714b",
-          "bytes": 4263
+          "sha256": "aaf5a24202f667129d71c824be178004c1091ca059ae1ae77ab0f91eb2368a7c",
+          "bytes": 4724
         },
         {
           "path": "docs/CHANGELOG.md",
@@ -317,13 +317,13 @@
     },
     "drosera": {
       "name": "drosera",
-      "head": "98851c714fea35ca238c3b16a00e76ec58f06fd7",
-      "syncedAt": "2026-11-24T07:12:23.541Z",
+      "head": "e48a4aa36964fe386707806f69c22561db14720f",
+      "syncedAt": "2026-11-24T09:12:22.915Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "0d41df44fed682b316dda46e1914bedb63b6484dec78027dd960df5f14725cb9",
-          "bytes": 3532
+          "sha256": "7bb4acb1f0d979275113c15ea58b4c079de73f3c47c1fa9e540d4c860f5d04c5",
+          "bytes": 3979
         },
         {
           "path": "docs/CHANGELOG.md",
@@ -394,13 +394,13 @@
     },
     "trellis": {
       "name": "trellis",
-      "head": "eaabdd5cc030e60cc00e1645dabd8032deaeaa4f",
-      "syncedAt": "2026-11-24T04:42:20.407Z",
+      "head": "57504522e83c55c86b4f89d981cb4e94ced8f727",
+      "syncedAt": "2026-11-24T09:12:23.150Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "4097fee9f70c803e261ba837a1b0789d74ad2dd8e15bc118b7fa5a65e9073e29",
-          "bytes": 4274
+          "sha256": "82ed3204e427207c70a204c2d9d3b8af2e2318de0d581e8445c22caea43c011e",
+          "bytes": 4710
         },
         {
           "path": "docs/CHANGELOG.md",
@@ -506,13 +506,13 @@
     },
     "bloom": {
       "name": "bloom",
-      "head": "1e199b513fc9800e69bb05bece10889eb29e518c",
-      "syncedAt": "2026-11-24T07:12:23.775Z",
+      "head": "cfe6424bfad8239a19e98321fc6975b5e4c32828",
+      "syncedAt": "2026-11-24T09:12:23.411Z",
       "files": [
         {
           "path": "README.md",
-          "sha256": "185f46a97cc419f4ad535dfd05b8b02800c486b5bf5662fddcaea3a7d02ca55f",
-          "bytes": 9406
+          "sha256": "2b8f462e0595cb6a4f5aa8a13704e890487f38a3440d94e67adfe44c94e67e89",
+          "bytes": 9829
         },
         {
           "path": "docs/CHANGELOG.md",
@@ -608,18 +608,18 @@
     },
     "videsign": {
       "name": "videsign",
-      "head": "c5f89a77efa5193931d9f4bdf43265787135a1ef",
-      "syncedAt": "2026-11-24T06:42:22.477Z",
+      "head": "b6e26d96ff3431084063fdb2a41b56098bbdf981",
+      "syncedAt": "2026-11-24T09:12:23.836Z",
       "files": [
         {
           "path": "DESIGN.md",
-          "sha256": "cb6e0abc50042031caac97878aea2f8d2c589c8b34679022fcee3ba4ef1fdacc",
-          "bytes": 61089
+          "sha256": "1a71d0515d3ae4cc76889e1aab3c9af58e835bad41752c290f12fd8de500d8b9",
+          "bytes": 61294
         },
         {
           "path": "README.md",
-          "sha256": "6bae1921af691cb9c75d2fee9092bae7596deb00bccb2b264ced895a3edbaff8",
-          "bytes": 10987
+          "sha256": "61c039cada39dfeb07eb316f85866b234f7dd2bc1b10449e9d96aad63128dec6",
+          "bytes": 9740
         },
         {
           "path": "docs/superpowers/plans/2026-11-18-memory-field.md",

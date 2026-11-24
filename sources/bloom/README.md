@@ -1,3 +1,10 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/bloom-banner-dark.svg">
+  <img src=".github/assets/bloom-banner.svg" alt="Bloom banner: an opened five-petal flower, and the tagline Workspace, CLI, and terminal UI." width="1280">
+</picture>
+
+Workspace, CLI, and terminal UI
+
 # Bloom
 
 Give a head agent a brief and watch a team work through it in one group conversation. Specialists can research public sources, review the findings, and assemble a Markdown guide. Each contribution is a file on a shared desktop that you can open, attach to another task, or download.
@@ -67,3 +74,5 @@ npm run test:network
 ## License
 
 Bloom is available under the [MIT license](LICENSE). The bundled Geist fonts retain the [SIL Open Font License](public/fonts/Geist-OFL.txt).
+
+The Vidoxlabs name and mark are trademarks of Vidoxlabs LLC. They are not covered by this repository's MIT license.

@@ -1,3 +1,10 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/aestivation-banner-dark.svg">
+  <img src=".github/assets/aestivation-banner.svg" alt="Aestivation banner: a closed bud with wrapping sepals, and the tagline Plans, verdicts, and the assembly gate." width="1280">
+</picture>
+
+Plans, verdicts, and the assembly gate
+
 # aestivation
 
 Plan proposal, deterministic validation, review verdicts, and the assembly gate.
@@ -76,3 +83,5 @@ Tests use the Node built-in runner. Adding a rule means adding the test that hol
 ## License
 
 MIT
+
+The Vidoxlabs name and mark are trademarks of Vidoxlabs LLC. They are not covered by this repository's MIT license.

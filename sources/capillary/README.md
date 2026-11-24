@@ -1,3 +1,10 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/capillary-banner-dark.svg">
+  <img src=".github/assets/capillary-banner.svg" alt="Capillary banner: branching capillary veins, and the tagline Context with its sources attached." width="1280">
+</picture>
+
+Context with its sources attached
+
 # Capillary
 
 Capillary is an open, local-first **context retrieval system** for agent workspaces. It
@@ -62,3 +69,5 @@ seam.
 ## License
 
 [MIT](LICENSE)
+
+The Vidoxlabs name and mark are trademarks of Vidoxlabs LLC. They are not covered by this repository's MIT license.
