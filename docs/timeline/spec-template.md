@@ -61,7 +61,9 @@ Note how this capability honors stack boundaries, claim discipline, zero-depende
 
 ## Open owner decisions
 
-Reference pending decisions (`D1` to `D14` in `docs/timeline/decisions.md` or new unratified questions) without deciding them.
+List open questions and follow the [Owner questions](agent-guide.md#owner-questions) process. Once the owner answers, replace the open item with the line below and add a dated entry under Changes. Add the decision index anchor on the next touch after indexing.
+
+`Decided YYYY-MM-DD in <repo>#<n>: <one-line question>. Owner's answer, verbatim: "<answer>".`
 
 ## Evidence
 
