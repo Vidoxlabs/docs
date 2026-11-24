@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-24T09:12:23.855Z",
+  "generatedAt": "2026-11-24T10:42:22.196Z",
   "sources": {
     "seed": {
       "name": "seed",
@@ -608,13 +608,13 @@
     },
     "videsign": {
       "name": "videsign",
-      "head": "b6e26d96ff3431084063fdb2a41b56098bbdf981",
-      "syncedAt": "2026-11-24T09:12:23.836Z",
+      "head": "06470ce03a251d00263a35ac2d7816cb6e8f2d03",
+      "syncedAt": "2026-11-24T10:42:22.185Z",
       "files": [
         {
           "path": "DESIGN.md",
-          "sha256": "1a71d0515d3ae4cc76889e1aab3c9af58e835bad41752c290f12fd8de500d8b9",
-          "bytes": 61294
+          "sha256": "6e2cb46d8e2316987ea951028a64fa86feedce98e0ec6c973f015c6de2fc0339",
+          "bytes": 62209
         },
         {
           "path": "README.md",
