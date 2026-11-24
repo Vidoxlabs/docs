@@ -62,23 +62,27 @@
     {
       "id": "CAP-03",
       "role": "touches",
-      "status": "proposed",
-      "claim": "planned",
+      "status": "in-progress",
+      "claim": "specified",
       "spec": "seed/docs/capabilities/CAP-03-typed-tool-input-output.md",
       "slices": [
         {
           "id": "CAP-03.3",
           "title": "Pre-dispatch input validation, single repair turn, and output validation in bloom",
           "milestone": "M2",
-          "status": "proposed"
+          "status": "landed"
         }
       ],
       "toolIds": [],
       "contracts": [
         "docs/architecture.md"
       ],
-      "tests": [],
-      "prs": [],
+      "tests": [
+        "test/coding-loop.test.mjs"
+      ],
+      "prs": [
+        "bloom#5"
+      ],
       "commits": [],
       "adr": [],
       "decision": null,
@@ -87,32 +91,32 @@
     {
       "id": "CAP-04",
       "role": "lead",
-      "status": "proposed",
-      "claim": "planned",
+      "status": "in-progress",
+      "claim": "specified",
       "spec": "docs/capabilities/CAP-04-workspace-tools-coding-loop.md",
       "slices": [
         {
           "id": "CAP-04.1",
           "title": "Drosera workspace and finish tool faces pack and recipe",
           "milestone": "M2",
-          "status": "proposed"
+          "status": "landed"
         },
         {
           "id": "CAP-04.2",
           "title": "Workspace root path containment, write serialization, capped digest output",
           "milestone": "M2",
-          "status": "proposed"
+          "status": "landed"
         },
         {
           "id": "CAP-04.3",
           "title": "Coding loop integration with workspace tools and finish action",
           "milestone": "M2",
-          "status": "proposed"
+          "status": "landed"
         }
       ],
       "toolIds": [
-        "workspace.file.read",
         "workspace.dir.list",
+        "workspace.file.read",
         "workspace.text.search",
         "workspace.file.write",
         "workspace.file.update",
@@ -122,12 +126,29 @@
       "contracts": [
         "docs/architecture.md"
       ],
-      "tests": [],
-      "prs": [],
+      "tests": [
+        "test/workspace-tools.test.mjs",
+        "test/coding-loop.test.mjs",
+        "test/shell-gate.test.mjs",
+        "test/model-stream.test.mjs",
+        "test/cli-coding.test.mjs",
+        "test/live-test-kit.test.mjs",
+        "test/cloud-gemini.test.mjs",
+        "test/live/live-suite.live.mjs"
+      ],
+      "prs": [
+        "drosera#4",
+        "bloom#4",
+        "bloom#5",
+        "bloom#8",
+        "bloom#9"
+      ],
       "commits": [],
-      "adr": [],
+      "adr": [
+        "docs/adr/0002-family-peer-imports.md"
+      ],
       "decision": null,
-      "updated": "2026-11-23"
+      "updated": "2026-11-24"
     },
     {
       "id": "CAP-05",
@@ -478,23 +499,30 @@
     {
       "id": "CAP-16",
       "role": "touches",
-      "status": "proposed",
-      "claim": "planned",
+      "status": "in-progress",
+      "claim": "specified",
       "spec": "seed/docs/capabilities/CAP-16-provider-conformance-model-profiles.md",
       "slices": [
         {
           "id": "CAP-16.3",
           "title": "Doctor probe model profile and profile-driven prompts and budgets in bloom",
           "milestone": "M4",
-          "status": "proposed"
+          "status": "landed"
         }
       ],
       "toolIds": [],
       "contracts": [
         "docs/architecture.md"
       ],
-      "tests": [],
-      "prs": [],
+      "tests": [
+        "test/doctor-probe.test.mjs",
+        "test/cli-coding.test.mjs",
+        "test/cloud-gemini.test.mjs"
+      ],
+      "prs": [
+        "bloom#7",
+        "bloom#9"
+      ],
       "commits": [],
       "adr": [],
       "decision": null,

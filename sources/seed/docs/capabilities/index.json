@@ -62,15 +62,15 @@
     {
       "id": "CAP-03",
       "role": "lead",
-      "status": "proposed",
-      "claim": "planned",
+      "status": "in-progress",
+      "claim": "specified",
       "spec": "docs/capabilities/CAP-03-typed-tool-input-output.md",
       "slices": [
         {
           "id": "CAP-03.1",
           "title": "Schema subset and validator in seed plus optional outputSchema",
           "milestone": "M2",
-          "status": "proposed"
+          "status": "landed"
         },
         {
           "id": "CAP-03.2",
@@ -89,12 +89,16 @@
       "contracts": [
         "docs/contracts/tool-id.md"
       ],
-      "tests": [],
-      "prs": [],
+      "tests": [
+        "test/schema.test.mjs"
+      ],
+      "prs": [
+        "seed#3"
+      ],
       "commits": [],
       "adr": [],
       "decision": null,
-      "updated": "2026-11-23"
+      "updated": "2026-11-24"
     },
     {
       "id": "CAP-06",
@@ -339,15 +343,15 @@
     {
       "id": "CAP-16",
       "role": "lead",
-      "status": "proposed",
-      "claim": "planned",
+      "status": "in-progress",
+      "claim": "specified",
       "spec": "docs/capabilities/CAP-16-provider-conformance-model-profiles.md",
       "slices": [
         {
           "id": "CAP-16.1",
           "title": "Recorded provider conformance fixtures and model profile contract",
           "milestone": "M4",
-          "status": "proposed"
+          "status": "landed"
         },
         {
           "id": "CAP-16.2",
@@ -359,19 +363,26 @@
           "id": "CAP-16.3",
           "title": "Doctor probe model profile and profile-driven prompts and budgets in bloom",
           "milestone": "M4",
-          "status": "proposed"
+          "status": "landed"
         }
       ],
       "toolIds": [],
       "contracts": [
         "docs/contracts/provider.md"
       ],
-      "tests": [],
-      "prs": [],
+      "tests": [
+        "test/model-profile.test.mjs",
+        "test/provider-conformance.test.mjs"
+      ],
+      "prs": [
+        "seed#4",
+        "seed#6",
+        "bloom#7"
+      ],
       "commits": [],
       "adr": [],
       "decision": null,
-      "updated": "2026-11-23"
+      "updated": "2026-11-24"
     },
     {
       "id": "CAP-17",

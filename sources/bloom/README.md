@@ -25,17 +25,17 @@ Open **http://127.0.0.1:4317**, choose **Create a team** and give the head agent
 
 ## Connect a model endpoint
 
-Teams run on any service that speaks the chat-completions HTTP API (`POST {base}/chat/completions`). Bloom names no default service.
+Teams and coding sessions run on any service that speaks the chat-completions HTTP API (`POST {base}/chat/completions`). Bloom names no default service. The endpoint lives only in the private `config.json` in Bloom's data directory, described under **Terminal commands** below, and neither the web workspace nor the terminal takes it on the command line.
 
 ```sh
-npm start -- --api-base '<your-endpoint>' --team-model local-model
+npm start -- --workspace '<sandbox folder>'
 ```
 
-Use your server's address and model. A hosted endpoint must use HTTPS; set `BLOOM_API_KEY` in the environment if it needs a key. Team calls send the brief and admitted evidence to that endpoint. Started without `--api-base`, Bloom still opens the workspace, notes and files, and a team turn stops with a message naming the flag.
+The web workspace follows the terminal's rules: local providers only, the configured key setting, and the model profile saved by `bloom doctor --probe`. Team calls send the brief and admitted evidence to that endpoint. Without a provider, Bloom still opens the workspace, notes and files, and a team turn stops with a message pointing at `config.json`.
 
 Every provider runs behind [seed](https://github.com/Vidoxlabs/seed)'s provider seam: Bloom checks the adapter when it starts and checks every reply against seed's record before the team reads it. A reply outside that record stops the turn.
 
-**Coding sessions** need a coding runtime, and none ships with Bloom yet. The scripted demo runtime shows the coding view, with streamed plans, tool activity and approvals. Outside the demo, the **Create a coding session** choice is hidden, and coding sessions saved by an earlier version stay readable but cannot start a new turn.
+**Coding sessions** run the coding loop in the chosen folder when a provider is configured. The browser shows streamed text, a row for every model call and tool call, and an approval card before every write and every command. The scripted demo runtime shows the same view without a model. [docs/live-test.md](docs/live-test.md) is the runbook for a first live run in a throwaway sandbox.
 
 ## Terminal commands
 
@@ -43,9 +43,9 @@ Every provider runs behind [seed](https://github.com/Vidoxlabs/seed)'s provider 
 
 A configured local model can run the existing team loop. In the terminal data directory, use a private `config.json` with `version: 1`, one entry under `providers` with `kind: "chat-completions"` and `baseURL` set to your OpenAI-compatible API base, and `models.aliases` containing an alias, backend model ID and workload. Set `models.default` to that alias or choose one with `--model`. Loopback is local by default. For a server on your private network, set `locality` to `local`. Enable `allowInsecureHttp` only if that server uses plain HTTP. Set `apiKeyEnv` to the name of an environment variable if the server requires a key.
 
-The team loop uses the desktop and saved specialists. `--workspace` records the session's workspace. The coding runtime and terminal cloud approval are **planned**.
+The team loop uses the desktop and saved specialists. `--team NAME --workspace PATH` records a team session's workspace. **Implemented:** `bloom chat --workspace PATH` without `--team` runs the coding loop in that folder: the model reads, searches, edits and runs `node`, `npm` or `git` there, and Bloom asks before every write and every command. A headless `bloom run --workspace PATH` never writes. Read the command gate and its residual risk in [docs/architecture.md](docs/architecture.md) before pointing it at a folder you care about. Terminal cloud providers need `--allow-cloud` inside a sandbox from `scripts/make-sandbox.mjs`; the web workspace stays local only.
 
-`bloom doctor` checks the local installation and endpoint rule without displaying the address. Model-server probes are **planned**. `bloom sessions list` lists session IDs. `bloom sessions export ID --jsonl` writes the stored events in order, and `bloom replay FILE --step` displays them one at a time. Use `--data-dir` to select the data directory, including when you read a demo session. `bloom memory --help` lists note commands. Forget requires `--confirm`.
+`bloom doctor` checks the local installation and endpoint rule without displaying the address. `bloom doctor --probe` also asks the configured provider what it supports, saves its model profile, and names the provider only by its config name and locality. Cloud providers need `--allow-cloud` on probe and chat. `bloom sessions list` lists session IDs. `bloom sessions export ID --jsonl` writes the stored events in order, and `bloom replay FILE --step` displays them one at a time. Use `--data-dir` to select the data directory, including when you read a demo session. `bloom memory --help` lists note commands. Forget requires `--confirm`.
 
 ## Work with a team
 
