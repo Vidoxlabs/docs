@@ -9,6 +9,7 @@
     { "name": "drosera", "files": ["README.md"], "roots": ["docs/"], "extensions": [".md", ".json"] },
     { "name": "trellis", "files": ["README.md"], "roots": ["docs/"], "extensions": [".md", ".json"] },
     { "name": "bloom", "files": ["README.md"], "roots": ["docs/"], "extensions": [".md", ".json"] },
+    { "name": "vivarium", "files": ["README.md", "AGENTS.md"], "roots": ["docs/"], "extensions": [".md", ".json"] },
     { "name": "videsign", "files": ["README.md", "DESIGN.md"], "roots": ["docs/"], "extensions": [".md", ".json", ".yml"] }
   ]
 }
