@@ -1,3 +1,5 @@
+<!-- Managed file. Propose changes by pull request; they are carried into the shared templates. hash: 6da8689a274423c7 -->
+
 # Docs workspace
 
 Docs is a public repository. Everything committed here can be read by anyone.
