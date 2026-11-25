@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-25T08:12:28.845Z",
+  "generatedAt": "2026-11-25T13:31:20.625Z",
   "sources": {
     "seed": {
       "name": "seed",
@@ -635,6 +635,98 @@
           "path": "docs/superpowers/plans/2026-11-18-memory-field.md",
           "sha256": "e27bd95a3a0ec40cc139c34b0d2ac417719f5fb7b89047c21b44e8b561b8ea0f",
           "bytes": 8071
+        }
+      ]
+    },
+    "vivarium": {
+      "name": "vivarium",
+      "head": "43aaf01c795f15f7850f3726c372a950ca0cd3bb",
+      "syncedAt": "2026-11-25T13:31:20.621Z",
+      "files": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "c238b8dabe4e57b21a734e8c03109c8edc7eb0f2da57313e0270fd4f417bd354",
+          "bytes": 6151
+        },
+        {
+          "path": "README.md",
+          "sha256": "1077816f7845ccba534cbfbee67d0e0fdd1dbbad72343ca58f85bc5a9168944f",
+          "bytes": 8609
+        },
+        {
+          "path": "docs/adr/0001-umbrella-with-submodules.md",
+          "sha256": "d22c0cc11add315ab042fd1c902f7ab1a260ee4a05d825d365985995b00dc7cb",
+          "bytes": 4758
+        },
+        {
+          "path": "docs/adr/0002-internal-agents-use-the-public-setup.md",
+          "sha256": "c6c001d2732c5f5e0d037dbf37253f6fb178b4671dec235f10a2d7aba819e8d3",
+          "bytes": 2747
+        },
+        {
+          "path": "docs/adr/0003-first-run-setup-and-no-default-autonomy.md",
+          "sha256": "ccb361ce61accff6005ff9e02bb1dfb2c19c4466f9e2224eece4595f8c431178",
+          "bytes": 2919
+        },
+        {
+          "path": "docs/adr/0004-model-access-routes.md",
+          "sha256": "95de5010a0f42455135d3d6ee99937009962d3d0fe3a5951f69caeb8f4d7b9d1",
+          "bytes": 3682
+        },
+        {
+          "path": "docs/adr/0005-web-app-context-routes.md",
+          "sha256": "6a1cca7252c251c6d6271cbf4e97ed2e1ee531e619b84e757ae1b8f096e24354",
+          "bytes": 3642
+        },
+        {
+          "path": "docs/adr/README.md",
+          "sha256": "66f3fd3461fac1ea5f09d2d9a4b78f135b718db96f73a68a79e63870866663c3",
+          "bytes": 1682
+        },
+        {
+          "path": "docs/adr/template.md",
+          "sha256": "f75cf7e8e2e13e8d7138dcd10caf8e026879db38f500a9aa0dfe3a75a6ff9d68",
+          "bytes": 954
+        },
+        {
+          "path": "docs/docs-timeline.md",
+          "sha256": "2ce455c7d70d7571a170980c4cce1fe1863dda25e584c7d6c98cbcbbcc8dbd7c",
+          "bytes": 3735
+        },
+        {
+          "path": "docs/product/context-access.md",
+          "sha256": "1638e2f94262bf35532ff1c6207ce800537025032bc5232137e6eb8f6eb7c5ec",
+          "bytes": 4315
+        },
+        {
+          "path": "docs/product/first-run-setup.md",
+          "sha256": "1e1e4a20d2cb925d5f8c6ed2498154ebe6d583518a47d381f3211615cc195784",
+          "bytes": 8028
+        },
+        {
+          "path": "docs/product/model-access.md",
+          "sha256": "fe0d2b476d46a4ede1aed85fee57bc68c0349e0a1b4bfed837b90eab6788b9b7",
+          "bytes": 3887
+        },
+        {
+          "path": "docs/product/naming.md",
+          "sha256": "4190288fc8e6f80464ec34ab26b2b9c846cdffb77d9451d973901e63c67caf44",
+          "bytes": 2696
+        },
+        {
+          "path": "docs/roadmap/system-work.md",
+          "sha256": "96c5fde0d51578b4b8b35b9fe5990a851cd9c5028c225ad297cae0f33705fcfe",
+          "bytes": 5796
+        },
+        {
+          "path": "docs/system-map.md",
+          "sha256": "84bf3648ebc21a0085933734a47cd03ec60ea5a20e0f02389442afdcc9365eb1",
+          "bytes": 3105
+        },
+        {
+          "path": "docs/vision/design-brief.md",
+          "sha256": "38658e25db5dfa0e79154104d693a011d94f17b15b3f247620ee442dcfb7d62b",
+          "bytes": 39205
         }
       ]
     }
