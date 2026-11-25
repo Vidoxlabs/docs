@@ -33,7 +33,7 @@ Every capability carries one of four labels, and the label must be true:
 
 - No credentials, tokens, account names, personal handles, hostnames, IP addresses, port numbers, container names, cluster names, or network topologies in any committed file.
 - No binary assets. The extension gate in `sources.json` is structural: keep it closed.
-- No invented product names. The family is `seed`, `capillary`, `myosotis`, `aestivation`, `drosera`, `trellis`, and `bloom`, plus the plain-named siblings `docs` and `videsign`.
+- No invented product names. The product is `vivarium`; its systems are `seed`, `capillary`, `myosotis`, `aestivation`, `drosera`, `trellis`, and `bloom`; the plain-named siblings are `docs` and `videsign`.
 - Runtime dependencies: none. A dependency proposal is an architecture decision first.
 
 ## Verification cycle
