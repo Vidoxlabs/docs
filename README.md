@@ -7,7 +7,7 @@ The documentation hub
 
 # Docs
 
-Documentation hub for the Vidoxlabs agent family. Pages are written here, and every public repository's documentation lands here verbatim through a scheduled sync: one source of truth upstream, one place to read and render it all.
+Documentation hub for the Vidoxlabs public repositories: today, the seven systems of Vivarium, the `vivarium` umbrella, and the `videsign` design canon. Pages are written here, and every public repository's documentation lands here verbatim through a scheduled sync: one source of truth upstream, one place to read and render it all.
 
 **Status: `0.1.0`, hub pages, sync engine, and CI runs.** Selection, planning, provenance, and rendering live in `src/sync-core.mjs`, and `npm test` covers them. The site handoff in [docs/site-integration.md](docs/site-integration.md) is `specified`, not shipped.
 
@@ -38,15 +38,17 @@ Pull requests land as sources when they merge: the sync watches `main` only, so 
 | [aestivation](https://github.com/Vidoxlabs/aestivation) | plans, verdicts, and the assembly gate |
 | [drosera](https://github.com/Vidoxlabs/drosera) | tool faces, skills, hooks, cookbooks |
 | [trellis](https://github.com/Vidoxlabs/trellis) | probes and dated runs, outside the call path |
-| [bloom](https://github.com/Vidoxlabs/bloom) | the team workspace, the only composer |
-| [docs](https://github.com/Vidoxlabs/docs) | this hub: family documentation |
+| [bloom](https://github.com/Vidoxlabs/bloom) | Vivarium's user interface, the only composer |
+| [vivarium](https://github.com/Vidoxlabs/vivarium) | the product's umbrella: pins the seven systems above |
+| [videsign](https://github.com/Vidoxlabs/videsign) | the design canon |
+| [docs](https://github.com/Vidoxlabs/docs) | this hub: product-neutral documentation |
 
 Naming follows the botanic law in [capillary's docs/family.md](https://github.com/Vidoxlabs/capillary/blob/main/docs/family.md). `docs` and `videsign` sit outside the botanic line by owner decision: infrastructure carries plain words.
 
 ## Documentation
 
 - [Index](docs/index.md): what to read first
-- [Family](docs/family.md): the agent family, and where this hub stands
+- [Family](docs/family.md): the systems, the product they make, and where this hub stands
 - [Engineering law](docs/engineering-law.md): the discipline every public repository keeps
 - [Sync contract](docs/sync.md): cadence, provenance, and rules
 - [Site integration](docs/site-integration.md): how vidoxlabs.dev will read this repository

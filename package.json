@@ -1,7 +1,7 @@
 {
   "name": "@vidoxlabs/docs",
   "version": "0.1.0",
-  "description": "Documentation for the Vidoxlabs agent family: written here, synced from every public repository.",
+  "description": "Documentation for the Vidoxlabs public repositories: written here, synced from every public repository.",
   "type": "module",
   "main": "src/sync-core.mjs",
   "scripts": {
