@@ -1,12 +1,12 @@
 # Family glossary
 
-This glossary establishes shared terminology for public timeline specifications, contracts, and capability ledgers. For naming rules across the botanic product family, see [seed's docs/lexicon.md](https://github.com/Vidoxlabs/seed/blob/main/docs/lexicon.md) and [capillary's docs/family.md](https://github.com/Vidoxlabs/capillary/blob/main/docs/family.md).
+This glossary establishes shared terminology for public timeline specifications, contracts, and capability ledgers. For the botanic naming of the Vivarium systems, see [seed's docs/lexicon.md](https://github.com/Vidoxlabs/seed/blob/main/docs/lexicon.md) and [capillary's docs/family.md](https://github.com/Vidoxlabs/capillary/blob/main/docs/family.md).
 
 ## Generalized family and role terms
 
 Public repositories use only two naming forms: proper nouns for the public repositories (`seed`, `capillary`, `myosotis`, `aestivation`, `drosera`, `trellis`, `bloom`, `docs`, `videsign`) and generalized role terms for concepts and roles:
 
-| Generalized term | Public product | Meaning |
+| Generalized term | Public repository | Meaning |
 | --- | --- | --- |
 | `native client` | none (private surface) | The desktop application a person works from. |
 | `intelligence backend` | none (private service) | The private backend service behind client applications. |

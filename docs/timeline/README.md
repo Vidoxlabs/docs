@@ -1,6 +1,6 @@
 # Development timeline
 
-This folder is the public development timeline and capability ledger for the Vidoxlabs agent family. It coordinates work across `docs`, `seed`, `capillary`, `myosotis`, `aestivation`, `drosera`, `trellis`, and `bloom` without putting code implementation inside the documentation hub.
+This folder is the public development timeline and capability ledger for the seven Vivarium systems and this hub. It coordinates work across `docs`, `seed`, `capillary`, `myosotis`, `aestivation`, `drosera`, `trellis`, and `bloom` without putting code implementation inside the documentation hub.
 
 ## How to use the timeline
 

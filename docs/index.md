@@ -4,7 +4,7 @@ Ownership splits in two: pages this repository writes, and pages synced verbatim
 
 ## Owned pages
 
-- [Family](family.md): the agent family, and where this hub stands.
+- [Family](family.md): the systems, the product they make, and where this hub stands.
 - [Engineering law](engineering-law.md): the discipline every public repository keeps.
 - [Sync contract](sync.md): how sources arrive, on what schedule, with what provenance.
 - [Site integration](site-integration.md): the specified handoff to vidoxlabs.dev.
