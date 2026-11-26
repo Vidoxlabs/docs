@@ -32,7 +32,7 @@ Enforces four deterministic freshness rules offline, without network access:
    - Extends `scripts/sync-sources.mjs` alongside `docs/sync.md` and sync tests in a single commit so sync runs regenerate `docs/timeline/ledger.md` deterministically (preserving `# Capability ledger` on line 1, `Hand-maintained until CAP-02 lands; generated afterward.`, and the pure function of `capabilities.json` + `lead` entries) whenever synced `sources/` updates.
 4. **Grammar source (`D3`) and build order (`D14`)**:
    - Enforces `seed` tool-ID grammar (`domain . [resource . [sub .]] verb`, closed verb set, no forbidden vendor/infrastructure/persona segments) across all `toolIds[]` arrays and spec `### Tool IDs` tables.
-   - Pending owner ruling `D3`, `CAP-02.1` sources the grammar from `seed` as a commit-pinned `devDependency` of `docs` (one grammar, zero runtime dependencies), while sibling self-tests run standalone without sibling checkouts.
+   - Pending owner ruling `D3` (default taken, awaiting owner), `CAP-02.1` sources the grammar from `seed` as a commit-pinned `devDependency` of `docs` (one grammar, zero runtime dependencies), while sibling self-tests run standalone without sibling checkouts.
    - Build order (`D14`): land `CAP-02.2` to `CAP-02.8` self-tests first, then `CAP-02.1` (`test/timeline.test.mjs` in `docs`), then `CAP-02.9` (sync regeneration with `docs/sync.md` and sync tests in one commit).
 
 ## Contract touchpoints
@@ -90,9 +90,9 @@ Build order: `CAP-02.2`..`CAP-02.8` -> `CAP-02.1` -> `CAP-02.9`.
 
 ## Open owner decisions
 
-- `D2` (unratified / pending owner ruling): Two-field status (`status` lifecycle plus `claim` truth label) with fixed pairings enforced by `CAP-02`.
-- `D3` (unratified / pending owner ruling): Grammar source for the hub's `CAP-02.1` test (review recommendation: `seed` as a commit-pinned `devDependency` of `docs`, keeping one grammar and zero runtime dependencies).
-- `D14` (unratified / pending owner ruling): Review conventions made under delegation: `CAP-02` nine-slice split (`CAP-02.1` hub test only, `CAP-02.2` to `CAP-02.8` self-tests, `CAP-02.9` sync ledger regeneration, build order `CAP-02.2`..`CAP-02.8` -> `CAP-02.1` -> `CAP-02.9`), slice milestones, slice IDs in `dependsOn`, and `lead` vs `touches` slice and spec rules.
+- `D2` (unratified; default taken, awaiting owner): Two-field status (`status` lifecycle plus `claim` truth label) with fixed pairings enforced by `CAP-02`.
+- `D3` (unratified; default taken, awaiting owner; nothing built on it yet): Grammar source for the hub's `CAP-02.1` test (review recommendation: `seed` as a commit-pinned `devDependency` of `docs`, keeping one grammar and zero runtime dependencies).
+- `D14` (unratified; default taken, awaiting owner): Review conventions made under delegation: `CAP-02` nine-slice split (`CAP-02.1` hub test only, `CAP-02.2` to `CAP-02.8` self-tests, `CAP-02.9` sync ledger regeneration, build order `CAP-02.2`..`CAP-02.8` -> `CAP-02.1` -> `CAP-02.9`), slice milestones, slice IDs in `dependsOn`, and `lead` vs `touches` slice and spec rules.
 
 ## Evidence
 
@@ -102,3 +102,4 @@ None yet (`proposed`, `planned`).
 
 - `2026-11-23`: Initial `CAP-02` specification drafted (`CAP-01.1`).
 - `2026-11-23`: Review updates: split `CAP-02.1` and `CAP-02.9` with build order, apply slice milestone, slice dependency, and `lead` vs `touches` spec resolution rules, and align `D2`, `D3`, and `D14` (`CAP-01.1`).
+- `2026-11-26`: Relabel the open owner decisions with their true status (default taken, awaiting owner). No capability status changes (`CAP-01.1`).
