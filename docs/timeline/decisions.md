@@ -14,7 +14,7 @@ Every ratified entry uses these fields in order:
 - **Decision**: The owner's answer quoted from the pull request that acted on it, with private details redacted
 - **Attribution**: Exact sentence `Quoted from the owner's answer recorded in <repo>#<n>.`
 
-An entry whose quote comes from the owner's own design text, rather than from an answer in a pull request, says so: its attribution reads `Quoted from the owner's design text recorded in <repo>#<n>.`, and its status stays `Ratified (owner design text, confirmation pending)` until the owner confirms it in a pull request.
+An entry whose quote comes from design text supplied for the product, rather than from an owner answer in a pull request, says so: its attribution reads `Quoted from the design text recorded in <repo>#<n>.`, and its status stays `Relayed (owner-supplied design text, unconfirmed)` until the owner confirms it in a pull request. Such an entry is not ratified, and the label is about attribution only. It does not approve the underlying capability or implementation.
 
 Public safety rules for entries:
 
@@ -25,25 +25,25 @@ Public safety rules for entries:
 
 No owner decision has been ratified by an owner answer in a pull request yet.
 
-## Owner design text (confirmation pending)
+## Relayed design text (unconfirmed)
 
-These two entries quote the owner's own design text. Each awaits the owner's confirmation in a pull request before it is listed as ratified.
+These two entries quote design text supplied for the product. Its authorship is not confirmed. Each awaits the owner's confirmation in a pull request before it can be listed as ratified.
 
 ### D-20261125-01
 
 - **Date**: 2026-11-25
 - **Scope**: `vivarium` ADR `0002` (internal agents use the public setup)
 - **Decision**: "There is no private overlay. Vidoxlabs' own internal agents are created in the app through the same first-run setup and editors any user goes through, so the team uses the product exactly as users do."
-- **Attribution**: Quoted from the owner's design text recorded in vivarium#9.
-- **Status**: Ratified (owner design text, confirmation pending)
+- **Attribution**: Quoted from the design text recorded in vivarium#9.
+- **Status**: Relayed (owner-supplied design text, unconfirmed)
 
 ### D-20261125-02
 
 - **Date**: 2026-11-25
 - **Scope**: `vivarium` ADR `0003` (first-run setup and no default autonomy)
 - **Decision**: "No default autonomy level. A scripted first-run setup has the person choose autonomy and simple or advanced workflows, and shows where to change both later."
-- **Attribution**: Quoted from the owner's design text recorded in vivarium#9.
-- **Status**: Ratified (owner design text, confirmation pending). The status covers the quoted substance; the rest of the ADR is not yet confirmed.
+- **Attribution**: Quoted from the design text recorded in vivarium#9.
+- **Status**: Relayed (owner-supplied design text, unconfirmed). The status covers the quoted substance; the rest of the ADR is not confirmed either.
 
 `vivarium` ADRs `0004` (model access routes) and `0005` (web-app context routes) are not indexed here yet: no owner words for them have been found on record.
 
