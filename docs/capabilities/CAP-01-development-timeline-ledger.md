@@ -99,3 +99,4 @@ None yet (`CAP-01.1` scaffold PR in progress across the eight repositories; `npm
 - `2026-11-23`: Initial `CAP-01` specification drafted and Phase 0 scaffold prepared across `docs` and the seven sibling repositories (`CAP-01.1`).
 - `2026-11-23`: Review updates: align canonical `D1` to `D14` decision references, record full `CAP-01.1` to `CAP-01.8` slice entries with milestones and `prs: ["docs#1"]`, and document updated changelog, `spec`/`slices`, and `dependsOn` conventions (`CAP-01.1`).
 - `2026-11-26`: Relabel the open owner decisions with their true status (default taken, awaiting owner). No capability status changes (`CAP-01.1`).
+- `2026-11-27`: Index the owner's confirmation of `vivarium` ADRs `0002`, `0003`, and `0004` as ratified entries, each scoped to its confirmed substance; ADR `0005` stays unindexed. No capability status changes (`CAP-01.1`).
