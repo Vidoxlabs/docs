@@ -23,29 +23,37 @@ Public safety rules for entries:
 
 ## Ratified decisions
 
-No owner decision has been ratified by an owner answer in a pull request yet.
-
-## Relayed design text (unconfirmed)
-
-These two entries quote design text supplied for the product. Its authorship is not confirmed. Each awaits the owner's confirmation in a pull request before it can be listed as ratified.
+Each entry below quotes the owner's own confirmation. An entry ratifies only the substance its scope names; the rest of the ADR it points to is not ratified by it.
 
 ### D-20261125-01
 
-- **Date**: 2026-11-25
-- **Scope**: `vivarium` ADR `0002` (internal agents use the public setup)
-- **Decision**: "There is no private overlay. Vidoxlabs' own internal agents are created in the app through the same first-run setup and editors any user goes through, so the team uses the product exactly as users do."
-- **Attribution**: Quoted from the design text recorded in vivarium#9.
-- **Status**: Relayed (owner-supplied design text, unconfirmed)
+- **Date**: 2026-11-27
+- **Scope**: `vivarium` ADR `0002` (internal agents use the public setup), architectural substance only: internal agents use the same public setup, templates, and editors as users, with their configurations in user data rather than a private product overlay
+- **Decision**: "I confirm that section 11 of my 26 November 2026 continuation directive ratifies the architectural substance of Vivarium ADR-0002, ADR-0003 and ADR-0004."
+- **Attribution**: Quoted from the owner's answer recorded in vivarium#13.
+- **Status**: Ratified. First indexed on 2026-11-25 as relayed design text quoted from vivarium#9; the anchor is kept.
 
 ### D-20261125-02
 
-- **Date**: 2026-11-25
-- **Scope**: `vivarium` ADR `0003` (first-run setup and no default autonomy)
-- **Decision**: "No default autonomy level. A scripted first-run setup has the person choose autonomy and simple or advanced workflows, and shows where to change both later."
-- **Attribution**: Quoted from the design text recorded in vivarium#9.
-- **Status**: Relayed (owner-supplied design text, unconfirmed). The status covers the quoted substance; the rest of the ADR is not confirmed either.
+- **Date**: 2026-11-27
+- **Scope**: `vivarium` ADR `0003` (first-run setup and no default autonomy), architectural substance only: a scripted first-run setup, no default autonomy, explicit configuration choices, and questions linked to the settings that caused them. An incomplete configuration is not the same as an agent that is ready to run
+- **Decision**: "I confirm that section 11 of my 26 November 2026 continuation directive ratifies the architectural substance of Vivarium ADR-0002, ADR-0003 and ADR-0004."
+- **Attribution**: Quoted from the owner's answer recorded in vivarium#13.
+- **Status**: Ratified. First indexed on 2026-11-25 as relayed design text quoted from vivarium#9; the anchor is kept.
 
-`vivarium` ADRs `0004` (model access routes) and `0005` (web-app context routes) are not indexed here yet: no owner words for them have been found on record.
+### D-20261127-01
+
+- **Date**: 2026-11-27
+- **Scope**: `vivarium` ADR `0004` (model access routes), architectural substance only: officially supported subscription access, the person's own API keys, and local models, with no hosted-credit plan and no credential broker at launch. It chooses no model provider and makes no credential-storage decision
+- **Decision**: "I confirm that section 11 of my 26 November 2026 continuation directive ratifies the architectural substance of Vivarium ADR-0002, ADR-0003 and ADR-0004."
+- **Attribution**: Quoted from the owner's answer recorded in vivarium#13.
+- **Status**: Ratified
+
+## Relayed design text (unconfirmed)
+
+No entry is in this state now. `D-20261125-01` and `D-20261125-02` moved to Ratified on 2026-11-27, on the owner's confirmation.
+
+`vivarium` ADR `0005` (web-app context routes) is not indexed here yet: no owner words for it have been found on record.
 
 ## Pending owner decisions (unratified)
 
