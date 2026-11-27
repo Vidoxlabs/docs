@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-25T13:31:20.625Z",
+  "generatedAt": "2026-11-27T20:12:24.766Z",
   "sources": {
     "seed": {
       "name": "seed",
@@ -640,8 +640,8 @@
     },
     "vivarium": {
       "name": "vivarium",
-      "head": "43aaf01c795f15f7850f3726c372a950ca0cd3bb",
-      "syncedAt": "2026-11-25T13:31:20.621Z",
+      "head": "7a37bcf1cf8cd33653324b07c625ed5589d27005",
+      "syncedAt": "2026-11-27T20:12:24.762Z",
       "files": [
         {
           "path": "AGENTS.md",
@@ -712,6 +712,11 @@
           "path": "docs/product/naming.md",
           "sha256": "4190288fc8e6f80464ec34ab26b2b9c846cdffb77d9451d973901e63c67caf44",
           "bytes": 2696
+        },
+        {
+          "path": "docs/roadmap/advanced-system-plan.md",
+          "sha256": "52d463ce20a0b68448cd1468b371ca626a9a68daaf6e952c6eb10b0a9aa356de",
+          "bytes": 17372
         },
         {
           "path": "docs/roadmap/system-work.md",
