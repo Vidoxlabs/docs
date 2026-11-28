@@ -10,7 +10,7 @@ A string not listed here stays as it is. Element ids, option values, stored stag
 
 The owner ruled on the review's renames after the swarm closed. These rows win over everything below and over both research files.
 
-- **Keep `Head agent` and `Shared desktop`.** They name Bloom's model: one head agent that creates specialists, and one shared computer whose desktop every agent can use. That is the xAI Grok Bot model Bloom follows ([how Grok Bot works](https://docs.x.ai/grok-bot/how-grok-bot-works), [shared computer](https://docs.x.ai/grok-bot/computer-and-apps), [group messaging](https://docs.x.ai/grok-bot/chat-and-collaboration)). The research report's "GrokBot" section reads an unrelated third-party repository (`Franzferdinan51/GrokBot`), so its case for `Files` and `Lead name` is set aside.
+- **Keep `Head agent` and `Shared desktop`.** They name Bloom's model: one head agent that creates specialists, and one shared computer whose desktop every agent can use. That is the xAI Grok Bot model Bloom follows ([how Grok Bot works](https://docs.x.ai/grok-bot/how-grok-bot-works), [shared computer](https://docs.x.ai/grok-bot/computer-and-apps), [group messaging](https://docs.x.ai/grok-bot/chat-and-collaboration)). The research report once read an unrelated third-party repository for the opposite case; that evidence is removed and set aside, so `Files` and `Lead name` lose their case.
 - **Keep `Jurisdiction`.** It is the owner's word for what a specialist answers for.
 - **Familiarity comes from helper text, not renames.** Each kept term gets one plain `hint` line directly under it, using the existing `hint` class:
   - under `Head agent name`: `Plans the work and creates specialists for it.`
@@ -18,7 +18,7 @@ The owner ruled on the review's renames after the swarm closed. These rows win o
   - under the `Shared desktop` heading, replacing `Select files to attach to the next message.`: `Files every agent on this computer can open and reuse. Check files to include with the next task.`
 - **`Token limit` still replaces `Token stop threshold`.** That rename was not contested.
 - **Persona library (later on 2026-11-22).** The owner asked for a persona library. It is a `Personas` section in the left sidebar, specified in section 6b. It replaces the persona part of the section 4 lock and the persona item in section 7. Memory and intent still get no screen of their own.
-- **Deeper team memory and team-to-team questions (later on 2026-11-22).** The owner asked for deeper team memory, using Memorix and ViWeb as references, and for teams to talk to each other. Section 6c specifies both. Its notes-used line replaces the section 2 recall wording, and its note controls replace the section 4 rule that the recall wording is the whole notes edit. Memory still gets no screen of its own: it stays in the `Notes` section and in `Activity`.
+- **Deeper team memory and team-to-team questions (later on 2026-11-22).** The owner asked for deeper team memory, using the predecessor memory and workspace systems as references, and for teams to talk to each other. Section 6c specifies both. Its notes-used line replaces the section 2 recall wording, and its note controls replace the section 4 rule that the recall wording is the whole notes edit. Memory still gets no screen of its own: it stays in the `Notes` section and in `Activity`.
 - Everything else in this contract stands.
 
 ## 1. First minute
@@ -202,14 +202,14 @@ A persona is a saved specialist: name, Jurisdiction, voice, stage, and an option
 
 ## 6c. Team memory and team-to-team questions (added on owner request, 2026-11-22)
 
-Memory follows the Memorix distinctions: confirmed notes are kept apart from agent suggestions, and a team's own notes are kept apart from notes shared with every team.
+Memory follows the recall distinctions: confirmed notes are kept apart from agent suggestions, and a team's own notes are kept apart from notes shared with every team.
 
 - **Adding a note.** The `Save a team note` dialog gains two checkboxes. `Always use` is checked by default, with the hint `Turn off to use this note only when it matches the task.` `Share with every team` is unchecked by default.
 - **Note rows.** Each note shows its text and one hint line built from: `Always used` or `Used when relevant`, `Shared with every team`, `Suggested by {agent}`, `Corrected`, and `Used {n} time` / `Used {n} times`. Each row has `Correct` and `Forget`.
 - **Correct.** Opens the dialog `Correct a note`, label `What should the team remember instead?`, filled with the old text. Saving replaces the note. Like `Forget`, it withdraws everything built from the old note.
 - **Suggestions.** Specialists can suggest up to two facts per handoff. They are listed under the heading `Suggested by agents`, with the hint `Agents never use a suggestion until you keep it.` Each row shows the text, the suggesting agent, `Keep` and `Dismiss`. `Keep` turns it into a note used when relevant. Forget or Correct clears pending suggestions.
 - **Notes used.** In `Activity`, each specialist shows `{actor} · {used} of {considered} notes used`. Expanding it lists each note it received, prefixed `Always · ` or `Relevant · `.
-- **Recall.** `Always` notes reach every specialist. A `when relevant` note reaches a specialist only when it matches the brief and assignment. Notes are ranked by a simplified Memorix score, with at most eight notes and 2,000 characters per call. An approved review counts as useful for the notes behind it.
+- **Recall.** `Always` notes reach every specialist. A `when relevant` note reaches a specialist only when it matches the brief and assignment. Notes are ranked by a simplified floatation score, with at most eight notes and 2,000 characters per call. An approved review counts as useful for the notes behind it.
 - **Team-to-team questions.** The head agent may ask one question of another team per task. The asking conversation shows the question with the hint `Question for {team}`. The answer comes from the other head agent with the hint `From team {team}`. The other team's conversation shows the same pair, opened as a turn of its own, so it shows as busy and its `Stop` ends only the answer. In `Activity` the step reads `{head} · Answering`, and a tool row reads `Ask {team}`. The asking team pays for the call.
 - **What crosses.** The answering head sees only its jurisdiction, notes shared with every team, its non-private group posts and its shareable desktop titles. Its private notes never cross. It cannot ask a third team.
 - **When a question can't be answered.** If the other team is busy, the asking head posts `{team} is busy with its own task, so the team continues without its answer.` If the other team stops it, the post is `{team} stopped the question, so the team continues without its answer.`

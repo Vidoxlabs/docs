@@ -1,5 +1,7 @@
 # Implementability review
 
+> **Withdrawn in part.** This pass planned five fixed starter seats with set names. Vivarium ships no fixed roster: agents are created by each person in setup, from generic templates ([vivarium ADR-0002](https://github.com/Vidoxlabs/vivarium/blob/main/docs/adr/0002-internal-agents-use-the-public-setup.md)). The starter-seat steps below are kept as history with placeholder names and are not to be built.
+
 Reviewed `docs/backend/research/agent-runtime-patterns.md` against `src/teams.mjs`, `src/team-store.mjs`, `src/http.mjs`, `src/harness.mjs`, `public/index.html`, `public/team.js`, and `public/app.js`. The research file stays as evidence. This review is the instruction for the assembler. Where they disagree, this review wins.
 
 This file does not change source, `docs/ui/`, or the research report. It does not paste prompt text.
@@ -57,15 +59,15 @@ The subsections below are the cells of that table.
 
 **what the assembler may write:**
 
-Inside `Teams.create`, after `nameOf` and before `this.harness.store.transaction`, reject a colliding head name. If `name.toLowerCase()` is `violet`, `wisteria`, `xylia`, `yarrow`, or `zinnia`, throw the existing `bad(...)` error (`TEAM_INPUT`, HTTP 400) with this message: `Choose a head agent name other than Violet, Wisteria, Xylia, Yarrow, or Zinnia.` Do not open the transaction. No session row, no `teams` row, and no `members` rows are written.
+Inside `Teams.create`, after `nameOf` and before `this.harness.store.transaction`, reject a colliding head name. If `name.toLowerCase()` matches a starter seat name, throw the existing `bad(...)` error (`TEAM_INPUT`, HTTP 400) with a message that names the starter seats. Do not open the transaction. No session row, no `teams` row, and no `members` rows are written.
 
 When the name does not collide, keep the current session and `teams` insert. In that same transaction, after `TeamStore.create`, insert exactly five `members` rows, in this order, so `rowid` order matches:
 
-1. `Violet`
-2. `Wisteria`
-3. `Xylia`
-4. `Yarrow`
-5. `Zinnia`
+1. `Starter 1`
+2. `Starter 2`
+3. `Starter 3`
+4. `Starter 4`
+5. `Starter 5`
 
 Each row uses the columns that already exist. Every row stores the same profile text:
 
@@ -138,11 +140,11 @@ The route can ship before the form. Do not add roster inputs. Do not relabel the
 
 **verdict:** accept
 
-**evidence:** Section 4 of the research quotes an untrusted six-step excerpt that names Violet twice. `Teams.run` runs each assignment once. `reviewBlocked` stops later assignments only after a `review` stage returns `revise`.
+**evidence:** Section 4 of the research quotes an untrusted six-step excerpt that gives one seat two turns. `Teams.run` runs each assignment once. `reviewBlocked` stops later assignments only after a `review` stage returns `revise`.
 
 **what the assembler may write:**
 
-Nothing from that excerpt. `Teams.run` does not gain a fixed speaking order, a second Violet turn, new stage ids, or new agents. The five seeded seats stay on stage `work`, so a `revise` verdict does not skip them.
+Nothing from that excerpt. `Teams.run` does not gain a fixed speaking order, a second turn for one seat, new stage ids, or new agents. The five seeded seats stay on stage `work`, so a `revise` verdict does not skip them.
 
 ### 2.5 R5. One transcript
 
@@ -178,7 +180,7 @@ Row text, using events the loop already emits:
 
 Do not invent a route event.
 
-Route line, only on a `team.message` whose `assignments` array is present. Under the list `public/app.js` already renders (`name — assignment`), add one text line: the author, then `, `, then each `assignments[].name` in array order, separated by `, `. Example shape: `Lead, Violet, Wisteria`. No arrow. No word “to”. Do not read or write a recipient. Do not put the `persona` boolean on this line.
+Route line, only on a `team.message` whose `assignments` array is present. Under the list `public/app.js` already renders (`name — assignment`), add one text line: the author, then `, `, then each `assignments[].name` in array order, separated by `, `. Example shape: `Lead, Planner, Reviewer`. No arrow. No word “to”. Do not read or write a recipient. Do not put the `persona` boolean on this line.
 
 When a later `team.message` in the same turn has `verdict` `revise`, find that author in the assignments array. On the order line, append ` (not run)` to each assignment name that follows that author. Leave the names visible. If that author is not in the array, append the suffix to nobody.
 
@@ -198,7 +200,7 @@ The assembler may write only the following behavior.
 
 Accepted strings, copied exactly:
 
-- Collision error: `Choose a head agent name other than Violet, Wisteria, Xylia, Yarrow, or Zinnia.`
+- Collision error: a message that names the starter seats.
 - Charter: `Help the user shape the next agent.`
 - Voice: `Clear and specific.`
 - Stage for all five inserts: `work`
@@ -222,7 +224,7 @@ Leave these out of the assembler pass.
 - A prompt column.
 - A sixth seeded seat. The head is the `teams` row. Do not insert these five into the persona library.
 - Any seeded stage other than `work`. Do not seed `review`, `assemble`, or `verify`. Do not add a stage id. Do not order assignments so a `revise` verdict skips the starter seats. The existing `reviewBlocked` rule stays as it is.
-- The untrusted six-step excerpt as `Teams.run`. Do not run Violet twice. Do not add agents or stages for that excerpt.
+- The untrusted six-step excerpt as `Teams.run`. Do not run one seat twice. Do not add agents or stages for that excerpt.
 - A prompt scan, on the server or in the browser, that decides `staff`.
 - A loop that runs every stored member on a head turn whose `staff` is not true.
 - An insert on `PATCH /api/teams/:id/members`.

@@ -1,6 +1,6 @@
 # Implementability review
 
-> **Owner decision, 2026-11-22.** The adjudication "Shared desktop becomes Files" (section 4) and the `Lead name` / `Role` rows are overruled. The research behind them read an unrelated "GrokBot" repository. `Head agent`, `Jurisdiction` and `Shared desktop` stay, each with a helper line; see section 0 of [the interface contract](../interface-contract.md). All other verdicts stand.
+> **Owner decision, 2026-11-22.** The adjudication "Shared desktop becomes Files" (section 4) and the `Lead name` / `Role` rows are overruled. The research behind them read an unrelated third-party repository; that evidence is removed. `Head agent`, `Jurisdiction` and `Shared desktop` stay, each with a helper line; see section 0 of [the interface contract](../interface-contract.md). All other verdicts stand.
 
 Reviewed `docs/ui/research/familiar-harness-patterns.md` against the browser surface and the team, store, adapter, harness, and model modules. This file is the interface contract input. It does not change source.
 

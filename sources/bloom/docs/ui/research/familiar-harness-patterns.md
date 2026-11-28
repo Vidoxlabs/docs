@@ -1,6 +1,6 @@
 # Familiar harness patterns for Bloom
 
-> **Correction, 2026-11-22 (owner decision).** The GrokBot section below reads `github.com/Franzferdinan51/GrokBot` ("Grok Build Desktop"). That repository is unrelated to xAI's Grok Bot, the product Bloom follows ([how Grok Bot works](https://docs.x.ai/grok-bot/how-grok-bot-works), [shared computer](https://docs.x.ai/grok-bot/computer-and-apps), [group messaging](https://docs.x.ai/grok-bot/chat-and-collaboration)). Conclusions drawn from it, including the `Files` and `Lead name` renames, are set aside. The owner kept `Head agent`, `Jurisdiction` and `Shared desktop`; see section 0 of [the interface contract](../interface-contract.md). The rest of this report is unchanged.
+> **Correction, 2026-11-22 (owner decision).** One section of this report read an unrelated third-party repository that presents itself under a name similar to that of a product Bloom follows ([how that product works](https://docs.x.ai/grok-bot/how-grok-bot-works), [shared computer](https://docs.x.ai/grok-bot/computer-and-apps), [group messaging](https://docs.x.ai/grok-bot/chat-and-collaboration)). That repository is not the product, and the section has been removed. Conclusions drawn from it, including the `Files` and `Lead name` renames, are set aside. The owner kept `Head agent`, `Jurisdiction` and `Shared desktop`; see section 0 of [the interface contract](../interface-contract.md). The rest of this report is unchanged.
 
 Read on 2026-11-22. This report is evidence for a later reviewer. It separates what the pages and this checkout show from what Bloom should change.
 
@@ -11,7 +11,7 @@ Bloom should feel familiar on first open. The familiar gesture is: pick a place 
 OBSERVED across the pages opened on 2026-11-22:
 
 - First run is a short path. Install or open the app, sign in if the product requires it, choose a folder or repository, and type a task in ordinary language. Cursor’s quickstart says to pick a folder and open Agent. Claude Code’s terminal quickstart says to `cd` into a project and run `claude`. Claude’s desktop quickstart says to choose Local and Open folder. Codex CLI says to run `codex` in a project and describe a task. GitHub Copilot’s task page says to pick a repository, type a prompt, and press Enter. OpenCode’s TUI page says to run `opencode` in the project and press Enter.
-- Chat is the place the user types. It sits in a side pane (Cursor Agent, Cmd+I), under a prompt box (Claude desktop, Codex CLI, Copilot), or as a scrolling transcript with a fixed composer (OpenCode TUI, GrokBot README).
+- Chat is the place the user types. It sits in a side pane (Cursor Agent, Cmd+I), under a prompt box (Claude desktop, Codex CLI, Copilot), or as a scrolling transcript with a fixed composer (OpenCode TUI).
 - Files are the project. People attach them with `@` (Cursor, Claude desktop, OpenCode) or they let the agent search. A separate computer screen, live desktop, or preview is a second surface, present in some products and absent in others.
 - Extra agents are created by asking in the task, by a named control such as Create an agent, or by a file the product already knows how to load. The user is rarely asked to invent a legal-sounding charter before the first message.
 - Approvals are a pause with a short choice: allow this once, allow it again, or reject it. The words differ. The gesture does not.
@@ -23,31 +23,6 @@ RECOMMENDED stance for Bloom: keep the three-column page. Put the first task in 
 ## 2. Product-by-product observations
 
 Each block is OBSERVED from the listed URL on 2026-11-22. No live app was opened. Where a page returned chrome or an illustration as text, that is stated. Screens that were not in the fetched text are not described.
-
-### GrokBot
-
-URLs opened:
-
-- https://github.com/Franzferdinan51/GrokBot (repository page; the conversion did not include the README body)
-- https://raw.githubusercontent.com/Franzferdinan51/GrokBot/main/README.md
-- https://raw.githubusercontent.com/Franzferdinan51/GrokBot/main/VISION.md
-- https://api.github.com/repos/Franzferdinan51/GrokBot/contents/ (root file list only)
-
-The README and VISION.md describe different products in the same repository. The README title is “Grok Build Desktop.” VISION.md says GrokBot is terminal-first and that it will not merge “agent-hierarchy frameworks” as a default architecture. This report does not merge those two documents into one screen.
-
-README, first run: Settings, confirm the Grok Build CLI, sign in with xAI or another provider, then choose **Agent (no project)**, **Scratch**, or **Open project**.
-
-README, chat: a fixed header and composer with an independently scrolling transcript. Left navigation collapses. A right Preview rail is separate from chat. The composer stays usable while Preview is open.
-
-README, files and computer: a workspace file browser and editor, a contained terminal, Git status, and per-file diffs. Preview is a sandboxed rail with desktop, tablet, and mobile widths and a local preview server. First-run step 6 says the Agent tab configures “shared desktop/remote runtime defaults.” The README does not define that phrase, and it does not use the label “Head agent.” The closest role name is “primary agent,” which “remains responsible for integration and final verification.” VISION.md says the assistant should “run real tasks on a real computer” and lists “better computer-use” as a later priority. VISION.md does not describe a computer pane.
-
-README, agents: optional Grok Build subagent delegation for research, inspection, testing, and preview review. Mixture-of-agents presets run 2–8 reference models in plan-only mode, then one acting aggregator edits and verifies. Subagents and the primary agent are settings and prompt behavior, not a roster the README shows being created in the transcript.
-
-README, approvals: “visible automatic-approval controls,” permission modes, allow and deny rules, and the slash command `/approve [on|off]`. Automatic approvals are “visibly marked.” The README does not list the button labels on an approval card.
-
-README, model: selectors populated from `grok models`, plus `/model` in chat and `/models` in Telegram. Codex, MiniMax, and other providers appear after their own sign-in.
-
-README, usage and cache: “token-aware visible-only context” and `/compress` for Telegram. The README does not describe a usage meter, a cache-read number, or a cost figure in the desktop transcript.
 
 ### OpenCode
 
@@ -135,7 +110,6 @@ URLs opened:
 - https://developers.openai.com/codex/cli
 - https://developers.openai.com/codex/app
 - https://developers.openai.com/codex/concepts/sandboxing
-- https://raw.githubusercontent.com/openai/codex/main/README.md
 
 The Codex application itself was not opened. The overview fetch returned page text with these labels: New chat, Pinned, Projects, Recents, “What should we build?”, “Choose project”, “On my computer”, “Do anything”, and “6 Sol Light.” That is a documentation rendering, not a session that was used.
 
@@ -272,17 +246,16 @@ OBSERVED gesture, then the Bloom pane that already receives it.
 | Familiar gesture | Where it was seen | Bloom pane now |
 | --- | --- | --- |
 | Pick a folder, then type a task | Cursor quickstart, Claude desktop, Codex CLI directory line, Copilot repository dropdown, OpenCode `cwd` | **Direct coding session** → **Workspace directory**, then the center composer. The path shows under the session title. |
-| Start without a project | GrokBot README: Scratch, or Agent (no project) | Blank **Workspace directory**. Placeholder and README say Scratch. |
 | Start a team by describing the teammates in the task | Claude agent teams; Cursor “coordinator agent”; Codex “specialized agents”; Copilot agent dropdown | **Agent team**. The first Send to the lead creates the roster. **To** addresses one member later. **Use research brief** is a sample of that sentence. |
-| Chat in the center, work on the side | GrokBot transcript plus Preview; Claude prompt with optional file, diff, and browser panes; Cursor side pane or Agents Window | Center **Group conversation**. Right **Inspector**. Left **Workspaces**. |
+| Chat in the center, work on the side | Claude prompt with optional file, diff, and browser panes; Cursor side pane or Agents Window | Center **Group conversation**. Right **Inspector**. Left **Workspaces**. |
 | Attach files with a mention or a picker | Cursor `@`, Claude `@filename`, OpenCode `@`, Copilot `@` and the + menu | Team: check up to six rows, or paste a URL in the brief. Direct: no file checklist. The agent uses the workspace path. |
 | Open a file the agent wrote | Cursor diff and checkpoints; Claude `+12 -1` diff; Codex “inspect diffs”; Copilot session changes | Transcript button **Open** plus the title, and **Open** on a desktop row. The reader is Markdown text, not a diff. |
-| Watch a live computer or app preview | GrokBot Preview rail; Claude Browser pane; Cursor Browser tool | No pane. **Shared desktop** is the file list. |
+| Watch a live computer or app preview | Claude Browser pane; Cursor Browser tool | No pane. **Shared desktop** is the file list. |
 | Approve once, or allow it again | OpenCode Allow once / Always allow / Reject; Claude Yes and “don’t ask again”; Codex once or for the session; Cursor Allow on a card | Direct sessions: **Approval needed** in the inspector. Buttons are the adapter labels Bloom keeps. Team sessions: no approval card. |
-| Choose a model beside the prompt | Cursor picker, Claude desktop picker, Codex `/model`, OpenCode `/models`, Copilot model dropdown, GrokBot `/model` | Composer **Model**. Team create hides a second **Model** under **Model and budget**. |
+| Choose a model beside the prompt | Cursor picker, Claude desktop picker, Codex `/model`, OpenCode `/models`, Copilot model dropdown | Composer **Model**. Team create hides a second **Model** under **Model and budget**. |
 | See whether the context is filling up | Cursor context ring; Codex “100% context left”; OpenCode mini footer and ACP `usage_update`; Claude optional status line | Team only: `#usage` under **Run activity**. Direct: the region stays empty. |
-| Leave a note the next session can read | Anthropic progress file; GrokBot `MEMORY.md` mentioned as files, not as a pane | **Team memory**, **Add note**, **Forget**. |
-| Stop the run | Claude desktop stop button; OpenCode cancel; GrokBot `/stop` | Composer **Stop**. |
+| Leave a note the next session can read | Anthropic progress file | **Team memory**, **Add note**, **Forget**. |
+| Stop the run | Claude desktop stop button; OpenCode cancel | Composer **Stop**. |
 
 ## 5. Label changes worth making
 
@@ -335,7 +308,7 @@ Words that already match and should stay: **Workspaces**, **Team**, **To**, **Se
 
 **Head agent** appears on the form, in the empty transcript, and as the default name in `Teams.create`. The visible word should be **Lead**, which is already the input’s default value and the word Claude uses for “team lead.”
 
-**Shared desktop** names a file list. GrokBot’s README uses “shared desktop” once, without showing a file list, and its Preview rail is a different control. Renaming Bloom’s heading to **Files** matches Cursor, Claude, Codex, OpenCode, and Copilot. The on-disk directory can stay as it is.
+**Shared desktop** names a file list. Renaming Bloom’s heading to **Files** matches Cursor, Claude, Codex, OpenCode, and Copilot. The on-disk directory can stay as it is.
 
 ## 6. Usage and cache
 
@@ -355,7 +328,6 @@ OBSERVED elsewhere:
 - OpenCode shows usage in the mini footer when that footer is on, and ACP can report used tokens against context size plus USD cost. Child-session tokens are called out as excluded.
 - Claude Code can print a context percentage on a custom status line. The quickstart does not show one by default.
 - Copilot’s opened pages point at billing. They do not show a session meter.
-- GrokBot’s README mentions token-aware context and does not show a meter.
 
 RECOMMENDED for `#usage`:
 
@@ -368,8 +340,7 @@ RECOMMENDED for `#usage`:
 
 ## 7. Gaps and things that could not be verified
 
-- No live app was opened. GrokBot, OpenCode Desktop, Cursor, Claude desktop, Codex, and GitHub were read as documentation. Pane positions that appear only in screenshots were not inspected. The Agents Window page has an image; its pixels were not reviewed.
-- The GrokBot repository page conversion omitted the README. The raw README and VISION.md were opened. They disagree. VISION.md describes a terminal-first assistant and rejects a default manager hierarchy. The README describes Grok Build Desktop, a primary agent, subagents, and a Preview rail. Neither document shows a control named Head agent. “Shared desktop” is one unexplained phrase in the README’s first-run list.
+- No live app was opened. OpenCode Desktop, Cursor, Claude desktop, Codex, and GitHub were read as documentation. Pane positions that appear only in screenshots were not inspected. The Agents Window page has an image; its pixels were not reviewed.
 - OpenCode’s intro names a desktop app and a web app. The opened docs describe the TUI, ACP, agents, permissions, and CLI settings. A desktop layout page was not found.
 - Cursor pages opened do not show a pane named Composer. The context-ring categories were read. The subagents page and the models page were not read in full.
 - Claude’s permission illustration did not come through as text. The prose names Yes, “Yes, and don’t ask again,” and sometimes “Yes, and switch to auto mode.” The subagents page was only partly read.
@@ -397,10 +368,6 @@ Checkout:
 
 Public pages:
 
-- https://github.com/Franzferdinan51/GrokBot
-- https://raw.githubusercontent.com/Franzferdinan51/GrokBot/main/README.md
-- https://raw.githubusercontent.com/Franzferdinan51/GrokBot/main/VISION.md
-- https://api.github.com/repos/Franzferdinan51/GrokBot/contents/
 - https://opencode.ai/docs/
 - https://opencode.ai/docs/cli/tui
 - https://opencode.ai/docs/cli/acp/
@@ -421,7 +388,6 @@ Public pages:
 - https://developers.openai.com/codex/cli
 - https://developers.openai.com/codex/app
 - https://developers.openai.com/codex/concepts/sandboxing
-- https://raw.githubusercontent.com/openai/codex/main/README.md
 - https://docs.github.com/en/copilot/concepts/agents/coding-agent
 - https://docs.github.com/en/copilot/how-tos/copilot-on-github/use-copilot-agents/kick-off-a-task
 - https://www.anthropic.com/research/effective-harnesses-for-long-running-agents

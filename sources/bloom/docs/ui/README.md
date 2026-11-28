@@ -13,7 +13,7 @@ Its section 0 records the owner's decisions of 2026-11-22. They override both re
 Two research files are the evidence behind the contract:
 
 - [Implementability review](research/implementability-review.md). The coordinator approved this review. Section 7 is the include list and the leave-out list.
-- [Familiar harness patterns](research/familiar-harness-patterns.md). This report is evidence. It is not a second include list. Where the report and the review disagree, the review wins. Its "GrokBot" section describes an unrelated third-party repository, not xAI's Grok Bot; see the note at the top of the report.
+- [Familiar harness patterns](research/familiar-harness-patterns.md). This report is evidence. It is not a second include list. Where the report and the review disagree, the review wins. It once carried a section reading an unrelated third-party repository; that section is removed, and the note at the top of the report explains why.
 
 ## What a code agent may change, and what it must leave alone
 

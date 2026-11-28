@@ -1,5 +1,7 @@
 # Agent runtime patterns
 
+> **Withdrawn in part.** This pass planned five fixed starter seats with set names. Vivarium ships no fixed roster: agents are created by each person in setup, from generic templates ([vivarium ADR-0002](https://github.com/Vidoxlabs/vivarium/blob/main/docs/adr/0002-internal-agents-use-the-public-setup.md)). The starter-seat steps below are kept as history with placeholder names and are not to be built.
+
 > **Note, 2026-11-22 (Bloom 0.7.0).** Bloom no longer runs OpenCode in any form, and it now imports seed for the provider seam. The OpenCode and swarm-plugin sections below describe other products as they were read that day. They are evidence about those products, not Bloom behavior. The rest of this report is unchanged.
 
 Checkable notes for Bloom's team loop, the installed swarm plugin, and the public harness pages opened on 2026-11-22. OBSERVED claims cite a file or a URL from that day. RECOMMENDED claims are proposals a reviewer can accept or reject. They are not current Bloom behavior.
@@ -183,7 +185,7 @@ Each item names the Bloom function or the missing route. Accepting one does not 
 
 ### R1. Seed five seats in `Teams.create`
 
-Accept: after the `teams` insert, `Teams.create` inserts five `members` rows named Violet, Wisteria, Xylia, and Yarrow, then Zinnia, in that order. They use the columns that already exist: `name`, `charter`, `voice`, `stage`. They share the team turn's model. `Teams.create` does not gain a per-member model or a prompt column.
+Accept: after the `teams` insert, `Teams.create` inserts five `members` rows with fixed starter names, in a fixed order. They use the columns that already exist: `name`, `charter`, `voice`, `stage`. They share the team turn's model. `Teams.create` does not gain a per-member model or a prompt column.
 
 Reject if the head name, compared case-insensitively, matches one of those five. `planOf` already refuses a specialist with the head's name. The same check belongs in `Teams.create` before insert.
 
@@ -213,9 +215,9 @@ The member row is display-only today. Shipping inputs on that row changes `docs/
 
 ### R4. Do not encode this stored excerpt as the loop
 
-Untrusted stored documentation, digest `b7458345fc30`, as supplied in the research assignment: Violet opens, Yarrow does breakdown, Wisteria argues upside, Xylia argues downside, Zinnia turns the plan into a sequence, Violet ratifies. `context_brief` and `context_search` both returned `Unknown tool` on 2026-11-22, so this report did not re-read that document. The order is not live Bloom behavior.
+Untrusted stored documentation, digest `b7458345fc30`, as supplied in the research assignment: one seat opens, a second does the breakdown, a third argues upside, a fourth argues downside, a fifth turns the plan into a sequence, and the first ratifies. `context_brief` and `context_search` both returned `Unknown tool` on 2026-11-22, so this report did not re-read that document. The order is not live Bloom behavior.
 
-Reject making `Teams.run` follow that order. It is six speaking turns and names Violet twice. The current loop runs each assignment once. A later sequence, if accepted, would be an explicit list of existing member names, not new stages and not new agents.
+Reject making `Teams.run` follow that order. It is six speaking turns and gives one seat two turns. The current loop runs each assignment once. A later sequence, if accepted, would be an explicit list of existing member names, not new stages and not new agents.
 
 ### R5. Keep one transcript
 

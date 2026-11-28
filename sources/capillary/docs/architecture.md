@@ -39,7 +39,7 @@ Every crossing is stateable to a reviewer:
 - *Which items* the budgets left out.
 - *Why* — the budgets and the order are part of the packet.
 
-## Neurology of the family
+## Neurology of the systems
 
 Capillary decides nothing. It serves retrieval to the layers that decide:
 
@@ -51,7 +51,7 @@ Capillary decides nothing. It serves retrieval to the layers that decide:
   hands it exact evidence, never verdicts.
 
 While the public counterparts of those systems are in the works, capillary's contracts
-stand alone: `myosotis`, `aestivation`, and capillary are one family with separate
+stand alone: `myosotis`, `aestivation`, and capillary are peers with separate
 provinces, and the seams are contracts, not assumptions.
 
 ## What capillary refuses to own

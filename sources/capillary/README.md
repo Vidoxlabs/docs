@@ -42,9 +42,9 @@ opens a network listener or retrieves over the network today.
 - [Bounded retrieval](docs/contracts/retrieval.md): the packet, its budgets, declared shortening, declared omissions
 - [Provenance](docs/contracts/retrieval.md): digests and origin classes on every source
 
-## How capillary fits the family (`specified`)
+## How capillary fits the systems (`specified`)
 
-The botanic line, per [docs/family.md](docs/family.md): **seed** (the foundation a runtime
+The botanic line, per [docs/systems.md](docs/systems.md): **seed** (the foundation a runtime
 grows from) → **capillary** (these channels, lifting context to it) → **myosotis**
 (governed memory: consent, keep, and forget) → **aestivation** (the bud's arrangement,
 admission and review before assembly) → **drosera** (the sundew's tentacles: tools,
@@ -64,7 +64,7 @@ seam.
 - [Contracts](docs/contracts/retrieval.md): bounded retrieval and provenance
 - [Relations contract](docs/contracts/relations.md): typed, append-only context relations
 - [Interop](docs/interop.md): Bloom, Seed, and the memory seam
-- [Family](docs/family.md): the botanic naming line
+- [Systems](docs/systems.md): the botanic naming line
 
 ## License
 

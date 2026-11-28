@@ -1,4 +1,4 @@
-# The botanic family
+# The botanic systems
 
 Status: `ratified` by the owner, 2026-11-23. This document records the naming law.
 
@@ -19,9 +19,8 @@ seed                          the contract floor
 - **Capillary, myosotis, aestivation, and drosera** are peers. They do not import each other. A later call goes from a peer down onto seed's published exports, or upward into bloom. Drosera is external tool faces, skills, hooks, and cookbooks. It is not seed's harness tooling. Myosotis is memory, including how it stores records. That storage is myosotis's concern, not another product.
 - **Trellis** reports disagreement. The repository that lagged repairs itself in its own task.
 
-The public-product family is named from botany, on purpose: the five persona seats of
-the house canon — Violet, Wisteria, Xylia, Yarrow, Zinnia — are all flowering plants, so
-the products they use take the same kingdom. Each name names what its system does:
+The public product line is named from botany, on purpose. Each name names what its
+system does:
 
 | Name | Botany | System | Place |
 | --- | --- | --- | --- |
@@ -51,17 +50,17 @@ the products they use take the same kingdom. Each name names what its system doe
    the same way: a real botanical word, true to its function, no force-fitting for
    spelling. It does not become a new required step between the floor and the composer.
 
-## Plain-named siblings
+## Plain-named peers
 
-Two public repositories serve the family without joining the botanic line, by owner
-decision. `docs` is the family documentation hub: the family's shared pages are written
-there, and every member's own documentation is carried verbatim on a schedule.
+Two public repositories serve the systems without joining the botanic line, by owner
+decision. `docs` is the shared documentation hub: the systems' shared pages are written
+there, and each system's own documentation is carried verbatim on a schedule.
 `videsign` is the design canon. Infrastructure keeps plain words; products take botanic
 ones. Neither is a step in the stack.
 
 ## Note on predecessors
 
-This family revamps internal systems whose historical names (an admission-transport
+This line revamps internal systems whose historical names (an admission-transport
 name, a memory store's name, a context store) stay retired in public prose. Their
 **public successors** carry the botanic names above; in seed's generalized lexicon the
 mapping is recorded so readers of older material can arrive gently. Private lineage
